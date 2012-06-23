@@ -23,7 +23,7 @@ rom_mid_dpi=160
 rom_lowmid_dpi=140
 
 # SYSTEM
-android.dpi=rom_mid_dpi
+android.dpi=rom_lowmid_dpi
 com.android.systemui.dpi=rom_mid_dpi
 com.android.providers.downloads.ui.dpi=rom_mid_dpi
 com.android.email.dpi=rom_lowmid_dpi
