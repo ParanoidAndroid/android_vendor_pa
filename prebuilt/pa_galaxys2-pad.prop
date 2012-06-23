@@ -33,6 +33,7 @@ com.android.mms.mode=1
 com.google.android.talk.dpi=rom_mid_dpi
 com.android.settings.dpi=rom_mid_dpi
 com.android.contacts.dpi=rom_mid_dpi
+com.android.phone.dpi=rom_tablet_base
 org.openintents.filemanager.mode=1
 com.android.browser.dpi=rom_mid_dpi
 jackpal.androidterm.dpi=rom_mid_dpi
