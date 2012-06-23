@@ -3,59 +3,59 @@
 ###################
 
 ## P.A.D PARAMETERS
-hybrid_mode=1
-rom_tablet_base=192
-rom_phone_base=320
-system_default_dpi=0
-user_default_dpi=320
-user_default_mode=1
+$hybrid_mode=1
+$rom_tablet_base=192
+$rom_phone_base=320
+$system_default_dpi=0
+$user_default_dpi=320
+$user_default_mode=1
 
 ## P.A.L PARAMETERS
-screen_default_width=360
-screen_default_height=567
-screen_default_layout=268435474
-screen_opposite_width=600
-screen_opposite_height=1018
-screen_opposite_layout=268435491
+$screen_default_width=360
+$screen_default_height=567
+$screen_default_layout=268435474
+$screen_opposite_width=600
+$screen_opposite_height=1018
+$screen_opposite_layout=268435491
 
 ## USER DEFINED VARIABLES
-rom_mid_dpi=240
+$rom_mid_dpi=240
 
 ## SYSTEM
 android.dpi=240
 com.android.systemui.dpi=220
-com.tmobile.themechooser.dpi=rom_phone_base
-com.tmobile.thememanager.dpi=rom_phone_base
-com.google.android.talk.dpi=rom_phone_base
+com.tmobile.themechooser.dpi=$rom_phone_base
+com.tmobile.thememanager.dpi=$rom_phone_base
+com.google.android.talk.dpi=$rom_phone_base
 com.google.android.talk.mode=1
-com.android.bluetooth.dpi=rom_mid_dpi
-com.android.browser.dpi=rom_mid_dpi
-com.android.contacts.dpi=rom_mid_dpi
+com.android.bluetooth.dpi=$rom_mid_dpi
+com.android.browser.dpi=$rom_mid_dpi
+com.android.contacts.dpi=$rom_mid_dpi
 com.android.contacts.mode=2
-com.android.email.dpi=rom_mid_dpi
+com.android.email.dpi=$rom_mid_dpi
 com.android.email.mode=2
-com.android.mms.dpi=rom_mid_dpi
-com.android.phone.dpi=rom_mid_dpi
-com.android.providers.downloads.ui.dpi=rom_mid_dpi
-com.android.settings.dpi=rom_mid_dpi
+com.android.mms.dpi=$rom_mid_dpi
+com.android.phone.dpi=$rom_mid_dpi
+com.android.providers.downloads.ui.dpi=$rom_mid_dpi
+com.android.settings.dpi=$rom_mid_dpi
 com.android.settings.mode=2
-com.android.vending.dpi=rom_mid_dpi
-com.android.voicedialer.dpi=rom_mid_dpi
-com.android.vpndialogs.dpi=rom_mid_dpi
-com.android.wallpaper.livepicker.dpi=rom_mid_dpi
-com.google.android.gm.dpi=rom_mid_dpi
+com.android.vending.dpi=$rom_mid_dpi
+com.android.voicedialer.dpi=$rom_mid_dpi
+com.android.vpndialogs.dpi=$rom_mid_dpi
+com.android.wallpaper.livepicker.dpi=$rom_mid_dpi
+com.google.android.gm.dpi=$rom_mid_dpi
 com.google.android.gm.mode=2
-com.google.android.googlequicksearchbox.dpi=rom_mid_dpi
-com.google.android.gsf.login.dpi=rom_mid_dpi
-com.google.android.setupwizard.dpi=rom_mid_dpi
-com.google.android.voicesearch.dpi=rom_mid_dpi
-com.noshufou.android.su.dpi=rom_mid_dpi
-com.google.android.youtube.dpi=rom_mid_dpi
-com.android.calendar.dpi=rom_mid_dpi
-com.andrew.apollo.dpi=rom_mid_dpi
-com.android.inputmethod.latin.dpi=rom_phone_base
+com.google.android.googlequicksearchbox.dpi=$rom_mid_dpi
+com.google.android.gsf.login.dpi=$rom_mid_dpi
+com.google.android.setupwizard.dpi=$rom_mid_dpi
+com.google.android.voicesearch.dpi=$rom_mid_dpi
+com.noshufou.android.su.dpi=$rom_mid_dpi
+com.google.android.youtube.dpi=$rom_mid_dpi
+com.android.calendar.dpi=$rom_mid_dpi
+com.andrew.apollo.dpi=$rom_mid_dpi
+com.android.inputmethod.latin.dpi=$rom_phone_base
 com.android.inputmethod.latin.mode=1
-com.cyanogenmod.trebuchet.dpi=rom_phone_base
+com.cyanogenmod.trebuchet.dpi=$rom_phone_base
 com.cyanogenmod.trebuchet.mode=1
 
 ## USER-APPS
