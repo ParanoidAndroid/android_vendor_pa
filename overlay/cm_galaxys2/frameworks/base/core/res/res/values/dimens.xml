@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Height of the horizontal navigation bar on devices that require it -->
+    <dimen name="navigation_bar_height">37dp</dimen>
+
+</resources>

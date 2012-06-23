@@ -1,0 +1,8 @@
+[
+    {
+        "account":      "D4rKn3sSyS",
+        "repository":   "propietary_vendor_samsung",
+        "target_path":  "vendor/samsung",
+        "revision":     "ics"
+    }
+]
