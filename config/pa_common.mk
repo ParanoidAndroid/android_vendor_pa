@@ -4,8 +4,9 @@ PRODUCT_COPY_FILES += \
 
 # Replace CM9 files
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
-
+    vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/pa/prebuilt/common/bootanimation/paranoid-android.zip:system/media/bootanimation.zip
+    
 # ParanoidAndroid Packages
 PRODUCT_PACKAGES += \
     ParanoidBackup \
