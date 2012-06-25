@@ -8,6 +8,7 @@
 %rom_mid_base=260
 %rom_framework_dpi=250
 %rom_systemui_dpi=220
+%rom_launcher_dpi=290
 %screen_default_width=360
 %screen_default_height=567
 %screen_default_layout=268435474
@@ -18,7 +19,7 @@
 ## CONFIGURATION
 %hybrid_mode=1
 %system_default_dpi=%rom_mid_base
-%user_default_dpi=%rom_phone_base
+%user_default_dpi=%rom_mid_base
 %user_default_mode=1
 android.dpi=%rom_framework_dpi
 com.android.systemui.dpi=%rom_systemui_dpi
@@ -31,11 +32,11 @@ com.android.inputmethod.dpi=%rom_phone_base
 com.android.camera.mode=2
 com.android.camera.dpi=%rom_tablet_base
 com.cyanogenmod.trebuchet.mode=1
-com.cyanogenmod.trebuchet.dpi=%rom_phone_base
+com.cyanogenmod.trebuchet.dpi=%rom_launcher_dpi
 com.anddoes.launcher.mode=1
-com.anddoes.launcher.dpi=%rom_phone_base
+com.anddoes.launcher.dpi=%rom_launcher_dpi
 com.teslacoilsw.launcher.mode=1
-com.teslacoilsw.launcher.dpi=%rom_phone_base
+com.teslacoilsw.launcher.dpi=%rom_launcher_dpi
 com.android.calendar.mode=2
 com.android.chrome.mode=1
 com.android.contacts.mode=2
@@ -48,5 +49,4 @@ com.android.vending.mode=2
 com.google.android.gm.mode=2
 com.google.android.googlequicksearchbox.mode=2
 com.google.android.talk.mode=1
-com.google.android.youtube.dpi=%rom_tablet_base
 com.google.android.youtube.mode=2
