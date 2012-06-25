@@ -4,8 +4,15 @@ PRODUCT_COPY_FILES += \
 
 # Replace CM9 files
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/pa/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
+    vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
+
+ifneq ($(TARGET_BOOTANIMATION_NAME),)
+    PRODUCT_COPY_FILES += \
+        vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
+else
+    PRODUCT_COPY_FILES += \
+        vendor/cm/prebuilt/common/bootanimation/vertical-480x800.zip:system/media/bootanimation.zip
+endif
     
 # ParanoidAndroid Packages
 PRODUCT_PACKAGES += \
