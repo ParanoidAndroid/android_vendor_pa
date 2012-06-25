@@ -44,6 +44,7 @@ com.android.htmlviewer.mode=1
 com.android.mms.mode=1
 com.android.settings.mode=2
 com.android.vending.mode=2
+com.google.android.gm.mode=2
 com.google.android.googlequicksearchbox.mode=2
 com.google.android.talk.mode=1
 com.google.android.youtube.mode=2
