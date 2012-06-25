@@ -6,10 +6,8 @@
 %rom_tablet_base=192
 %rom_phone_base=320
 %rom_mid_base=260
-%rom_mid_high_base=290
 %rom_framework_dpi=250
 %rom_systemui_dpi=220
-%rom_launcher_dpi=290
 %screen_default_width=360
 %screen_default_height=567
 %screen_default_layout=268435474
