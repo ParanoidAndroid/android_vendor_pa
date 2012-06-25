@@ -8,10 +8,10 @@ PRODUCT_COPY_FILES += \
 
 ifneq ($(TARGET_BOOTANIMATION_NAME),)
     PRODUCT_COPY_FILES += \
-        vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
+        vendor/pa/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
 else
     PRODUCT_COPY_FILES += \
-        vendor/cm/prebuilt/common/bootanimation/vertical-480x800.zip:system/media/bootanimation.zip
+        vendor/pa/prebuilt/common/bootanimation/vertical-480x800.zip:system/media/bootanimation.zip
 endif
     
 # ParanoidAndroid Packages
