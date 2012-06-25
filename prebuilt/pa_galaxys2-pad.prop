@@ -2,53 +2,48 @@
 # PARANOIDANDROID #
 ###################
 
-## P.A.D PARAMETERS
-$hybrid_mode=1
-$rom_tablet_base=128
-$rom_phone_base=240
-$system_default_dpi=240
-$user_default_dpi=240
-$user_default_mode=1
+## DEFAULTS
+%rom_tablet_base=128
+%rom_phone_base=240
+%rom_mid_base=180
+%rom_framework_dpi=150
+%rom_systemui_dpi=160
+%screen_default_width=320
+%screen_default_height=508
+%screen_default_layout=34
+%screen_opposite_width=640
+%screen_opposite_height=1018
+%screen_opposite_layout=268435475
 
-## P.A.L PARAMETERS
-$screen_default_width=320
-$screen_default_height=508
-$screen_default_layout=34
-$screen_opposite_width=640
-$screen_opposite_height=1018
-$screen_opposite_layout=268435475
+## CONFIGURATION
+%hybrid_mode=1
+%system_default_dpi=%rom_mid_base
+%user_default_dpi=%rom_mid_base
+%user_default_mode=1
+android.dpi=%rom_framework_dpi
+com.android.systemui.dpi=%rom_systemui_dpi
 
-## USER DEFINED VARIABLES
-$rom_mid_dpi=160
-$rom_lowmid_dpi=140
-
-# SYSTEM
-android.dpi=$rom_mid_dpi
-com.android.systemui.dpi=$rom_mid_dpi
-com.android.providers.downloads.ui.dpi=$rom_mid_dpi
-com.android.email.dpi=$rom_lowmid_dpi
-com.android.vending.dpi=$rom_mid_dpi
-com.android.vending.mode=2
-com.android.mms.mode=1
-com.google.android.talk.dpi=$rom_mid_dpi
-com.android.settings.dpi=$rom_mid_dpi
-com.android.contacts.dpi=$rom_mid_dpi
-org.openintents.filemanager.mode=1
-com.android.browser.dpi=$rom_mid_dpi
-jackpal.androidterm.dpi=$rom_mid_dpi
-com.noshufou.android.su.mode=1
-com.android.camera.dpi=$rom_tablet_base
-com.android.calculator2.dpi=$rom_tablet_base
-com.android.calculator2.mode=2
-com.bel.android.dspmanager.mode=1
-com.android.deskclock.dpi=$rom_tablet_base
-com.android.inputmethod.latin.dpi=$rom_phone_base
+## PREFERENCES
+com.android.phone.mode=1
+com.android.inputmethod.dpi=%rom_phone_base
 com.android.inputmethod.latin.mode=1
-com.cyanogenmod.trebuchet.dpi=$rom_phone_base
+com.android.inputmethod.dpi=%rom_phone_base
+com.android.camera.mode=2
+com.android.camera.dpi=%rom_tablet_base
 com.cyanogenmod.trebuchet.mode=1
-
-## USER-APPS
-com.google.android.youtube.dpi=$rom_tablet_base
+com.cyanogenmod.trebuchet.dpi=%rom_phone_base
+com.anddoes.launcher.mode=1
+com.anddoes.launcher.dpi=%rom_phone_base
+com.teslacoilsw.launcher.mode=1
+com.teslacoilsw.launcher.dpi=%rom_phone_base
+com.android.calendar.mode=2
+com.android.chrome.mode=1
+com.android.contacts.mode=2
+com.android.email.mode=2
+com.android.htmlviewer.mode=1
+com.android.mms.mode=1
+com.android.settings.mode=2
+com.android.vending.mode=2
+com.google.android.googlequicksearchbox.mode=2
+com.google.android.talk.mode=1
 com.google.android.youtube.mode=2
-com.google.android.gm.dpi=$rom_mid_dpi
-com.google.android.gm.mode=2
