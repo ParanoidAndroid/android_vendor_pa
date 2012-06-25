@@ -30,6 +30,7 @@ com.android.inputmethod.latin.mode=1
 com.android.inputmethod.dpi=%rom_phone_base
 com.android.camera.mode=2
 com.android.camera.dpi=%rom_tablet_base
+com.android.facelock.dpi=%rom_phone_base
 com.cyanogenmod.trebuchet.mode=1
 com.cyanogenmod.trebuchet.dpi=%rom_phone_base
 com.anddoes.launcher.mode=1
