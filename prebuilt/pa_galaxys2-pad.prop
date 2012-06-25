@@ -5,7 +5,7 @@
 ## DEFAULTS
 %rom_tablet_base=128
 %rom_phone_base=240
-%rom_mid_base=182
+%rom_mid_base=160
 %rom_framework_dpi=140
 %rom_systemui_dpi=160
 %screen_default_width=320
