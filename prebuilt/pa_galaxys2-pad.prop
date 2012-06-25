@@ -24,7 +24,6 @@ android.dpi=%rom_framework_dpi
 com.android.systemui.dpi=%rom_systemui_dpi
 
 ## PREFERENCES
-com.android.phone.mode=1
 com.android.inputmethod.dpi=%rom_phone_base
 com.android.inputmethod.latin.mode=1
 com.android.inputmethod.dpi=%rom_phone_base
@@ -56,3 +55,4 @@ com.paranoid.backup.dpi=%rom_phone_base
 com.paranoid.backup.mode=1
 com.paranoid.preferences.dpi=%rom_phone_base
 com.paranoid.preferences.mode=1
+com.tmobile.themechooser.dpi=%rom_phone_base
