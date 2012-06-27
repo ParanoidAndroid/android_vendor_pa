@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Defines default DPI to be used as User DPI -->
-    <string name="default_dpi_setting" translatable="false">"%rom_phone_base"</string>
-</resources>
