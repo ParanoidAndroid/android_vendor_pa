@@ -6,7 +6,7 @@ include vendor/pa/config/pa_common.mk
 
 # ParanoidAndroid device specific configuration
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=192
+    ro.sf.lcd_density=320
 
 # Inherit CM9 device configuration
 $(call inherit-product, device/samsung/maguro/cm.mk)
