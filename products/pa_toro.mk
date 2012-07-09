@@ -1,12 +1,11 @@
 # Check for target product
 ifeq (pa_toro,$(TARGET_PRODUCT))
 
+# Define PA bootanimation size
+PARANOID_BOOTANIMATION_NAME := 720x1280
+
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
-
-# ParanoidAndroid device specific configuration
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=320
 
 # Inherit CM9 device configuration
 $(call inherit-product, device/samsung/toro/cm.mk)
