@@ -11,7 +11,7 @@ ifneq ($(PARANOID_BOOTANIMATION_NAME),)
         vendor/pa/prebuilt/common/bootanimation/$(PARANOID_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
 else
     PRODUCT_COPY_FILES += \
-        vendor/pa/prebuilt/common/bootanimation/480x800.zip:system/media/bootanimation.zip
+        vendor/pa/prebuilt/common/bootanimation/HDPI.zip:system/media/bootanimation.zip
 endif
     
 # ParanoidAndroid Packages

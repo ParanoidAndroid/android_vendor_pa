@@ -2,7 +2,7 @@
 ifeq (pa_i9300,$(TARGET_PRODUCT))
 
 # Define PA bootanimation size
-PARANOID_BOOTANIMATION_NAME := 720x1280
+PARANOID_BOOTANIMATION_NAME := XHDPI
 
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
