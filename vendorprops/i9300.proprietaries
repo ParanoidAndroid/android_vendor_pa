@@ -1,7 +1,7 @@
 [
     {
-        "account":      "D4rKn3sSyS",
-        "repository":   "propietary_vendor_samsung",
+        "account":      "TheMuppets",
+        "repository":   "proprietary_vendor_samsung",
         "target_path":  "vendor/samsung",
         "revision":     "ics"
     }
