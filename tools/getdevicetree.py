@@ -10,16 +10,16 @@ device = sys.argv[1];
 
 manufacturer = None
 
-def IsNotNull(value):
-    return value is not None and len(value) > 0
+def isNullOrEmpty(value):
+    return value is None or len(value) < 0
 
-for dirname, dirnames, filenames in os.walk('./../../../device/'):
+for dirname, dirnames, filenames in os.walk('./device/'):
     for subdirname in dirnames:
-        path = os.path.join(dirname, subdirname)[18:]
-        if device[:product.find('-') - 3] in path:
+        path = os.path.join(dirname, subdirname)[9:]
+        if device in path:
             manufacturer = path[:path.find('/')];
 
-if not IsNotNull(manufacturer):
+if isNullOrEmpty(manufacturer):
     manufacturer = raw_input('Manufacturer not found, please write your device manufacturer: ')
 
 device_path = 'device/'+manufacturer+'/'+device
@@ -108,7 +108,7 @@ def fetch_device(device, manufacturer):
         else:
             print '  %s already in local_manifest' % repo_full
     else:
-        print 'device tree found, bailing out.'
+        print 'Device tree found. Skipping step.'
 
     if len(syncable_repos) > 0:
         print 'Syncing device'
