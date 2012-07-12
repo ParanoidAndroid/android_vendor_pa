@@ -3,12 +3,12 @@
         "account":      "TheMuppets",
         "repository":   "proprietary_vendor_samsung",
         "target_path":  "vendor/samsung",
-        "revision":     "ics"
+        "revision":     "jellybean"
     },
     {
         "account":      "TheMuppets",
         "repository":   "proprietary_vendor_imgtec",
         "target_path":  "vendor/imgtec",
-        "revision":     "ics"
+        "revision":     "jellybean"
     }
 ]
