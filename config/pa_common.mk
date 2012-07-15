@@ -17,14 +17,15 @@ endif
 # ParanoidAndroid Packages
 PRODUCT_PACKAGES += \
     ParanoidBackup \
-    ParanoidOTA      
+    ParanoidOTA \
+    ParanoidPreferences 
 
 # ParanoidAndroid Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
 
 PA_VERSION_MAJOR = 1
-PA_VERSION_MINOR = 6
+PA_VERSION_MINOR = 7
 PA_VERSION_MAINTENANCE = a
 
 TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
