@@ -20,6 +20,12 @@ PRODUCT_PACKAGES += \
     ParanoidOTA \
     ParanoidPreferences 
 
+# CyanogenMod Packages
+PRODUCT_PACKAGES += \
+    Superuser \
+    Superuser.apk \
+    su
+
 # ParanoidAndroid Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
