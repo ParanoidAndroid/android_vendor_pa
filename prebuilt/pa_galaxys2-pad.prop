@@ -2,6 +2,27 @@
 # PARANOIDANDROID #
 ###################
 
+## TRESHOLDS
+%rom_tablet_base=128
+%rom_phablet_base=220
+%rom_phone_base=240
+
+## CONFIGURATION
+%screen_1_width=320
+%screen_1_height=508
+%screen_1_layout=34
+%screen_2_width=640
+%screen_2_height=1018
+%screen_2_layout=268435475
+%screen_3_width=0
+%screen_3_height=0
+%screen_3_layout=0
+
+## PREFERENCES
+%rom_pref_mid=160
+%rom_pref_bigphablet=230
+%rom_pref_bigtablet=170
+
 ## DEFAULTS
 %rom_tablet_base=128
 %rom_phone_base=240
@@ -16,29 +37,37 @@
 
 ## CONFIGURATION
 %hybrid_mode=1
+%system_default_mode=0
 %user_default_mode=1
 %system_default_dpi=%rom_phone_base
 %user_default_dpi=%rom_phone_base
-android.dpi=0
-com.android.systemui.dpi=%rom_systemui_dpi
-com.android.systemui.mode=2
 
-## PREFERENCES
-com.android.settings.dpi=%rom_mid_base
-com.android.settings.mode=2
-com.android.calendar.dpi=%rom_mid_base
+## WORKSPACE PREFERENCES
+android.dpi=0
+android.mode=1
+com.android.systemui.dpi=0
+com.android.systemui.mode=1
+
+## SYSTEM PREFERENCES
+com.paranoid.preferences.dpi=260
+com.paranoid.preferences.mode=2
+com.android.settings.dpi=245
+com.android.settings.mode=3
+com.android.calendar.dpi=%rom_pref_mid
 com.android.calendar.mode=2
-com.android.contacts.dpi=%rom_mid_base
-com.android.contacts.mode=2
-com.android.browser.dpi=%rom_mid_base
+com.android.contacts.dpi=%rom_pref_mid
+com.android.contacts.mode=0
+com.android.browser.dpi=%rom_pref_mid
 com.android.browser.mode=2
 com.android.calculator2.dpi=%rom_tablet_base
-com.android.calculator2.mode=2
-com.android.email.dpi=%rom_mid_base
+com.android.calculator2.mode=3
+com.android.email.dpi=%rom_pref_mid
 com.android.email.mode=2
-com.android.vending.dpi=%rom_mid_base
+com.android.vending.dpi=%rom_pref_mid
 com.android.vending.mode=2
-com.google.android.gm.dpi=%rom_mid_base
+com.google.android.gm.dpi=%rom_pref_mid
 com.google.android.gm.mode=2
-com.google.android.talk.dpi=%rom_mid_base
+com.google.android.talk.dpi=%rom_pref_mid
 com.google.android.talk.mode=2
+
+## USER PREFERENCES
