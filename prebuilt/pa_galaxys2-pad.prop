@@ -49,9 +49,9 @@ com.android.systemui.dpi=0
 com.android.systemui.mode=1
 
 ## SYSTEM PREFERENCES
-com.paranoid.preferences.dpi=260
+com.paranoid.preferences.dpi=%rom_pref_mid
 com.paranoid.preferences.mode=2
-com.android.settings.dpi=245
+com.android.settings.dpi=%rom_pref_mid
 com.android.settings.mode=3
 com.android.calendar.dpi=%rom_pref_mid
 com.android.calendar.mode=2
