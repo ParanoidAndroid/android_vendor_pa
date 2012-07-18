@@ -1,3 +1,6 @@
+# Bring in Old audio files
+include frameworks/base/data/sounds/OldAudio.mk
+
 # ParanoidAndroid
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(TARGET_PRODUCT)-pad.prop:system/pad.prop
