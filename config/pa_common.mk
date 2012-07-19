@@ -1,6 +1,3 @@
-# Bring in Old audio files
-include frameworks/base/data/sounds/OldAudio.mk
-
 # use AOSP default sounds
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.config.ringtone=Themos.ogg \
