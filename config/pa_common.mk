@@ -1,6 +1,12 @@
 # Bring in Old audio files
 include frameworks/base/data/sounds/OldAudio.mk
 
+# use AOSP default sounds
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.config.ringtone=Ring_Synth_04.ogg \
+  ro.config.notification_sound=Pixiedust.ogg \
+  ro.config.alarm_alert=Alarm_Classic.ogg
+
 # ParanoidAndroid
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(TARGET_PRODUCT)-pad.prop:system/pad.prop
