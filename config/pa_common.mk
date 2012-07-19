@@ -3,9 +3,9 @@ include frameworks/base/data/sounds/OldAudio.mk
 
 # use AOSP default sounds
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.config.ringtone=Ring_Synth_04.ogg \
-  ro.config.notification_sound=Pixiedust.ogg \
-  ro.config.alarm_alert=Alarm_Classic.ogg
+  ro.config.ringtone=Themos.ogg \
+  ro.config.notification_sound=Proxima.ogg \
+  ro.config.alarm_alert=Cesium.ogg
 
 # ParanoidAndroid
 PRODUCT_COPY_FILES += \
