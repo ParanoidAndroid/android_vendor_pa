@@ -14,9 +14,9 @@
 %screen_2_width=640
 %screen_2_height=1018
 %screen_2_layout=268435475
-%screen_3_width=0
-%screen_3_height=0
-%screen_3_layout=0
+%screen_3_width=724
+%screen_3_height=1159
+%screen_3_layout=268435475
 
 ## PREFERENCES
 %rom_pref_mid=160
