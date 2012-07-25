@@ -2,8 +2,8 @@
 # PARANOIDANDROID #
 ###################
 
-## TRESHOLDS
-%rom_tablet_base=192
+## TRESHOLDS, OBSOLETE - ONLY USED FOR GUI SLIDERS
+%rom_tablet_base=160
 %rom_phablet_base=215
 %rom_phone_base=320
 
@@ -43,17 +43,17 @@ com.android.settings.dpi=245
 com.android.settings.mode=3
 com.android.calendar.dpi=%rom_pref_mid
 com.android.calendar.mode=2
-com.android.contacts.dpi=%rom_pref_mid
+com.android.contacts.dpi=%rom_phone_base
 com.android.contacts.mode=0
 com.android.browser.dpi=%rom_pref_mid
 com.android.browser.mode=2
 com.android.calculator2.dpi=%rom_tablet_base
 com.android.calculator2.mode=3
-com.android.email.dpi=%rom_pref_mid
+com.android.email.dpi=230
 com.android.email.mode=2
 com.android.vending.dpi=%rom_pref_mid
 com.android.vending.mode=2
-com.google.android.gm.dpi=%rom_pref_mid
+com.google.android.gm.dpi=230
 com.google.android.gm.mode=2
 com.google.android.talk.dpi=%rom_pref_mid
 com.google.android.talk.mode=2
