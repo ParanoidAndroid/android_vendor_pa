@@ -21,7 +21,7 @@
 ## PREFERENCES
 %rom_pref_mid=160
 %rom_pref_bigphablet=160
-%rom_pref_bigtablet=170
+%rom_pref_bigtablet=160
 
 ## DEFAULTS
 %rom_tablet_base=128
