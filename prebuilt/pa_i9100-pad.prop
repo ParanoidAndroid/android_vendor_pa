@@ -4,7 +4,7 @@
 
 ## TRESHOLDS
 %rom_tablet_base=128
-%rom_phablet_base=220
+%rom_phablet_base=160
 %rom_phone_base=240
 
 ## CONFIGURATION
@@ -20,7 +20,7 @@
 
 ## PREFERENCES
 %rom_pref_mid=160
-%rom_pref_bigphablet=170
+%rom_pref_bigphablet=160
 %rom_pref_bigtablet=170
 
 ## DEFAULTS
