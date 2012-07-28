@@ -22,8 +22,6 @@ endif
     
 # ParanoidAndroid Packages
 PRODUCT_PACKAGES += \
-    ParanoidBackup \
-    ParanoidOTA \
     ParanoidPreferences 
 
 # CyanogenMod Packages
@@ -37,8 +35,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
 
 PA_VERSION_MAJOR = 1
-PA_VERSION_MINOR = 8
-PA_VERSION_MAINTENANCE = a
+PA_VERSION_MINOR = 9
+PA_VERSION_MAINTENANCE = 3
 
 TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
 
