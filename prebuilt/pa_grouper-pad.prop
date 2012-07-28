@@ -3,59 +3,59 @@
 ###################
 
 ## TRESHOLDS, OBSOLETE - ONLY USED FOR GUI SLIDERS
-%rom_tablet_base=160
-%rom_phablet_base=215
-%rom_phone_base=320
+%rom_tablet_base=177
+%rom_phablet_base=213
+%rom_phone_base=355
 
 ## CONFIGURATION
 %screen_1_width=360
-%screen_1_height=567
+%screen_1_height=496
 %screen_1_layout=268435474
 %screen_2_width=600
-%screen_2_height=1018
-%screen_2_layout=268435491
+%screen_2_height=880
+%screen_2_layout=268435475
 %screen_3_width=720
-%screen_3_height=1232
-%screen_3_layout=268435491
+%screen_3_height=1101
+%screen_3_layout=268435475
 
 ## PREFERENCES
-%rom_pref_mid=260
-%rom_pref_bigphablet=220
-%rom_pref_bigtablet=220
+%rom_pref_mid=213
+%rom_pref_bigphablet=213
+%rom_pref_bigtablet=213
 
 ## CONFIGURATION
 %hybrid_mode=1
 %system_default_mode=0
-%user_default_mode=1
-%system_default_dpi=%rom_phone_base
-%user_default_dpi=%rom_phone_base
+%user_default_mode=0
+%system_default_dpi=%rom_phablet_base
+%user_default_dpi=%rom_phablet_base
 
 ## WORKSPACE PREFERENCES
 android.dpi=0
-android.mode=1
+android.mode=0
 com.android.systemui.dpi=0
-com.android.systemui.mode=1
+com.android.systemui.mode=0
 
 ## SYSTEM PREFERENCES
-com.paranoid.preferences.dpi=260
+com.paranoid.preferences.dpi=%rom_phablet_base
 com.paranoid.preferences.mode=2
-com.android.settings.dpi=245
+com.android.settings.dpi=%rom_phablet_base
 com.android.settings.mode=3
-com.android.calendar.dpi=%rom_pref_mid
+com.android.calendar.dpi=%rom_phablet_base
 com.android.calendar.mode=2
-com.android.contacts.dpi=%rom_phone_base
+com.android.contacts.dpi=%rom_phablet_base
 com.android.contacts.mode=0
-com.android.browser.dpi=%rom_pref_mid
+com.android.browser.dpi=%rom_phablet_base
 com.android.browser.mode=2
-com.android.calculator2.dpi=%rom_tablet_base
+com.android.calculator2.dpi=%rom_phablet_base
 com.android.calculator2.mode=3
-com.android.email.dpi=230
+com.android.email.dpi=%rom_phablet_base
 com.android.email.mode=2
-com.android.vending.dpi=%rom_pref_mid
+com.android.vending.dpi=%rom_phablet_base
 com.android.vending.mode=2
-com.google.android.gm.dpi=230
+com.google.android.gm.dpi=%rom_phablet_base
 com.google.android.gm.mode=2
-com.google.android.talk.dpi=%rom_pref_mid
+com.google.android.talk.dpi=%rom_phablet_base
 com.google.android.talk.mode=2
 
 ## USER PREFERENCES
