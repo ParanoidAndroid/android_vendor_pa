@@ -2,12 +2,7 @@
 # PARANOIDANDROID #
 ###################
 
-## TRESHOLDS, OBSOLETE - ONLY USED FOR GUI SLIDERS
-%rom_tablet_base=177
-%rom_phablet_base=213
-%rom_phone_base=355
-
-## CONFIGURATION - GUESTIMATED FOR NOW, MIGHT BE OFF
+## CONFIGURATION
 %screen_1_width=360
 %screen_1_height=496
 %screen_1_layout=268435474
@@ -18,8 +13,16 @@
 %screen_3_height=1101
 %screen_3_layout=268435475
 
-## PREFERENCES - USED BY GUI
-%rom_pref_mid=213
+## TRESHOLDS
+%rom_tablet_base=177
+%rom_phablet_base=213
+%rom_phone_base=355
+%rom_default_base=%rom_phablet_base
+%rom_default_mode=2
+
+## PARANOID PREFERENCES (GUI-PANEL)
+%rom_gui_min=160
+%rom_gui_max=360
 %rom_pref_bigphablet=240
 %rom_pref_bigtablet=200
 
@@ -27,14 +30,14 @@
 %hybrid_mode=1
 %system_default_mode=0
 %user_default_mode=0
-%system_default_dpi=%rom_phablet_base
-%user_default_dpi=%rom_phablet_base
+%system_default_dpi=%rom_tablet_base
+%user_default_dpi=3
 
 ## WORKSPACE PREFERENCES
 android.dpi=0
 android.mode=0
-com.android.systemui.dpi=%rom_tablet_base
-com.android.systemui.mode=3
+com.android.systemui.dpi=%rom_default_base
+com.android.systemui.mode=%rom_default_mode
 
 ## SYSTEM PREFERENCES
 com.paranoid.preferences.dpi=%rom_phablet_base
