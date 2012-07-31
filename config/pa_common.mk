@@ -6,7 +6,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # ParanoidAndroid
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/$(TARGET_PRODUCT)-pad.prop:system/pad.prop
+    vendor/pa/prebuilt/$(TARGET_PRODUCT).conf:system/etc/paranoid/properties.conf \
+    vendor/pa/prebuilt/$(TARGET_PRODUCT).conf:system/etc/paranoid/backup.conf
 
 # Replace CM9 files
 PRODUCT_COPY_FILES += \
