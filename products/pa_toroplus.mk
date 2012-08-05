@@ -7,6 +7,8 @@ PARANOID_BOOTANIMATION_NAME := XHDPI
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
+TARGET_FAMILY := pa_tuna
+
 # include missing proprietaries
 PRODUCT_COPY_FILES += \
   vendor/pa/proprietary/toroplus/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd

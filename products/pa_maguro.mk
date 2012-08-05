@@ -16,6 +16,9 @@ $(call inherit-product, device/samsung/maguro/cm.mk)
 
 PRODUCT_NAME := pa_maguro
 
+TARGET_FAMILY := pa_tuna
+
 GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
 
 endif
+
