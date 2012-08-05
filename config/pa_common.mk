@@ -33,7 +33,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
 # Allow device family to add overlays and use a same prop.conf
 ifneq ($(TARGET_FAMILY),)
     PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_FAMILY)
-    $(TARGET_PRODUCT) = $(TARGET_FAMILY)
+    $(TARGET_PRODUCT) := $(TARGET_FAMILY)
 endif
 
 PRODUCT_COPY_FILES += \
