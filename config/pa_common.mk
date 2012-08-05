@@ -33,16 +33,18 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
 # Allow device family to add overlays and use a same prop.conf
 ifneq ($(TARGET_FAMILY),)
     PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_FAMILY)
-    $(TARGET_PRODUCT) := $(TARGET_FAMILY)
+    PA_CONF_SOURCE := $(TARGET_FAMILY)
+else
+    PA_CONF_SOURCE := $(TARGET_PRODUCT)
 endif
 
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/$(TARGET_PRODUCT).conf:system/etc/paranoid/properties.conf \
-    vendor/pa/prebuilt/$(TARGET_PRODUCT).conf:system/etc/paranoid/backup.conf
+    vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
+    vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
 PA_VERSION_MAJOR = 1
 PA_VERSION_MINOR = 9
-PA_VERSION_MAINTENANCE = 5
+PA_VERSION_MAINTENANCE = 6
 
 TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
 
