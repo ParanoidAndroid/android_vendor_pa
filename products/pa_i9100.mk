@@ -4,6 +4,9 @@ ifeq (pa_i9100,$(TARGET_PRODUCT))
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
+# OVERLAY_TARGET adds overlay asset source
+OVERLAY_TARGET := $(TARGET_PRODUCT)
+
 # Inherit CM9 device configuration
 $(call inherit-product, device/samsung/i9100/cm.mk)
 
