@@ -4,6 +4,9 @@ ifeq (pa_grouper,$(TARGET_PRODUCT))
 # Define PA bootanimation size
 PARANOID_BOOTANIMATION_NAME := XHDPI
 
+# OVERLAY_TARGET adds overlay asset source
+OVERLAY_TARGET := $(TARGET_PRODUCT)
+
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 

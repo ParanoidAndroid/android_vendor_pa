@@ -7,6 +7,9 @@ PARANOID_BOOTANIMATION_NAME := XHDPI
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
+# OVERLAY_TARGET adds overlay asset source
+OVERLAY_TARGET := $(TARGET_PRODUCT)
+
 # Inherit CM9 device configuration
 $(call inherit-product, device/samsung/i9300/cm.mk)
 
