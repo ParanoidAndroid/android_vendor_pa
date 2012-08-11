@@ -8,7 +8,7 @@ include vendor/pa/config/pa_common.mk
 OVERLAY_TARGET := $(TARGET_PRODUCT)
 
 # Inherit CM9 device configuration
-$(call inherit-product, device/samsung/i9100/cm.mk)
+$(call inherit-product, device/samsung/epic/cm.mk)
 
 PRODUCT_NAME := pa_epicmtd
 
