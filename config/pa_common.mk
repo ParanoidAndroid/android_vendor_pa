@@ -6,7 +6,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Replace CM9 files
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
+    vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk
 
 ifneq ($(PARANOID_BOOTANIMATION_NAME),)
     PRODUCT_COPY_FILES += \
@@ -55,3 +56,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
   ro.pa.version=$(PA_VERSION)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.goo.developerid=paranoidandroid \
+  ro.goo.board=$(subst pa_,,$(TARGET_PRODUCT)) \
+  ro.goo.rom=$(TARGET_PRODUCT) \
+  ro.goo.version=$(shell date +%s)
