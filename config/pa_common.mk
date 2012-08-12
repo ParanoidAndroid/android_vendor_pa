@@ -49,13 +49,14 @@ PA_VERSION_MAINTENANCE = 8
 
 TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
 
+VERSION = $(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)
 CM_VERSION := PARANOIDANDROID
-PA_VERSION := $(CM_VERSION)-$(TARGET_PRODUCT)-$(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)-$(shell date +%0d%^b%Y-%H%M%S)
+PA_VERSION := $(CM_VERSION)-$(TARGET_PRODUCT)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
-  ro.modversion=$(CM_VERSION) \
-  ro.pa.version=$(PA_VERSION)
+  ro.modversion=$(PA_VERSION) \
+  ro.pa.version=$(VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.goo.developerid=paranoidandroid \
