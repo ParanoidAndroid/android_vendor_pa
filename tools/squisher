@@ -91,7 +91,7 @@ rm -rf $REPACK/ota/recovery
 
 # Determine what to name the new signed package
 if [ -z "$CYANOGEN_NIGHTLY" ]; then
-	PAVERSION=`sed -n -e'/ro\.pa\.version/s/^.*PARANOIDANDROID-//p' $REPACK/ota/system/build.prop`
+	PAVERSION=`sed -n -e'/ro\.modversion/s/^.*PARANOIDANDROID-//p' $REPACK/ota/system/build.prop`
 	: ${PAVERSION:=nightly}
 	OUTFILE=$OUT/$PAVERSION.zip
 	echo PAVERSION: $PAVERSION
