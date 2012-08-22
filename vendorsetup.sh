@@ -6,3 +6,4 @@ add_lunch_combo pa_toroplus-userdebug
 add_lunch_combo pa_grouper-userdebug
 add_lunch_combo pa_epicmtd-userdebug
 add_lunch_combo pa_galaxysmtd-userdebug
+add_lunch_combo pa_endeavoru-userdebug
