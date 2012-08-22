@@ -2,7 +2,7 @@
 ifeq (pa_epicmtd,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_galaxy_hdpi
+OVERLAY_TARGET := pa_hdpi
 
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
