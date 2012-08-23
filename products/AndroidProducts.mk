@@ -19,6 +19,9 @@ endif
 ifeq (pa_galaxysmtd,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_galaxysmtd.mk
 endif
+ifeq (pa_vibrantmtd,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_vibrantmtd.mk
+endif
 ifeq (pa_endeavoru,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_endeavoru.mk
 endif
