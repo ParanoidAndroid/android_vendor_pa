@@ -10,7 +10,7 @@ OVERLAY_TARGET := pa_xhdpi
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
-# Inherit CM9 device configuration
+# Inherit CM device configuration
 $(call inherit-product, device/htc/endeavoru/cm.mk)
 
 PRODUCT_NAME := pa_endeavoru
