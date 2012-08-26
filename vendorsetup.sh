@@ -8,6 +8,7 @@ add_lunch_combo pa_epicmtd-userdebug
 add_lunch_combo pa_galaxysmtd-userdebug
 add_lunch_combo pa_vibrantmtd-userdebug
 add_lunch_combo pa_endeavoru-userdebug
+add_lunch_combo pa_hercules-userdebug
 add_lunch_combo pa_coconut-userdebug
 add_lunch_combo pa_mango-userdebug
 add_lunch_combo pa_satsuma-userdebug
