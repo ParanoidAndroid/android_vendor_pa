@@ -46,3 +46,6 @@ endif
 ifeq (pa_urushi,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_urushi.mk
 endif
+ifeq (pa_crespo,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_crespo.mk
+endif
