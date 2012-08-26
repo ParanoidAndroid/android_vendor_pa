@@ -43,9 +43,9 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
-PA_VERSION_MAJOR = 1
-PA_VERSION_MINOR = 9
-PA_VERSION_MAINTENANCE = 92
+PA_VERSION_MAJOR = 2
+PA_VERSION_MINOR = 0
+PA_VERSION_MAINTENANCE = 0
 
 TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
 
