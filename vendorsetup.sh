@@ -15,3 +15,4 @@ add_lunch_combo pa_satsuma-userdebug
 add_lunch_combo pa_smultron-userdebug
 add_lunch_combo pa_urushi-userdebug
 add_lunch_combo pa_crespo-userdebug
+add_lunch_combo pa_crespo4g-userdebug
