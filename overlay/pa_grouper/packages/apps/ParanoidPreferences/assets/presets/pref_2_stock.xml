@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <property name="Stock UI" description="Hybrid mode /*g(on)f*/(br)Stock workspace" active="true">
 
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>

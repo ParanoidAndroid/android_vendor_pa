@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <property name="Tablet UI (Mid)" description="Hybrid mode /*g(on)f*/(br)Tablet workspace(br)2 Icons(br)Clock" active="true">
 
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
