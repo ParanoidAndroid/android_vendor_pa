@@ -54,7 +54,6 @@ CM_VERSION := PARANOIDANDROID
 PA_VERSION := $(CM_VERSION)-$(TARGET_PRODUCT)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cm.version=$(CM_VERSION) \
   ro.modversion=$(PA_VERSION) \
   ro.pa.version=$(VERSION)
 
