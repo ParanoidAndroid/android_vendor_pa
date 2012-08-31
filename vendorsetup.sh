@@ -17,3 +17,5 @@ add_lunch_combo pa_urushi-userdebug
 add_lunch_combo pa_crespo-userdebug
 add_lunch_combo pa_crespo4g-userdebug
 add_lunch_combo pa_quincyatt-userdebug
+add_lunch_combo pa_p6810-userdebug
+add_lunch_combo pa_p6800-userdebug
