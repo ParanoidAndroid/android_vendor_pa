@@ -55,3 +55,9 @@ endif
 ifeq (pa_quincyatt,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_quincyatt.mk
 endif
+ifeq (pa_p6810,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_p6810.mk
+endif
+ifeq (pa_p6800,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_p6800.mk
+endif
