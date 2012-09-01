@@ -27,6 +27,8 @@ PRODUCT_PACKAGES += \
     Superuser.apk \
     su
 
+BOARD := $(subst pa_,,$(TARGET_PRODUCT))
+
 # ParanoidAndroid Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
@@ -43,6 +45,10 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
+# Add CM release version
+CM_RELEASE := true
+CM_BUILD := $(BOARD)
+
 PA_VERSION_MAJOR = 2
 PA_VERSION_MINOR = 0
 PA_VERSION_MAINTENANCE = 0
@@ -50,16 +56,14 @@ PA_VERSION_MAINTENANCE = 0
 TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
 
 VERSION := $(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)
-CM_VERSION := $(CM_VERSION)$(TARGET_PRODUCT)
-PA_VERSION := PARANOIDANDROID-$(TARGET_PRODUCT)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
+PA_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(PA_VERSION) \
-  ro.cm.version = $(CM_VERSION) \
   ro.pa.version=$(VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.goo.developerid=paranoidandroid \
-  ro.goo.board=$(subst pa_,,$(TARGET_PRODUCT)) \
+  ro.goo.board=$(BOARD) \
   ro.goo.rom=$(TARGET_PRODUCT) \
   ro.goo.version=$(shell date +%s)
