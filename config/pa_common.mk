@@ -27,6 +27,14 @@ PRODUCT_PACKAGES += \
     Superuser.apk \
     su
 
+# device common prebuilts
+ifneq ($(DEVICE_COMMON),)
+    -include vendor/pa/prebuilt/$(DEVICE_COMMON)/prebuilt.mk
+endif
+
+# device specific prebuilts
+-include vendor/pa/prebuilt/$(TARGET_PRODUCT)/prebuilt.mk
+
 BOARD := $(subst pa_,,$(TARGET_PRODUCT))
 
 # ParanoidAndroid Overlays
