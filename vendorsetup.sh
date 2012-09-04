@@ -20,4 +20,3 @@ add_lunch_combo pa_quincyatt-userdebug
 add_lunch_combo pa_p6810-userdebug
 add_lunch_combo pa_p6800-userdebug
 add_lunch_combo pa_captivatemtd-userdebug
-add_lunch_combo pa_infuse4g-userdebug
