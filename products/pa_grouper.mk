@@ -5,7 +5,7 @@ ifeq (pa_grouper,$(TARGET_PRODUCT))
 PARANOID_BOOTANIMATION_NAME := XHDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := $(TARGET_PRODUCT)
+OVERLAY_TARGET := pa_tvdpi
 
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
