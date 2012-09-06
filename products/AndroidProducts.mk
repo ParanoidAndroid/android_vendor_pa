@@ -67,3 +67,6 @@ endif
 ifeq (pa_captivatemtd,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_captivatemtd.mk
 endif
+ifeq (pa_d2tmo,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_d2tmo.mk
+endif
