@@ -70,3 +70,15 @@ endif
 ifeq (pa_d2tmo,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_d2tmo.mk
 endif
+ifeq (pa_anzu,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_anzu.mk
+endif
+ifeq (pa_haida,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_haida.mk
+endif
+ifeq (pa_hallon,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_hallon.mk
+endif
+ifeq (pa_iyokan,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_iyokan.mk
+endif
