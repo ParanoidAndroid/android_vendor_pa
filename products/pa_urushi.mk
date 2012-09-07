@@ -7,7 +7,7 @@ OVERLAY_TARGET := pa_hdpi
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
-# Inherit CM9 device configuration
+# Inherit CM device configuration
 $(call inherit-product, device/semc/urushi/cm.mk)
 
 PRODUCT_NAME := pa_urushi

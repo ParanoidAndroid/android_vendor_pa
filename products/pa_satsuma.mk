@@ -7,7 +7,7 @@ OVERLAY_TARGET := pa_mdpi
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
-# Inherit CM9 device configuration
+# Inherit CM device configuration
 $(call inherit-product, device/semc/satsuma/cm.mk)
 
 PRODUCT_NAME := pa_satsuma
