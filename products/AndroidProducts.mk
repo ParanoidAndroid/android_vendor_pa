@@ -82,3 +82,9 @@ endif
 ifeq (pa_iyokan,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_iyokan.mk
 endif
+ifeq (pa_quincytmo,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_quincytmo.mk
+endif
+ifeq (pa_skyrocket,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_skyrocket.mk
+endif
