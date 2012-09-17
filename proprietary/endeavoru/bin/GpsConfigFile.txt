@@ -1,3 +1,0 @@
-gps_mode:autosupl_mode:
-ee_support:no:
-st_support:no:
