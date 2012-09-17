@@ -88,3 +88,6 @@ endif
 ifeq (pa_skyrocket,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_skyrocket.mk
 endif
+ifeq (pa_evita,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_evita.mk
+endif
