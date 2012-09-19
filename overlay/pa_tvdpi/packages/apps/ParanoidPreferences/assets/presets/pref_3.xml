@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<property name="Phone UI (small)" description="Hybrid mode /*g(on)f*/(br)Phablet workspace" active="true">
+<property name="Phone UI (small)" description="Hybrid mode /*g(on)f*/(br)Phone workspace" active="true">
 
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
         <setting type="Hybrid" target="com.android.systemui.dpi" value="180"/>
