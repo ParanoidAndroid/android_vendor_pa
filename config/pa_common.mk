@@ -69,6 +69,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.goo.developerid=paranoidandroid \
-  ro.goo.board=$(BOARD) \
-  ro.goo.rom=$(TARGET_PRODUCT) \
+  ro.goo.rom=paranoidandroid \
   ro.goo.version=$(shell date +%s)
