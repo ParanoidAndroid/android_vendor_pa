@@ -18,7 +18,7 @@ else
     PRODUCT_COPY_FILES += \
         vendor/pa/prebuilt/common/bootanimation/HDPI.zip:system/media/bootanimation.zip
 endif
-    
+
 # ParanoidAndroid Packages
 PRODUCT_PACKAGES += \
     ParanoidPreferences \
