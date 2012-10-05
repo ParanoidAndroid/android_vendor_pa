@@ -6,5 +6,6 @@
         <setting type="Hybrid" target="com.android.systemui.layout" value="%rom_default_layout"/>
         <setting type="Android" target="status_bar_clock" value="1"/>
         <setting type="Android" target="max_notification_icons" value="5"/>
+        <setting type="Android" target="status_bar_ime_switcher" value="1"/>
 
 </property>

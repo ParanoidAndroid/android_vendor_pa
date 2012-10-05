@@ -25,5 +25,6 @@
         <setting type="Hybrid" target="com.android.systemui.layout" value="720"/>
         <setting type="Android" target="status_bar_clock" value="1"/>
         <setting type="Android" target="max_notification_icons" value="4"/>
+        <setting type="Android" target="status_bar_ime_switcher" value="0"/>
 
 </property>

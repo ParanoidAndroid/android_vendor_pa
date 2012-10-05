@@ -27,5 +27,6 @@
         <setting type="Hybrid" target="%system_default_dpi" value="0"/>
         <setting type="Android" target="status_bar_clock" value="0"/>
         <setting type="Android" target="max_notification_icons" value="2"/>
+        <setting type="Android" target="status_bar_ime_switcher" value="0"/>
 
 </property>
