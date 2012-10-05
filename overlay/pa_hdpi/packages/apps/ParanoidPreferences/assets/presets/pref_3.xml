@@ -23,6 +23,5 @@
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
         <setting type="Hybrid" target="com.android.systemui.dpi" value="160"/>
         <setting type="Hybrid" target="com.android.systemui.layout" value="600"/>
-        <setting type="Android" target="status_bar_ime_switcher" value="1"/>
 
 </property>
