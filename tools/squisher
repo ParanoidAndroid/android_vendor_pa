@@ -35,6 +35,8 @@ if [ ! -f "$OTAPACKAGE" ]; then
 	exit 1
 fi
 
+$PA_VERSION_MAJOR.$PA_VERSION_MINOR$PA_VERSION_MAINTENANCE
+
 OPTICHARGER=$ANDROID_BUILD_TOP/vendor/pa/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
@@ -98,6 +100,9 @@ if [ -z "$CYANOGEN_NIGHTLY" ]; then
 else
 	OUTFILE=$OUT/update-squished.zip
 fi
+
+# PA versioning
+( cd $REPACK/ota/system/etc/paranoid; echo com.paranoid.preferences.version=$PAVERSION >> backup.conf; )
 
 # Pack it up and sign
 printf "Zipping package..."
