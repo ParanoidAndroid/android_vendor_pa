@@ -35,8 +35,6 @@ if [ ! -f "$OTAPACKAGE" ]; then
 	exit 1
 fi
 
-$PA_VERSION_MAJOR.$PA_VERSION_MINOR$PA_VERSION_MAINTENANCE
-
 OPTICHARGER=$ANDROID_BUILD_TOP/vendor/pa/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
