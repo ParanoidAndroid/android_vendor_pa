@@ -48,7 +48,8 @@ endif
 
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
-    vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
+    vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf \
+    vendor/pa/prebuilt/$(PA_CONF_SOURCE).apk:system/app/ParanoidPreferences.apk
 
 # Add CM release version
 CM_RELEASE := true
