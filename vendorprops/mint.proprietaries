@@ -1,0 +1,8 @@
+[
+    {
+        "account":      "TheMuppets",
+        "repository":   "proprietary_vendor_sony",
+        "target_path":  "vendor/sony",
+        "revision":     "jellybean"
+    }
+]
