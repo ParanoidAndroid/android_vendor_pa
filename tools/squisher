@@ -110,8 +110,6 @@ mkdir $REPACK/ota/system/etc/paranoid/preferences/images
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 
-cd $REPACK/ota/system/etc/paranoid; echo com.paranoid.preferences.version=$PAVERSION >> backup.conf; )
-
 # Pack it up and sign
 printf "Zipping package..."
 ( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )
