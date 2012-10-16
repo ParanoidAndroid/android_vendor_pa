@@ -105,6 +105,7 @@ fi
 
 # Copy ParanoidPreferences overlays
 printf "Copying overlay preferences for $OVERLAYTARGET..."
+echo
 mkdir $REPACK/ota/system/etc/paranoid/preferences
 mkdir $REPACK/ota/system/etc/paranoid/preferences/images
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
