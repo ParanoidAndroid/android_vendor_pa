@@ -17,11 +17,13 @@
  */
 -->
 
-<property name="Phablet UI" active="true" image="/system/etc/paranoid/preferences/res/pref_3">
+<property name="Tablet UI" active="true" image="/system/etc/paranoid/preferences/res/pref_4">
 
-        <description><![CDATA[Hybrid mode <b><font color='green'>on</font></b><br\>Phablet workspace]]></description>
+        <description><![CDATA[Hybrid mode <b><font color='green'>on</font></b><br\>Tablet workspace<br\>5 Icons<br\>No softkeys]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
         <setting type="Hybrid" target="com.android.systemui.dpi" value="160"/>
-        <setting type="Hybrid" target="com.android.systemui.layout" value="600"/>
+        <setting type="Hybrid" target="com.android.systemui.layout" value="720"/>
+        <setting type="Android" target="max_notification_icons" value="5"/>
+        <setting type="Android" target="nav_bar_status" value="1"/>
 
 </property>

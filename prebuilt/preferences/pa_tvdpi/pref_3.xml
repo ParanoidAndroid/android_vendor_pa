@@ -1,9 +1,9 @@
-<property name="Phone UI" active="true" image="/system/etc/paranoid/preferences/images/phone.jpg">
+<property name="Tablet UI" active="true" image="/system/etc/paranoid/preferences/images/tablet.jpg">
 
-        <description><![CDATA[Phone workspace<br/>180 DPI<br/>Smaller interface]]></description>
+        <description><![CDATA[Tablet workspace<br/>160 DPI<br/>5 Icons<br/>Clock]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
-        <setting type="Hybrid" target="com.android.systemui.dpi" value="180"/>
-        <setting type="Hybrid" target="com.android.systemui.layout" value="360"/>
+        <setting type="Hybrid" target="com.android.systemui.dpi" value="160"/>
+        <setting type="Hybrid" target="com.android.systemui.layout" value="720"/>
         <setting type="Android" target="status_bar_clock" value="1"/>
         <setting type="Android" target="max_notification_icons" value="5"/>
 
