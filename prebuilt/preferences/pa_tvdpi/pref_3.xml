@@ -1,4 +1,4 @@
-<property name="Phone UI" active="true" image="/etc/paranoid/preferences/images/phone.jpg">
+<property name="Phone UI" active="true" image="/system/etc/paranoid/preferences/images/phone.jpg">
 
         <description><![CDATA[Phone workspace<br/>180 DPI<br/>Smaller interface]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>

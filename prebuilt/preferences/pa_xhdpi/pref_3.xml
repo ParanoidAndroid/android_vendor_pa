@@ -1,4 +1,4 @@
-<property name="Phablet UI" active="true" image="/etc/paranoid/preferences/images/phablet.jpg">
+<property name="Phablet UI" active="true" image="/system/etc/paranoid/preferences/images/phablet.jpg">
 
         <description><![CDATA[Phablet workspace<br/>220 DPI]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
