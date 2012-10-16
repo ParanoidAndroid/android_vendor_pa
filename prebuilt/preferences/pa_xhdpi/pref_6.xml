@@ -1,6 +1,6 @@
-<property name="Tablet UI (Big)" active="true" image="/etc/paranoid/preferences/images/tablet.jpg">
+<property name="Tablet UI" active="true" image="/etc/paranoid/preferences/images/tablet.jpg">
 
-        <description><![CDATA[Tablet workspace</br>250 DPI</br>No Clock</br>Fat buttons]]></description>
+        <description><![CDATA[Tablet workspace<br/>250 DPI<br/>No Clock<br/>Fat buttons]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
         <setting type="Hybrid" target="com.android.systemui.dpi" value="250"/>
         <setting type="Hybrid" target="com.android.systemui.layout" value="720"/>

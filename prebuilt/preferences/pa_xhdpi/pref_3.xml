@@ -1,6 +1,6 @@
 <property name="Phablet UI" active="true" image="/etc/paranoid/preferences/images/phablet.jpg">
 
-        <description><![CDATA[Phablet workspace</br>220 DPI]]></description>
+        <description><![CDATA[Phablet workspace<br/>220 DPI]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
         <setting type="Hybrid" target="com.android.systemui.dpi" value="225"/>
         <setting type="Hybrid" target="com.android.systemui.layout" value="600"/>
