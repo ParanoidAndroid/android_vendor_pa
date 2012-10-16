@@ -65,7 +65,7 @@ PA_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(PA_VERSION) \
-  ro.pa.family=$(OVERLAY_TARGET) \
+  ro.pa.family=$(PA_CONF_SOURCE) \
   ro.pa.version=$(VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
