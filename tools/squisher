@@ -92,6 +92,7 @@ rm -rf $REPACK/ota/recovery
 # Determine what to name the new signed package
 if [ -z "$CYANOGEN_NIGHTLY" ]; then
 	PAVERSION=`grep 'ro.modversion=' $REPACK/ota/system/build.prop | sed -e 's/ro.modversion=//g'`
+	OVERLAYTARGET=`grep 'ro.pa.family=' $REPACK/ota/system/build.prop | sed -e 's/ro.pa.family=//g'`
 	: ${PAVERSION:=nightly}
 	OUTFILE=$OUT/$PAVERSION.zip
 	echo PAVERSION: $PAVERSION
@@ -102,8 +103,14 @@ fi
 # PA versioning
 ( cd $REPACK/ota/system/etc/paranoid; echo com.paranoid.preferences.version=$PAVERSION >> backup.conf; )
 
-# Copy PA overlays
-( cd $REPACK/ota/system/etc/paranoid; echo com.paranoid.preferences.version=$PAVERSION >> backup.conf; )
+# Copy ParanoidPreferences overlays
+printf "Copying overlay preferences for $OVERLAYTARGET..."
+mkdir $REPACK/ota/system/etc/paranoid/preferences
+mkdir $REPACK/ota/system/etc/paranoid/preferences/images
+cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
+cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
+
+cd $REPACK/ota/system/etc/paranoid; echo com.paranoid.preferences.version=$PAVERSION >> backup.conf; )
 
 # Pack it up and sign
 printf "Zipping package..."
