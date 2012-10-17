@@ -9,8 +9,17 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk \
     vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
-    vendor/pa/prebuilt/common/apk/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk \
     vendor/pa/prebuilt/common/xbin/su:system/xbin/su
+
+# Exclude prebuilt paprefs from builds if the flag is set
+ifneq ($(PREFS_FROM_SOURCE),true)
+    PRODUCT_COPY_FILES += \
+        vendor/pa/prebuilt/common/apk/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk
+else
+    # Build paprefs from sources
+    PRODUCT_PACKAGES += \
+        ParanoidPreferences \
+endif
 
 ifneq ($(PARANOID_BOOTANIMATION_NAME),)
     PRODUCT_COPY_FILES += \
@@ -19,10 +28,9 @@ else
     PRODUCT_COPY_FILES += \
         vendor/pa/prebuilt/common/bootanimation/HDPI.zip:system/media/bootanimation.zip
 endif
-    
-# ParanoidAndroid Packages
+
+# ParanoidAndroid common packages
 PRODUCT_PACKAGES += \
-    ParanoidPreferences \
     ParanoidWallpapers
 
 # device common prebuilts

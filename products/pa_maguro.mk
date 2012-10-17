@@ -7,6 +7,9 @@ PARANOID_BOOTANIMATION_NAME := XHDPI
 # OVERLAY_TARGET adds overlay asset source
 OVERLAY_TARGET := pa_xhdpi
 
+# Build paprefs from sources
+PREFS_FROM_SOURCE := true
+
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
