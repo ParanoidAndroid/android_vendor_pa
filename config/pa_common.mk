@@ -18,7 +18,7 @@ ifneq ($(PREFS_FROM_SOURCE),true)
 else
     # Build paprefs from sources
     PRODUCT_PACKAGES += \
-        ParanoidPreferences \
+        ParanoidPreferences
 endif
 
 ifneq ($(PARANOID_BOOTANIMATION_NAME),)
