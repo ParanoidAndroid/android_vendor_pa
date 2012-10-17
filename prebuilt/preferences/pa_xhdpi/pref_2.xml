@@ -1,12 +1,27 @@
-<property name="Phablet UI" active="true" image="/system/etc/paranoid/preferences/images/phablet.jpg">
+<property name="PA Default" active="true">
 
-        <description><![CDATA[Phablet workspace<br/>220 DPI]]></description>
+        <description><![CDATA[
+            300 DPI Phone UI<br/>
+            275 DPI lockscreen<br/>
+            290 DPI launcher<br/>
+            280 DPI for all apps<br/>
+            6 Holo toggles
+        ]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
-        <setting type="Hybrid" target="com.android.systemui.dpi" value="225"/>
-        <setting type="Hybrid" target="com.android.systemui.layout" value="600"/>
+        <setting type="Hybrid" target="com.android.systemui.dpi" value="300"/>
+        <setting type="Hybrid" target="com.android.systemui.layout" value="360"/>
         <setting type="Hybrid" target="%system_default_layout" value="0"/>
-        <setting type="Hybrid" target="%system_default_dpi" value="0"/>
+        <setting type="Hybrid" target="%system_default_dpi" value="280"/>
+        <setting type="Hybrid" target="%user_default_dpi" value="280"/>
+        <setting type="Hybrid" target="android.dpi" value="275"/>
+        <setting type="Hybrid" target="com.cyanogenmod.trebuchet.dpi" value="290"/>
+        <setting type="Hybrid" target="com.cyanogenmod.trebuchet.layout" value="360"/>
         <setting type="Android" target="status_bar_clock" value="1"/>
         <setting type="Android" target="max_notification_icons" value="5"/>
+        <setting type="Android" target="statusbar_toggles_enable" value="1"/>
+        <setting type="Android" target="statusbar_toggles" value="ROTATE|WIFI|GPS|BLUETOOTH|SYNC|SILENT"/>
+        <setting type="Android" target="statusbar_toggles_show_brightness" value="1"/>
+        <setting type="Android" target="statusbar_toggles_disable_scroll" value="1"/>
+        <setting type="Android" target="statusbar_toggles_style" value="2"/>
 
 </property>
