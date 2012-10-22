@@ -1,11 +1,11 @@
-<property name="PA Default" active="true">
+<property name="PA Demo" active="true">
 
         <description><![CDATA[
-            230 DPI Phone UI<br/>
-            200 DPI lockscreen<br/>
-            220 DPI launcher<br/>
-            220 DPI for all apps<br/>
-            6 Holo toggles
+            New to PA?<br/>
+            Choose this option,<br/>
+            see what it can do.<br>
+            Per-app-dpi & UI<br/>
+            & color, Phone-UI
         ]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
         <setting type="Hybrid" target="com.android.systemui.dpi" value="230"/>
@@ -23,5 +23,80 @@
         <setting type="Android" target="statusbar_toggles_show_brightness" value="1"/>
         <setting type="Android" target="statusbar_toggles_disable_scroll" value="1"/>
         <setting type="Android" target="statusbar_toggles_style" value="2"/>
+        <setting type="Hybrid" target="com.skype.raider.nbcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.skype.raider.nbctrlcol" value="ff00c1ff"/>
+        <setting type="Hybrid" target="com.skype.raider.nbglowcol" value="ffffd400"/>
+        <setting type="Hybrid" target="com.cyanogenmod.trebuchet.nbcol" value="aa000000"/>
+        <setting type="Hybrid" target="com.cyanogenmod.trebuchet.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.cyanogenmod.trebuchet.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.sand.airdroid.nbcol" value="ff6b9900"/>
+        <setting type="Hybrid" target="com.sand.airdroid.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.sand.airdroid.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.android.browser.nbcol" value="ff2c2c2c"/>
+        <setting type="Hybrid" target="com.android.browser.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.android.browser.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.android.calendar.nbcol" value="ffc2db00"/>
+        <setting type="Hybrid" target="com.android.calendar.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.android.calendar.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.android.chrome.nbcol" value="ff393939"/>
+        <setting type="Hybrid" target="com.android.chrome.nbctrlcol" value="ff00ceff"/>
+        <setting type="Hybrid" target="com.android.chrome.nbglowcol" value="ff656565"/>
+        <setting type="Hybrid" target="com.s0up.goomanager.nbcol" value="ff000000"/>
+        <setting type="Hybrid" target="com.s0up.goomanager.nbctrlcol" value="ff00c9ff"/>
+        <setting type="Hybrid" target="com.s0up.goomanager.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.google.android.apps.docs.nbcol" value="ff242424"/>
+        <setting type="Hybrid" target="com.google.android.apps.docs.nbctrlcol" value="ffe3ff00"/>
+        <setting type="Hybrid" target="com.google.android.apps.docs.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.dropbox.android.nbcol" value="ff0063b2"/>
+        <setting type="Hybrid" target="com.dropbox.android.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.dropbox.android.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.facebook.katana.nbcol" value="ff123a6d"/>
+        <setting type="Hybrid" target="com.facebook.katana.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.facebook.katana.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="flipboard.app.nbcol" value="ffdbdbdb"/>
+        <setting type="Hybrid" target="flipboard.app.nbctrlcol" value="ff383838"/>
+        <setting type="Hybrid" target="flipboard.app.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.android.vending.nbcol" value="ff3b3b3b"/>
+        <setting type="Hybrid" target="com.android.vending.nbctrlcol" value="ff95a939"/>
+        <setting type="Hybrid" target="com.android.vending.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.google.android.gm.nbcol" value="ff464646"/>
+        <setting type="Hybrid" target="com.google.android.gm.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.google.android.gm.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.google.android.googlequicksearchbox.nbcol" value="ffe4e4e4"/>
+        <setting type="Hybrid" target="com.google.android.googlequicksearchbox.nbctrlcol" value="ffadadad"/>
+        <setting type="Hybrid" target="com.google.android.googlequicksearchbox.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.google.android.apps.plus.nbcol" value="ff505050"/>
+        <setting type="Hybrid" target="com.google.android.apps.plus.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.google.android.apps.plus.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.imdb.mobile.nbcol" value="ffffd500"/>
+        <setting type="Hybrid" target="com.imdb.mobile.nbctrlcol" value="ff5c5c5c"/>
+        <setting type="Hybrid" target="com.imdb.mobile.nbglowcol" value="ff000000"/>
+        <setting type="Hybrid" target="pl.solidexplorer.nbcol" value="ff0ca4c0"/>
+        <setting type="Hybrid" target="pl.solidexplorer.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="pl.solidexplorer.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.soundcloud.android.nbcol" value="ffff5100"/>
+        <setting type="Hybrid" target="com.soundcloud.android.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.soundcloud.android.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.verge.android.nbcol" value="ffe00c0c"/>
+        <setting type="Hybrid" target="com.verge.android.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.verge.android.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.google.android.youtube.nbcol" value="ff000000"/>
+        <setting type="Hybrid" target="com.google.android.youtube.nbctrlcol" value="ffff0000"/>
+        <setting type="Hybrid" target="com.google.android.youtube.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.google.android.talk.nbcol" value="ff464646"/>
+        <setting type="Hybrid" target="com.google.android.talk.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.google.android.talk.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.whatsapp.nbcol" value="ff2e9e00"/>
+        <setting type="Hybrid" target="com.whatsapp.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.whatsapp.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.twitter.android.nbcol" value="ff009ecb"/>
+        <setting type="Hybrid" target="com.twitter.android.nbctrlcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.twitter.android.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.android.contacts.nbcol" value="ff000000"/>
+        <setting type="Hybrid" target="com.android.contacts.nbctrlcol" value="ff00c0ff"/>
+        <setting type="Hybrid" target="com.android.contacts.nbglowcol" value="ffffffff"/>
+        <setting type="Hybrid" target="com.android.settings.nbcol" value="ff000000"/>
+        <setting type="Hybrid" target="com.android.settings.nbctrlcol" value="ff00dbff"/>
+        <setting type="Hybrid" target="com.android.settings.nbglowcol" value="ffffffff"/>
 
 </property>
