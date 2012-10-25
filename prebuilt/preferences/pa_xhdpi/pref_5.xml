@@ -1,16 +1,17 @@
 <property name="Tablet UI" active="true" image="/system/etc/paranoid/preferences/images/tablet.jpg">
 
         <description><![CDATA[
-            220 DPI Tablet UI<br/>
-            2 Icons, Clock<br/>
-            Mid-sized Buttons<br/>
-            No apps changed]]></description>
+            250 DPI Tablet UI<br/>
+            2 Icons, No Clock<br/>
+            Fat buttons<br/>
+            No apps changed
+        ]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
-        <setting type="Hybrid" target="com.android.systemui.dpi" value="220"/>
+        <setting type="Hybrid" target="com.android.systemui.dpi" value="250"/>
         <setting type="Hybrid" target="com.android.systemui.layout" value="720"/>
         <setting type="Hybrid" target="%system_default_layout" value="0"/>
         <setting type="Hybrid" target="%system_default_dpi" value="0"/>
-        <setting type="Android" target="status_bar_clock" value="1"/>
+        <setting type="Android" target="status_bar_clock" value="0"/>
         <setting type="Android" target="max_notification_icons" value="2"/>
 
 </property>

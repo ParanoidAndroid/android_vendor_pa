@@ -1,11 +1,14 @@
-<property name="Phablet UI" active="true" image="/system/etc/paranoid/preferences/images/phablet.jpg">
+<property name="Tablet UI" active="true" image="/system/etc/paranoid/preferences/images/tablet.jpg">
 
         <description><![CDATA[
-            Phablet workspace<br\>
-            160 DPI
-        ]]></description>
+            Tablet workspace<br\>
+            160 DPI<br\>
+            5 Icons<br\>
+            No softkeys]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
         <setting type="Hybrid" target="com.android.systemui.dpi" value="160"/>
-        <setting type="Hybrid" target="com.android.systemui.layout" value="600"/>
+        <setting type="Hybrid" target="com.android.systemui.layout" value="720"/>
+        <setting type="Android" target="max_notification_icons" value="5"/>
+        <setting type="Android" target="nav_bar_status" value="0"/>
 
 </property>
