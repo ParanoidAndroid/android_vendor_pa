@@ -1,12 +1,11 @@
-# use AOSP default sounds
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.config.ringtone=Themos.ogg \
-  ro.config.notification_sound=Proxima.ogg \
-  ro.config.alarm_alert=Cesium.ogg
+# Let's wait 4.2 for this
+#PRODUCT_PROPERTY_OVERRIDES += \
+#  ro.config.ringtone=Themos.ogg \
+#  ro.config.notification_sound=Proxima.ogg \
+#  ro.config.alarm_alert=Cesium.ogg
 
-# Replace CM files
+# Copy specific ROM files
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk \
     vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
     vendor/pa/prebuilt/common/xbin/su:system/xbin/su
@@ -59,10 +58,6 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
-# Add CM release version
-CM_RELEASE := true
-CM_BUILD := $(BOARD)
-
 PA_VERSION_MAJOR = 2
 PA_VERSION_MINOR = 5
 PA_VERSION_MAINTENANCE = 4
@@ -77,6 +72,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.pa.family=$(PA_CONF_SOURCE) \
   ro.pa.version=$(VERSION)
 
+# goo.im properties
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.goo.developerid=paranoidandroid \
   ro.goo.rom=paranoidandroid \

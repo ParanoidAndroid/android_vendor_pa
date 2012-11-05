@@ -14,9 +14,6 @@ include vendor/pa/config/pa_common.mk
 PRODUCT_COPY_FILES += \
   vendor/pa/proprietary/toro/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd
 
-# Inherit CM device configuration
-$(call inherit-product, device/samsung/toro/cm.mk)
-
 PRODUCT_NAME := pa_toro
 
 GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))

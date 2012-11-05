@@ -18,9 +18,6 @@ PRODUCT_COPY_FILES += \
   vendor/pa/proprietary/crespo/libakm.so:system/vendor/lib/libakm.so \
   vendor/pa/proprietary/crespo/gpsd:system/vendor/bin/gpsd
 
-# Inherit CM device configuration
-$(call inherit-product, device/samsung/crespo/cm.mk)
-
 PRODUCT_NAME := pa_crespo
 
 GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))

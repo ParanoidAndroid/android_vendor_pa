@@ -1,8 +1,0 @@
-[
-    {
-        "account":      "TheMuppets",
-        "repository":   "proprietary_vendor_htc",
-        "target_path":  "vendor/htc",
-        "revision":     "jellybean"
-    }
-]
