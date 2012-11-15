@@ -11,14 +11,14 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/xbin/su:system/xbin/su
 
 # Exclude prebuilt paprefs from builds if the flag is set
-ifneq ($(PREFS_FROM_SOURCE),true)
-    PRODUCT_COPY_FILES += \
-        vendor/pa/prebuilt/common/apk/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk
-else
+#ifneq ($(PREFS_FROM_SOURCE),true)
+#    PRODUCT_COPY_FILES += \
+#        vendor/pa/prebuilt/common/apk/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk
+#else
     # Build paprefs from sources
-    PRODUCT_PACKAGES += \
-        ParanoidPreferences
-endif
+#    PRODUCT_PACKAGES += \
+#        ParanoidPreferences
+#endif
 
 ifneq ($(PARANOID_BOOTANIMATION_NAME),)
     PRODUCT_COPY_FILES += \
@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
 
 PA_VERSION_MAJOR = 2
 PA_VERSION_MINOR = 5
-PA_VERSION_MAINTENANCE = 4
+PA_VERSION_MAINTENANCE = 5
 
 TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
 
