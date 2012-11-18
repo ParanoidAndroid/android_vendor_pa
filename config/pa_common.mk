@@ -1,8 +1,8 @@
-# Let's wait 4.2 for this
-#PRODUCT_PROPERTY_OVERRIDES += \
-#  ro.config.ringtone=Themos.ogg \
-#  ro.config.notification_sound=Proxima.ogg \
-#  ro.config.alarm_alert=Cesium.ogg
+# Set audio
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.config.ringtone=Themos.ogg \
+  ro.config.notification_sound=Proxima.ogg \
+  ro.config.alarm_alert=Cesium.ogg
 
 # Copy specific ROM files
 PRODUCT_COPY_FILES += \
@@ -59,8 +59,8 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
 PA_VERSION_MAJOR = 2
-PA_VERSION_MINOR = 5
-PA_VERSION_MAINTENANCE = 5
+PA_VERSION_MINOR = 9
+PA_VERSION_MAINTENANCE = 9
 
 TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
 
