@@ -6,7 +6,7 @@
             over your apps.<br/>
         ]]></description>
         <setting type="Hybrid" target="com.skype.raider.colors" value="ffffffff|b200c1ff|ffffd400|ff145879"/>
-        <setting type="Hybrid" target="com.android.launcher" value="11000000|b2ffffff|ffffffff|11000000"/>
+        <setting type="Hybrid" target="com.android.launcher.colors" value="11000000|b2ffffff|ffffffff|11000000"/>
         <setting type="Hybrid" target="com.sand.airdroid.colors" value="ff6b9900|b2ffffff|ffffffff|ff000000"/>
         <setting type="Hybrid" target="com.android.browser.colors" value="ff2c2c2c|b2ffffff|ffffffff|ff000000"/>
         <setting type="Hybrid" target="com.android.calendar.colors" value="ffc2db00|b2ffffff|ffffffff|ff000000"/>
