@@ -53,9 +53,17 @@ def add_to_manifest(repositories):
         lm = ElementTree.Element("manifest")
 
     for repository in repositories:
+        try:
+            repo_remote = repository['remote']
+        except:
+            repo_remote = "github"
         repo_account = repository['account']
         repo_name = repository['repository']
         repo_target = repository['target_path']
+        try:
+            repo_revision = repository['revision']
+        except:
+            repo_revision = "jellybean"
         repo_full = repo_account + '/' + repo_name
         if exists_in_tree(lm, repo_full):
             print '%s already exists' % repo_full
@@ -63,7 +71,7 @@ def add_to_manifest(repositories):
 
         print 'Adding proprietary: %s -> %s' % (repo_full, repo_target)
         project = ElementTree.Element("project", attrib = { "path": repo_target,
-            "remote": "github", "name": repo_full, "revision": "jellybean" })
+            "remote": repo_remote, "name": repo_full, "revision": repo_revision })
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])
