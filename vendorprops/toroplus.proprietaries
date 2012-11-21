@@ -1,20 +1,58 @@
 [
     {
-        "account":      "TheMuppets",
-        "repository":   "proprietary_vendor_samsung",
+        "remote":       "bitbucket",
+        "account":      "paranoidandroid",
+        "repository":   "aosp_vendor_samsung",
         "target_path":  "vendor/samsung",
         "revision":     "jellybean"
     },
     {
-        "account":      "TheMuppets",
-        "repository":   "proprietary_vendor_imgtec",
+        "remote":       "bitbucket",
+        "account":      "paranoidandroid",
+        "repository":   "aosp_vendor_imgtec",
         "target_path":  "vendor/imgtec",
         "revision":     "jellybean"
     },
     {
-        "account":      "TheMuppets",
-        "repository":   "proprietary_vendor_invensense",
+        "remote":       "bitbucket",
+        "account":      "paranoidandroid",
+        "repository":   "aosp_vendor_invensense",
         "target_path":  "vendor/invensense",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "bitbucket",
+        "account":      "paranoidandroid",
+        "repository":   "aosp_vendor_broadcom",
+        "target_path":  "vendor/broadcom",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "bitbucket",
+        "account":      "paranoidandroid",
+        "repository":   "aosp_vendor_csr",
+        "target_path":  "vendor/csr",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "bitbucket",
+        "account":      "paranoidandroid",
+        "repository":   "aosp_vendor_nxp",
+        "target_path":  "vendor/nxp",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "bitbucket",
+        "account":      "paranoidandroid",
+        "repository":   "aosp_vendor_ti",
+        "target_path":  "vendor/ti",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "bitbucket",
+        "account":      "paranoidandroid",
+        "repository":   "aosp_vendor_widevine",
+        "target_path":  "vendor/widevine",
         "revision":     "jellybean"
     }
 ]
