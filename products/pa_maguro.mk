@@ -39,7 +39,7 @@ PRODUCT_NAME := pa_maguro
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := Samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_FINGERPRINT="google/yakju/maguro:4.0.4/IMM76I/330937:user/release-keys" PRIVATE_BUILD_DESC="yakju-user 4.0.4 IMM76I 330937 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_FINGERPRINT="google/yakju/maguro:4.2/JOP40C/527662:user/release-keys" PRIVATE_BUILD_DESC="yakju-user 4.2 JOP40C 527662 release-keys"
 
 GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
 
