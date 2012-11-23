@@ -30,13 +30,6 @@
     {
         "remote":       "github",
         "account":      "ParanoidAndroid",
-        "repository":   "proprietary_vendor_csr",
-        "target_path":  "vendor/csr",
-        "revision":     "jellybean"
-    },
-    {
-        "remote":       "github",
-        "account":      "ParanoidAndroid",
         "repository":   "proprietary_vendor_nxp",
         "target_path":  "vendor/nxp",
         "revision":     "jellybean"
