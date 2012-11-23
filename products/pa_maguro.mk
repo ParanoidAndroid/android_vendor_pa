@@ -27,10 +27,6 @@ PREFS_FROM_SOURCE := true
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
-# Include missing proprietaries
-PRODUCT_COPY_FILES += \
-  vendor/pa/proprietary/maguro/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd
-
 # Inherit AOSP device configuration
 $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 

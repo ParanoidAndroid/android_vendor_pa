@@ -10,10 +10,6 @@ OVERLAY_TARGET := pa_xhdpi
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
-# include missing proprietaries
-PRODUCT_COPY_FILES += \
-  vendor/pa/proprietary/toro/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd
-
 PRODUCT_NAME := pa_toro
 
 GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))

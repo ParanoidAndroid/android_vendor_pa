@@ -27,10 +27,6 @@ PREFS_FROM_SOURCE := true
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
-# include missing proprietaries
-PRODUCT_COPY_FILES += \
-  vendor/pa/proprietary/grouper/bcm4330.hcd:system/etc/firmware/bcm4330.hcd
-
 # Inherit AOSP device configuration
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
 
