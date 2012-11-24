@@ -35,7 +35,8 @@ PRODUCT_NAME := pa_grouper
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := Asus
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_FINGERPRINT="google/yakju/maguro:4.0.4/IMM76I/330937:user/release-keys" PRIVATE_BUILD_DESC="yakju-user 4.0.4 IMM76I 330937 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:4.2/JOP40C/527662:user/release-keys"
+PRIVATE_BUILD_DESC="nakasi-user 4.2 JOP40C 527662 release-keys"
 
 GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
 
