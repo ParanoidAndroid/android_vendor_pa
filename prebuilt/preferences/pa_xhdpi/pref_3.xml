@@ -1,4 +1,4 @@
-<property name="Tablet UI" active="true" image="/system/etc/paranoid/preferences/images/tablet.jpg">
+<property name="Tablet UI" active="true" image="/system/etc/paranoid/preferences/images/tablet.png" color="#51ab27">
 
         <description><![CDATA[
             192 DPI Tablet UI<br/>

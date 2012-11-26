@@ -1,4 +1,4 @@
-<property name="Phablet UI" active="true" image="/system/etc/paranoid/preferences/images/phablet.jpg">
+<property name="Phablet UI" active="true" image="/system/etc/paranoid/preferences/images/phablet.png" color="#f4b122">
 
         <description><![CDATA[
             220 DPI PhabletUI<br/>
