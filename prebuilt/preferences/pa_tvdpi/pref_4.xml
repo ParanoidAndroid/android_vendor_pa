@@ -1,4 +1,4 @@
-<property name="Tablet UI (Mid)" active="true" image="/system/etc/paranoid/preferences/images/tablet.png">
+<property name="Tablet UI (Mid)" active="true" image="/system/etc/paranoid/preferences/images/tablet.png" color="#51ab27">
 
         <description><![CDATA[Tablet workspace<br/>180 DPI<br/>4 Icons<br/>Clock]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
