@@ -10,6 +10,9 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
     vendor/pa/prebuilt/common/xbin/su:system/xbin/su
 
+# ROM stamp
+$(shell shuf -i 0-100000 -n 1 > .stamp)
+
 # Exclude prebuilt paprefs from builds if the flag is set
 ifneq ($(PREFS_FROM_SOURCE),true)
     PRODUCT_COPY_FILES += \
