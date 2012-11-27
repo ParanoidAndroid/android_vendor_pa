@@ -10,6 +10,14 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
     vendor/pa/prebuilt/common/xbin/su:system/xbin/su
 
+# Bring in camera effects
+PRODUCT_COPY_FILES +=  \
+    vendor/pa/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/pa/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+
+# Bring in all video files
+$(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
+
 # ROM stamp
 $(shell shuf -i 0-100000 -n 1 > .stamp)
 
