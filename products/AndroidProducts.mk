@@ -4,6 +4,9 @@ endif
 ifeq (pa_maguro,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_maguro.mk
 endif
+ifeq (pa_mako,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_mako.mk
+endif
 ifeq (pa_manta,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_manta.mk
 endif

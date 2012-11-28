@@ -1,0 +1,23 @@
+[
+    {
+        "remote":       "github",
+        "account":      "TheMuppets",
+        "repository":   "proprietary_vendor_lge",
+        "target_path":  "vendor/lge",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "lge-kernel-mako",
+        "target_path":  "kernel/lge/mako",
+        "branch":       "jellybean"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/wlan",
+        "target_path":  "hardware/qcom/wlan",
+        "branch":       "master"
+    }
+]
