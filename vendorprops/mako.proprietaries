@@ -16,6 +16,55 @@
     {
         "remote":       "aosp",
         "account":      "platform",
+        "repository":   "hardware/qcom/audio",
+        "target_path":  "hardware/qcom/audio",
+        "branch":       "master"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/bt",
+        "target_path":  "hardware/qcom/bt",
+        "branch":       "master"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/camera",
+        "target_path":  "hardware/qcom/camera",
+        "branch":       "master"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/display",
+        "target_path":  "hardware/qcom/display",
+        "branch":       "master"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/gps",
+        "target_path":  "hardware/qcom/gps",
+        "branch":       "master"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/media",
+        "target_path":  "hardware/qcom/media",
+        "branch":       "master"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/power",
+        "target_path":  "hardware/qcom/power",
+        "branch":       "master"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
         "repository":   "hardware/qcom/wlan",
         "target_path":  "hardware/qcom/wlan",
         "branch":       "master"
