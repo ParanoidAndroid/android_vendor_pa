@@ -28,7 +28,7 @@ PREFS_FROM_SOURCE := true
 include vendor/pa/config/pa_common.mk
 
 # Inherit AOSP device configuration
-$(call inherit-product, device/asus/grouper/full_tilapia.mk)
+$(call inherit-product, device/asus/tilapia/full_tilapia.mk)
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_tilapia
