@@ -84,7 +84,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.pa.version=$(VERSION)
 
 # goo.im properties
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.goo.developerid=paranoidandroid \
-  ro.goo.rom=paranoidandroid \
-  ro.goo.version=$(shell date +%s)
+ifneq ($(EXCLUDE_OTA_PROPERTIES),true)
+    PRODUCT_PROPERTY_OVERRIDES += \
+      ro.goo.developerid=paranoidandroid \
+      ro.goo.rom=paranoidandroid \
+      ro.goo.version=$(shell date +%s)
+endif
