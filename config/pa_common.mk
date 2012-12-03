@@ -18,9 +18,6 @@ PRODUCT_COPY_FILES +=  \
 # Bring in all video files
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
-# ROM stamp
-$(shell shuf -i 0-100000 -n 1 > .stamp)
-
 # Exclude prebuilt paprefs from builds if the flag is set
 ifneq ($(PREFS_FROM_SOURCE),true)
     PRODUCT_COPY_FILES += \
