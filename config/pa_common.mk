@@ -10,6 +10,17 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
     vendor/pa/prebuilt/common/xbin/su:system/xbin/su
 
+# init.d support
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/pa/prebuilt/common/etc/init.pa.rc:root/init.pa.rc
+
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/pa/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/pa/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh
+
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/pa/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
