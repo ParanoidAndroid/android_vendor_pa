@@ -1,7 +1,7 @@
 #
 # Stamp files with specific data
 #
-# Jesús David Gulfo Agudelo
+# D4rKn3sSyS
 #
 #
 
