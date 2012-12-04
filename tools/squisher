@@ -36,6 +36,7 @@ if [ ! -f "$OTAPACKAGE" ]; then
 fi
 
 OPTICHARGER=$ANDROID_BUILD_TOP/vendor/pa/tools/opticharger
+BUILDSTAMP=$ANDROID_BUILD_TOP/vendor/pa/tools/buildstamp.py
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
@@ -100,8 +101,10 @@ else
 	OUTFILE=$OUT/update-squished.zip
 fi
 
-# PA versioning
-( cd $REPACK/ota/system/etc/paranoid; echo com.paranoid.preferences.version=$PAVERSION >> backup.conf; )
+# PA stamp
+STAMP=$(shuf -i 1-100000 -n 1)
+python $BUILDSTAMP "$REPACK/ota/system/app/ParanoidPreferences.apk" "$STAMP"
+python $BUILDSTAMP "$REPACK/ota/system/framework/framework-res.apk" "$STAMP"
 
 # Copy ParanoidPreferences overlays
 printf "Copying overlay preferences for $OVERLAYTARGET..."
