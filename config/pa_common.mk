@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/pa/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/pa/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh
+    vendor/pa/prebuilt/common/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
