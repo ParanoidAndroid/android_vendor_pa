@@ -15,6 +15,10 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/sysinit:system/bin/sysinit \
     vendor/pa/prebuilt/common/etc/init.pa.rc:root/init.pa.rc
 
+# userinit support
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
