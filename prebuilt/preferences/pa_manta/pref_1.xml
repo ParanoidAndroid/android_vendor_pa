@@ -1,4 +1,4 @@
-<property name="Stock UI" active="true" image="/system/etc/paranoid/preferences/images/phone.jpg">
+<property name="Stock UI" active="true" image="/system/etc/paranoid/preferences/images/phone.png" color="#238fcd">
 
         <description><![CDATA[
             320 DPI Phone UI<br/>
