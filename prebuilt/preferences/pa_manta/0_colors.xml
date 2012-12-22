@@ -6,7 +6,6 @@
         <setting type="Hybrid" target="com.android.vending.colors" value="FF121212|B2DC8745|FFB5D67E|FF121212|C0C1534E"/>
         <setting type="Hybrid" target="com.facebook.katana.colors" value="FF28395F|B2FFFFFF|FFFFFFFF|FF375180|93FFFFFF"/>
         <setting type="Hybrid" target="com.android.mms.colors" value="FF222222|B2FFFFFF|FFFFFFFF|FF555555|B294B829"/>
-        <setting type="Hybrid" target="com.android.contacts.colors" value="FF33B5E5|B2FFFFFF|FFFFFFFF|FF000000|FF33B5E5"/>
         <setting type="Hybrid" target="com.google.android.calendar.colors" value="FF44B9E5|FFFFFFFF|FFFFFFFF|FFDDDDDD|FF44B9E5"/>
         <setting type="Hybrid" target="com.google.android.talk.colors" value="FF222222|B2FFFFFF|FFFFFFFF|FF222222|B2FF8801"/>
         <setting type="Hybrid" target="com.sand.airdroid.colors" value="FFF4F6F7|B260A517|FF000000|FF96DF4B|FF33B5E5"/>
