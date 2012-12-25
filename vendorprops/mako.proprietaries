@@ -35,11 +35,11 @@
         "branch":       "master"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/display",
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
+        "repository":   "android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "branch":       "master"
+        "branch":       "jellybean"
     },
     {
         "remote":       "aosp",
