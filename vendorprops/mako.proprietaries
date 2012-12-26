@@ -1,7 +1,7 @@
 [
     {
         "remote":       "github",
-        "account":      "TheMuppets",
+        "account":      "ParanoidAndroid",
         "repository":   "proprietary_vendor_lge",
         "target_path":  "vendor/lge",
         "revision":     "jellybean"
