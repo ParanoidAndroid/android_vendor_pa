@@ -5,9 +5,6 @@
 # /system is formatted and reinstalled, then the file is restored.
 #
 
-# beta9 introduces new properties, can be removed next release
-exit
-
 . /tmp/backuptool.functions
 
 list_files() {
