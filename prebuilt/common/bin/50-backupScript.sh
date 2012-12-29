@@ -13,6 +13,14 @@ etc/paranoid/properties.conf
 EOF
 }
 
+check_prereq() {
+export V=  grep revision system/etc/paranoid/properties.conf | cut -c11
+if ( ! grep -q "^ro.papref.revision=$V" /system/build.prop ); then
+  echo "Not backing up files from incompatible version."
+  exit 127
+fi
+}
+
 case "$1" in
   backup)
     list_files | while read FILE DUMMY; do
@@ -20,6 +28,7 @@ case "$1" in
     done
   ;;
   restore)
+    check_prereq()
     list_files | while read FILE REPLACEMENT; do
       R=""
       [ -n "$REPLACEMENT" ] && R="$S/$REPLACEMENT"
