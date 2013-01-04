@@ -13,7 +13,7 @@
         <setting type="Hybrid" target="com.android.systemui.statusbar.dpi" value="100"/>
         <setting type="Hybrid" target="%system_default_layout" value="0"/>
         <setting type="Hybrid" target="%system_default_dpi" value="0"/>
-        <setting type="Android" target="status_bar_clock" value="1"/>
+        <setting type="Android" target="status_bar_show_clock" value="1"/>
         <setting type="Android" target="max_notification_icons" value="5"/>
 
 </property>
