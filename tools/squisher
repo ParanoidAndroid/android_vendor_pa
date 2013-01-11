@@ -36,7 +36,6 @@ if [ ! -f "$OTAPACKAGE" ]; then
 fi
 
 OPTICHARGER=$ANDROID_BUILD_TOP/vendor/pa/tools/opticharger
-BUILDSTAMP=$ANDROID_BUILD_TOP/vendor/pa/tools/buildstamp.py
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
@@ -100,12 +99,6 @@ if [ -z "$CYANOGEN_NIGHTLY" ]; then
 else
 	OUTFILE=$OUT/update-squished.zip
 fi
-
-# PA stamp
-STAMP=$(shuf -i 1-100000 -n 1)
-PREFVERSION=`grep 'ro.papref.revision=' $REPACK/ota/system/build.prop | sed -e 's/ro.paprefrevision=//g'`
-python $BUILDSTAMP "$REPACK/ota/system/app/ParanoidPreferences.apk" "$STAMP"
-python $BUILDSTAMP "$REPACK/ota/system/framework/framework-res.apk" "$STAMP"
 
 # Copy ParanoidPreferences overlays
 printf "Copying overlay preferences for $OVERLAYTARGET..."
