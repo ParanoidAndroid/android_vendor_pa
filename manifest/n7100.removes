@@ -1,0 +1,14 @@
+[
+    {
+        "name":     "platform/frameworks/av",
+        "path":     "frameworks/av"
+    },
+    {
+        "name":     "ParanoidAndroid/android_frameworks_native",
+        "path":     "frameworks/native"
+    },
+    {
+        "name":     "platform/hardware/libhardware",
+        "path":     "hardware/libhardware"
+    }
+]
