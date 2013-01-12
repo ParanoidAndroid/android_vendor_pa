@@ -16,7 +16,7 @@ def isNullOrEmpty(value):
 for dirname, dirnames, filenames in os.walk('./device/'):
     for subdirname in dirnames:
         path = os.path.join(dirname, subdirname)[9:]
-        if device.find(path) != -1:
+        if path.find(device) != -1:
             manufacturer = path[:path.find('/')];
 
 if isNullOrEmpty(manufacturer):
