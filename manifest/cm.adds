@@ -81,7 +81,7 @@
         "account":      "CyanogenMod",
         "repository":   "android_packages_apps_DSPManager",
         "target_path":  "packages/apps/DSPManager",
-        "revision":     "cm-10.1"
+        "revision":     "177d90019c16cb53a5944d92687f7aa79aaf5677"
     },
     {
         "remote":       "github",
