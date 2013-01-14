@@ -22,14 +22,13 @@ PARANOID_BOOTANIMATION_NAME := XHDPI
 OVERLAY_TARGET := pa_xhdpi
 
 # Build paprefs from sources
-PREFS_FROM_SOURCE := true
+PREFS_FROM_SOURCE ?= true
 
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
 # Include missing proprietaries
 #PRODUCT_COPY_FILES += \
-
 
 # Inherit AOSP device configuration
 $(call inherit-product, device/samsung/n7100/full_n7100.mk)
