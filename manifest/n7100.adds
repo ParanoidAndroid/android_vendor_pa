@@ -42,6 +42,20 @@
         "revision":     "cm-10.1"
     },
     {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_device_generic_armv7-a-neon",
+        "target_path":  "device/generic/armv7-a-neon",
+	"revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_device_generic_common",
+        "target_path":  "device/generic/common",
+        "revision":     "cm-10.1"
+    },
+    {
         "remote":       "paranoid",
         "repository":   "android_packages_apps_paranoidpreferences",
         "target_path":  "packages/apps/ParanoidPreferences",
