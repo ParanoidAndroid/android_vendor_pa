@@ -21,6 +21,20 @@
         "revision":     "cm-10.1"
     },
     {
+        "remote":       "github",
+	"account":      "CyanogenMod",
+	"repository":   "android_frameworks_opt_telephony",
+	"target_path":  "frameworks/opt/telephony",
+	"revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+	"account":      "CyanogenMod",
+	"repository":   "android_device_common",
+	"target_path":  "device/common",
+	"revision":     "cm-10.1"
+    },
+    {
         "remote":       "paranoid",
         "repository":   "android_packages_apps_paranoidpreferences",
         "target_path":  "packages/apps/ParanoidPreferences",

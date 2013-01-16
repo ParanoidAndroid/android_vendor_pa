@@ -10,5 +10,13 @@
     {
         "name":     "platform/hardware/libhardware",
         "path":     "hardware/libhardware"
+    },
+    {
+        "name":     "device/common",
+	"path":     "device/common"
+    },
+    {
+        "name":     "ParanoidAndroid/android_frameworks_opt_telephony",
+	"path":     "frameworks/opt/telephony"
     }
 ]
