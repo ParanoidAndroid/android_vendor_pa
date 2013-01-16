@@ -28,7 +28,7 @@
 	"revision":     "cm-10.1"
     },
     {
-        "remote":       "github",
+	"remote":       "github",
 	"account":      "CyanogenMod",
 	"repository":   "android_device_common",
 	"target_path":  "device/common",
