@@ -12,6 +12,10 @@
         "path":     "hardware/libhardware"
     },
     {
+        "name":     "platform/hardware/libhardware_legacy",
+        "path":     "hardware/libhardware_legacy"
+    },
+    {
 	"name":     "device/common",
 	"path":     "device/common"
     },
