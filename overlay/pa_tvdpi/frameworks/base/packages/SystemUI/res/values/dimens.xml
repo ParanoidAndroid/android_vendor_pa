@@ -1,4 +1,8 @@
 <resources>
     <dimen name="status_bar_recents_thumbnail_width">240dp</dimen>
     <dimen name="status_bar_recents_thumbnail_height">220dp</dimen>
+    
+        <!-- Pie contols sizing -->
+    <dimen name="pie_radius_start">70dp</dimen>
+    <dimen name="pie_radius_increment">85dp</dimen>
 </resources>
