@@ -16,6 +16,10 @@
         "path":     "hardware/libhardware_legacy"
     },
     {
+        "name":     "platform/system/vold",
+        "path":     "system/vold"
+    },
+    {
         "name":     "device/common",
         "path":     "device/common"
     },
