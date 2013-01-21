@@ -16,7 +16,7 @@
 ifeq (pa_i9100,$(TARGET_PRODUCT))
 
 # Define PA bootanimation size
-PARANOID_BOOTANIMATION_NAME := XHDPI
+PARANOID_BOOTANIMATION_NAME := HDPI
 
 # OVERLAY_TARGET adds overlay asset source
 OVERLAY_TARGET := pa_hdpi
