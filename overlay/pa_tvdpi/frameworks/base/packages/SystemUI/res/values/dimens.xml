@@ -3,6 +3,29 @@
     <dimen name="status_bar_recents_thumbnail_height">220dp</dimen>
     
         <!-- Pie contols sizing -->
-    <dimen name="pie_radius_start">70dp</dimen>
-    <dimen name="pie_radius_increment">85dp</dimen>
+    <dimen name="pie_trigger_height">15dp</dimen>
+
+    <dimen name="pie_radius_start">60dp</dimen>
+    <dimen name="pie_radius_increment">100dp</dimen>
+    <dimen name="pie_chevron_start">285dp</dimen>
+    <dimen name="pie_chevron_increment">4dp</dimen>
+    <dimen name="pie_battery_start">170dp</dimen>
+    <dimen name="pie_battery_increment">10dp</dimen>
+    <dimen name="pie_status_start">164dp</dimen>
+    <dimen name="pie_notifications_start">295dp</dimen>
+
+    <dimen name="pie_clock_size">100dp</dimen>
+    <dimen name="pie_clock_offset">-28dp</dimen>
+    <dimen name="pie_ampm_size">18dp</dimen>
+    <dimen name="pie_ampm_offset">-105dp</dimen>
+    <dimen name="pie_status_size">20dp</dimen>
+    <dimen name="pie_status_offset">-18dp</dimen>
+    <dimen name="pie_notification_size">25dp</dimen>
+    <dimen name="pie_notification_offset">-105dp</dimen>
+    <dimen name="pie_notification_row_size">26dp</dimen>
+    <dimen name="pie_notification_icon_size">25dp</dimen>
+
+    <dimen name="pie_touch_offset">24dp</dimen>
+    <dimen name="pie_tab_title_height">24dp</dimen>
+    <dimen name="pie_item_size">40dp</dimen>
 </resources>
