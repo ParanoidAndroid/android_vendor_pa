@@ -1,3 +1,9 @@
+# Set version
+PA_VERSION_MAJOR = 3
+PA_VERSION_MINOR = 9
+PA_VERSION_MAINTENANCE = 6
+PA_PREF_REVISION = 1
+
 # Set audio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Themos.ogg \
@@ -95,13 +101,26 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
-PA_VERSION_MAJOR = 3
-PA_VERSION_MINOR = 9
-PA_VERSION_MAINTENANCE = 6
-PA_PREF_REVISION = 1
+# Copy ParanoidPreferences overlays
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/preferences/images/phablet.png:system/etc/paranoid/preferences/images/phablet.png \
+    vendor/pa/prebuilt/preferences/images/phone.png:system/etc/paranoid/preferences/images/phone.png \
+    vendor/pa/prebuilt/preferences/images/tablet.png:system/etc/paranoid/preferences/images/tablet.png \
+    vendor/pa/prebuilt/preferences/images/undefined.png:system/etc/paranoid/preferences/images/undefined.png
 
-TARGET_CUSTOM_RELEASETOOL := source vendor/pa/tools/squisher
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/preferences/$(PA_CONF_SOURCE)/0_colors.xml:system/etc/paranoid/preferences/0_colors.xml \
+    vendor/pa/prebuilt/preferences/$(PA_CONF_SOURCE)/pref_1.xml:system/etc/paranoid/preferences/pref_1.xml \
+    vendor/pa/prebuilt/preferences/$(PA_CONF_SOURCE)/pref_2.xml:system/etc/paranoid/preferences/pref_2.xml \
+    vendor/pa/prebuilt/preferences/$(PA_CONF_SOURCE)/pref_3.xml:system/etc/paranoid/preferences/pref_3.xml \
+    vendor/pa/prebuilt/preferences/$(PA_CONF_SOURCE)/pref_4.xml:system/etc/paranoid/preferences/pref_4.xml
 
+ifneq ($(PA_CONF_SOURCE),pa_tvdpi)
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/preferences/$(PA_CONF_SOURCE)/pref_5.xml:system/etc/paranoid/preferences/pref_5.xml
+endif
+
+# Set vendor version and target name
 VERSION := $(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)
 ifeq ($(DEVELOPER_VERSION),true)
     PA_VERSION := dev_$(BOARD)-$(VERSION)-$(shell date -u +%Y%m%d)
@@ -109,8 +128,11 @@ else
     PA_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date -u +%Y%m%d)
 endif
 
+VENDOR_OTA_PACKAGE_TARGET := $(PA_VERSION)
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(PA_VERSION) \
     ro.pa.family=$(PA_CONF_SOURCE) \
     ro.pa.version=$(VERSION) \
-    ro.papref.revision=$(PA_PREF_REVISION)
+    ro.papref.revision=$(PA_PREF_REVISION) \
+    ro.pa=true
