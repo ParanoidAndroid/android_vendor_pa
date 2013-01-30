@@ -1,0 +1,24 @@
+[
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_kernel_htc_qsd8k",
+        "target_path":  "kernel/htc/qsd8k",
+        "revision":     "jellybean"
+    }
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_vendor_htc",
+        "target_path":  "vendor/htc",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "WoH",
+        "repository":   "android_device_htc_bravo",
+        "target_path":  "device/htc/bravo",
+        "revision":     "master"
+    },
+
+]
