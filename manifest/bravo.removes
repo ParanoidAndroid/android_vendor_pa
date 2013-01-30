@@ -1,0 +1,62 @@
+[
+    {
+        "name":     "ParanoidAndroid/android_bionic",
+        "path":     "bionic"
+    },
+    {
+        "name":     "platform/external/wpa_supplicant_8",
+        "path":     "external/wpa_supplicant_8"
+    },
+    {
+        "name":     "platform/frameworks/av",
+        "path":     "frameworks/av"
+    },
+    {
+        "name":     "ParanoidAndroid/android_frameworks_base",
+        "path":     "frameworks/base"
+    },
+    {
+        "name":     "ParanoidAndroid/android_frameworks_native",
+        "path":     "frameworks/native"
+    },
+    {
+        "name":     "platform/hardware/ril",
+        "path":     "hardware/ril"
+    },
+    {
+        "name":     "platform/hardware/libhardware",
+        "path":     "hardware/libhardware"
+    },
+    {
+        "name":     "platform/hardware/libhardware_legacy",
+        "path":     "hardware/libhardware_legacy"
+    },
+    {
+        "name":     "platform/system/bluetooth",
+        "path":     "system/bluetooth"
+    },
+    {
+        "name":     "ParanoidAndroid/android_system_core",
+        "path":     "system/core"
+    },
+    {
+        "name":     "platform/system/extras",
+        "path":     "system/extras"
+    },
+    {
+        "name":     "platform/system/security",
+        "path":     "system/security"
+    },
+    {
+        "name":     "platform/system/vold",
+        "path":     "system/vold"
+    },
+    {
+        "name":     "device/common",
+        "path":     "device/common"
+    },
+    {
+        "name":     "ParanoidAndroid/android_frameworks_opt_telephony",
+        "path":     "frameworks/opt/telephony"
+    }
+]
