@@ -9,3 +9,4 @@ add_lunch_combo pa_n7100-userdebug
 add_lunch_combo pa_tf700t-userdebug
 add_lunch_combo pa_toro-userdebug
 add_lunch_combo pa_toroplus-userdebug
+add_lunch_combo pa_crespo-userdebug
