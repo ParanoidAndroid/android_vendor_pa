@@ -29,28 +29,28 @@
     },
     {
         "remote":       "github",
-        "account":      "Everolv",
+        "account":      "Evervolv",
         "repository":   "android_frameworks_native",
         "target_path":  "frameworks/native",
         "revision":     "jellybean"
     },
     {
         "remote":       "github",
-        "account":      "Everolv",
+        "account":      "Evervolv",
         "repository":   "android_hardware_atheros",
         "target_path":  "hardware/atheros",
         "revision":     "jellybean"
     },
     {
         "remote":       "github",
-        "account":      "Everolv",
+        "account":      "Evervolv",
         "repository":   "android_hardware_gpsshim",
         "target_path":  "hardware/gpsshim",
         "revision":     "jellybean"
     },
     {
         "remote":       "github",
-        "account":      "Everolv",
+        "account":      "Evervolv",
         "repository":   "android_hardware_libhardware",
         "target_path":  "hardware/libhardware",
         "revision":     "jellybean"
@@ -225,16 +225,23 @@
     },
     {
         "remote":       "github",
-        "account":      "Evervolv",
+        "account":      "CyanogenMod",
         "repository":   "android_device_generic_armv7-a-neon",
         "target_path":  "device/generic/armv7-a-neon",
-        "revision":     "jellybean"
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_device_generic_common",
+        "target_path":  "device/generic/common",
+        "revision":     "cm-10.1"
     },
     {
         "remote":       "github",
         "account":      "Evervolv",
-        "repository":   "android_device_generic_common",
-        "target_path":  "device/generic/common",
+        "repository":   "android_device_generic_goldfish",
+        "target_path":  "device/generic/goldfish",
         "revision":     "jellybean"
     }
 ]
