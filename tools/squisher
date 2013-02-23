@@ -133,5 +133,7 @@ echo "Package complete: $OUTFILE"
 cat $img.md5sum
 echo
 )
+export ROMPATH=$OUTFILE
+export ROMNAME=$PAVERSION.zip
 
 exit 0
