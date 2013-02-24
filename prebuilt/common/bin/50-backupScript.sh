@@ -28,7 +28,6 @@ case "$1" in
     done
   ;;
   restore)
-    check_prereq()
     list_files | while read FILE REPLACEMENT; do
       R=""
       [ -n "$REPLACEMENT" ] && R="$S/$REPLACEMENT"
