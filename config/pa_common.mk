@@ -6,10 +6,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Copy specific ROM files
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk \
-    vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
-    vendor/pa/prebuilt/common/xbin/su:system/xbin/su \
-    vendor/pa/prebuilt/common/bin/.ext/.su:system/bin/.ext/.su
+    vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk 
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -58,6 +55,9 @@ PRODUCT_PACKAGES += \
 
 # T-Mobile theme engine
 include vendor/pa/config/themes_common.mk
+
+#Embed superuser into settings 
+SUPERUSER_EMBEDDED := true
 
 # device common prebuilts
 ifneq ($(DEVICE_COMMON),)
