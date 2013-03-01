@@ -9,6 +9,20 @@
     {
         "remote":       "github",
         "account":      "ParanoidAndroid",
+        "repository":   "proprietary_vendor_broadcom",
+        "target_path":  "vendor/broadcom",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
+        "repository":   "proprietary_vendor_qcom",
+        "target_path":  "vendor/qcom",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
         "repository":   "lge-kernel-mako",
         "target_path":  "kernel/lge/mako",
         "branch":       "jellybean"
