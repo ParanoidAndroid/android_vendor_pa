@@ -32,21 +32,21 @@
         "account":      "platform",
         "repository":   "hardware/qcom/audio",
         "target_path":  "hardware/qcom/audio",
-        "branch":       "master"
+        "branch":       "jb-mr1.1-release"
     },
     {
         "remote":       "aosp",
         "account":      "platform",
         "repository":   "hardware/qcom/bt",
         "target_path":  "hardware/qcom/bt",
-        "branch":       "master"
+        "branch":       "jb-mr1.1-release"
     },
     {
         "remote":       "aosp",
         "account":      "platform",
         "repository":   "hardware/qcom/camera",
         "target_path":  "hardware/qcom/camera",
-        "branch":       "master"
+        "branch":       "jb-mr1.1-release"
     },
     {
         "remote":       "github",
@@ -60,27 +60,27 @@
         "account":      "platform",
         "repository":   "hardware/qcom/gps",
         "target_path":  "hardware/qcom/gps",
-        "branch":       "master"
+        "branch":       "jb-mr1.1-release"
     },
     {
         "remote":       "aosp",
         "account":      "platform",
         "repository":   "hardware/qcom/media",
         "target_path":  "hardware/qcom/media",
-        "branch":       "master"
+        "branch":       "jb-mr1.1-release"
     },
     {
         "remote":       "aosp",
         "account":      "platform",
         "repository":   "hardware/qcom/power",
         "target_path":  "hardware/qcom/power",
-        "branch":       "master"
+        "branch":       "jb-mr1.1-release"
     },
     {
         "remote":       "aosp",
         "account":      "platform",
         "repository":   "hardware/qcom/wlan",
         "target_path":  "hardware/qcom/wlan",
-        "branch":       "master"
+        "branch":       "jb-mr1.1-release"
     }
 ]
