@@ -1,0 +1,9 @@
+[
+    {
+        "remote":       "github",
+        "account":      "adrian-bl-hox-jb",
+        "repository":   "android_vendor_htc_endeavoru",
+        "target_path":  "vendor/htc/endeavoru",
+        "revision":     "jb"
+    }
+]

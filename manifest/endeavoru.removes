@@ -1,0 +1,58 @@
+[
+    {
+        "name":     "platform/frameworks/av",
+        "path":     "frameworks/av"
+    },
+    {
+        "name":     "ParanoidAndroid/android_frameworks_native",
+        "path":     "frameworks/native"
+    },
+    {
+        "name":     "platform/hardware/libhardware_legacy",
+        "path":     "hardware/libhardware_legacy"
+    },
+    {
+        "name":     "ParanoidAndroid/android_frameworks_base",
+        "path":     "frameworks/base"
+    },
+    {
+        "name":     "ParanoidAndroid/android_frameworks_opt_telephony",
+        "path":     "frameworks/opt/telephony"
+    },
+    {
+        "name":     "ParanoidAndroid/android_system_core",
+        "path":     "system/core"
+    },
+    {
+        "name":     "platform/external/wpa_supplicant_8",
+        "path":     "external/wpa_supplicant_8"
+    },
+    {
+        "name":     "platform/external/bluetooth/bluedroid",
+        "path":     "external/bluetooth/bluedroid"
+    },
+    {
+        "name":     "platform/hardware/ti/wlan",
+        "path":     "hardware/ti/wlan"
+    },
+    {
+        "name":     "platform/hardware/ril",
+        "path":     "hardware/ril"
+    },
+    {
+        "name":     "platform/hardware/libhardware",
+        "path":     "hardware/libhardware"
+    },
+    {
+        "name":     "platform/system/netd",
+        "path":     "system/netd"
+    },
+    {
+        "name":     "platform/packages/apps/Camera",
+        "path":     "packages/apps/Camera"
+    },
+    {
+        "name":     "platform/packages/apps/VoiceDialer",
+        "path":     "packages/apps/VoiceDialer"
+    }
+]
