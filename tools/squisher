@@ -5,17 +5,16 @@
 #
 
 OUT_TARGET_HOST=`uname -a | grep Darwin`
-if [ -z "$OUT_TARGET_HOST" ]
-then
-   OUT_TARGET_HOST=linux-x86
-   MD5=md5sum
-   XARGS="xargs --max-args=1 --max-procs `grep 'processor' /proc/cpuinfo|wc -l`"
-   SED=sed
+if [ -z "$OUT_TARGET_HOST" ]; then
+	OUT_TARGET_HOST=linux-x86
+	MD5=md5sum
+	XARGS="xargs --max-args=1 --max-procs `grep 'processor' /proc/cpuinfo|wc -l`"
+	SED=sed
 else
-   OUT_TARGET_HOST=darwin-x86
-   MD5=md5
-   XARGS="xargs -n 1 -P `sysctl hw.ncpu | awk '{print $2}'`"
-   SED=gsed
+	OUT_TARGET_HOST=darwin-x86
+	MD5=md5
+	XARGS="xargs -n 1 -P `sysctl hw.ncpu | awk '{print $2}'`"
+	SED=gsed
 fi
 
 if [ -z "$OUT" -o ! -d "$OUT" ]; then
@@ -24,12 +23,13 @@ if [ -z "$OUT" -o ! -d "$OUT" ]; then
 fi
 
 if [ "$TARGET_BUILD_TYPE" = "debug" ]; then
-    OTAPACKAGE=$OUT/${TARGET_PRODUCT}_debug-ota-$TARGET_BUILD_VARIANT.$USER.zip
+	OTAPACKAGE=$OUT/${TARGET_PRODUCT}_debug-ota-$TARGET_BUILD_VARIANT.$USER.zip
 elif [ "$TARGET_BUILD_VARIANT" = "userdebug" ]; then
-    OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-eng.$USER.zip
+	OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-eng.$USER.zip
 else
-    OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$USER.zip
+	OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$USER.zip
 fi
+
 if [ ! -f "$OTAPACKAGE" ]; then
 	echo "$OTAPACKAGE doesn't exist!";
 	exit 1
@@ -108,6 +108,10 @@ mkdir $REPACK/ota/system/etc/paranoid/preferences/images
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 echo "ro.pa=true"  >> $REPACK/ota/system/build.prop
+
+# Inject build manifest
+printf "Injecting build manifest..."
+( cd $ANDROID_BUILD_TOP; repo manifest -o $REPACK/ota/system/etc/build-manifest.xml -r )
 
 # Pack it up and sign
 printf "Zipping package..."
