@@ -91,13 +91,22 @@ rm -rf $REPACK/ota/recovery
 
 # Determine what to name the new signed package
 if [ -z "$CYANOGEN_NIGHTLY" ]; then
-	PAVERSION=`sed -n -e'/ro\.modversion/s/^.*PARANOIDANDROID-//p' $REPACK/ota/system/build.prop`
+	PAVERSION=`grep 'ro.modversion=' $REPACK/ota/system/build.prop | sed -e 's/ro.modversion=//g'`
+	OVERLAYTARGET=`grep 'ro.pa.family=' $REPACK/ota/system/build.prop | sed -e 's/ro.pa.family=//g'`
 	: ${PAVERSION:=nightly}
 	OUTFILE=$OUT/$PAVERSION.zip
 	echo PAVERSION: $PAVERSION
 else
 	OUTFILE=$OUT/update-squished.zip
 fi
+
+# Copy ParanoidPreferences overlays
+printf "Copying overlay preferences for $OVERLAYTARGET..."
+echo
+mkdir $REPACK/ota/system/etc/paranoid/preferences
+mkdir $REPACK/ota/system/etc/paranoid/preferences/images
+cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
+cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 
 # Pack it up and sign
 printf "Zipping package..."
@@ -124,5 +133,7 @@ echo "Package complete: $OUTFILE"
 cat $img.md5sum
 echo
 )
+export ROMPATH=$OUTFILE
+export ROMNAME=$PAVERSION.zip
 
 exit 0

@@ -16,14 +16,14 @@ def isNullOrEmpty(value):
 for dirname, dirnames, filenames in os.walk('./device/'):
     for subdirname in dirnames:
         path = os.path.join(dirname, subdirname)[9:]
-        if device in path:
+        if path.find(device) != -1:
             manufacturer = path[:path.find('/')];
 
 if isNullOrEmpty(manufacturer):
     manufacturer = raw_input('Manufacturer not found, please write your device manufacturer: ')
 
 device_path = 'device/'+manufacturer+'/'+device
-repo_full = 'CyanogenMod/android_' + device_path.replace('/', '_')
+repo_full = 'ParanoidAndroid/android_' + device_path.replace('/', '_')
 
 def exists_in_tree(lm, repository):
     for child in lm.getchildren():
@@ -68,7 +68,7 @@ def add_to_manifest(repositories):
         lm = ElementTree.Element('manifest')
 
     for repository in repositories:
-        repo_account = "CyanogenMod"
+        repo_account = "ParanoidAndroid"
         repo_name = 'android_'+device_path.replace('/', '_')
         repo_target = device_path
         if exists_in_tree(lm, repo_full):

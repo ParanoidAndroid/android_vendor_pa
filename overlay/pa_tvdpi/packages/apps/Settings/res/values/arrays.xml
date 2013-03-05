@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="values_pie_size" translatable="false">
+        <item>1</item>
+        <item>1.2</item>
+        <item>1.4</item>
+        <item>1.6</item>
+    </string-array>
+</resources>

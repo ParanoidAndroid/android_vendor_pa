@@ -1,0 +1,247 @@
+[
+    {
+        "remote":       "github",
+        "account":      "WoH",
+        "repository":   "android_bionic",
+        "target_path":  "bionic",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_external_wpa_supplicant_8",
+        "target_path":  "external/wpa_supplicant_8",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_frameworks_av",
+        "target_path":  "frameworks/av",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "WoH",
+        "repository":   "android_frameworks_base",
+        "target_path":  "frameworks/base",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_frameworks_native",
+        "target_path":  "frameworks/native",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_atheros",
+        "target_path":  "hardware/atheros",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_gpsshim",
+        "target_path":  "hardware/gpsshim",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_libhardware",
+        "target_path":  "hardware/libhardware",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_libhardware_legacy",
+        "target_path":  "hardware/libhardware_legacy",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_ril",
+        "target_path":  "hardware/ril",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_audio",
+        "target_path":  "hardware/qcom/audio",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_audio-legacy",
+        "target_path":  "hardware/qcom/audio-legacy",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_bt",
+        "target_path":  "hardware/qcom/bt",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_camera",
+        "target_path":  "hardware/qcom/camera",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_display",
+        "target_path":  "hardware/qcom/display",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_display-caf",
+        "target_path":  "hardware/qcom/display-caf",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_display-legacy",
+        "target_path":  "hardware/qcom/display-legacy",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_gps",
+        "target_path":  "hardware/qcom/gps",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_gps-legacy",
+        "target_path":  "hardware/qcom/gps-legacy",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_keymaster",
+        "target_path":  "hardware/qcom/keymaster",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_media",
+        "target_path":  "hardware/qcom/media",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_media-legacy",
+        "target_path":  "hardware/qcom/media-legacy",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_power",
+        "target_path":  "hardware/qcom/power",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_sensors",
+        "target_path":  "hardware/qcom/sensors",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_hardware_qcom_wlan",
+        "target_path":  "hardware/qcom/wlan",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_system_bluetooth",
+        "target_path":  "system/bluetooth",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "WoH",
+        "repository":   "android_system_core",
+        "target_path":  "system/core",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_system_extras",
+        "target_path":  "system/extras",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_system_security",
+        "target_path":  "system/security",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_system_vold",
+        "target_path":  "system/vold",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "WoH",
+        "repository":   "android_frameworks_opt_telephony",
+        "target_path":  "frameworks/opt/telephony",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_device_common",
+        "target_path":  "device/common",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_device_generic_armv7-a-neon",
+        "target_path":  "device/generic/armv7-a-neon",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_device_generic_common",
+        "target_path":  "device/generic/common",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "Evervolv",
+        "repository":   "android_device_generic_goldfish",
+        "target_path":  "device/generic/goldfish",
+        "revision":     "jellybean"
+    }
+]
