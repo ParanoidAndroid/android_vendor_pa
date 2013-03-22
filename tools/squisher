@@ -107,6 +107,7 @@ mkdir $REPACK/ota/system/etc/paranoid/preferences
 mkdir $REPACK/ota/system/etc/paranoid/preferences/images
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
+echo "ro.pa=true"  >> $REPACK/ota/system/build.prop
 
 # Pack it up and sign
 printf "Zipping package..."
@@ -134,11 +135,7 @@ cat $img.md5sum
 echo
 )
 
-ROMPATH=$OUTFILE
-ROMNAME=$PAVERSION.zip
-
-export ROMPATH
-export OUTFILE
-
+echo $OUTFILE > $OUT/romPath
+echo $PAVERSION.zip > $OUT/romName
 
 exit 0
