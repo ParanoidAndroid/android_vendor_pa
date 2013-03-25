@@ -16,8 +16,10 @@ def isNullOrEmpty(value):
 for dirname, dirnames, filenames in os.walk('./device/'):
     for subdirname in dirnames:
         path = os.path.join(dirname, subdirname)[9:]
-        if path.find(device) != -1:
-            manufacturer = path[:path.find('/')];
+        # Exclude common, sample and google device manufacturers
+        if path.find('common') == -1 and path.find('sample') == -1 and path.find('google') == -1:
+            if path.find(device) != -1:
+                manufacturer = path[:path.find('/')];
 
 if isNullOrEmpty(manufacturer):
     manufacturer = raw_input('Manufacturer not found, please write your device manufacturer: ')
