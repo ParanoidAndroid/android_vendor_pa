@@ -23,6 +23,13 @@
     {
         "remote":       "github",
         "account":      "ParanoidAndroid",
+        "repository":   "proprietary_vendor_widevine",
+        "target_path":  "vendor/widevine",
+        "revision":     "jellybean"
+    },
+    {
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
         "repository":   "lge-kernel-mako",
         "target_path":  "kernel/lge/mako",
         "branch":       "jellybean"
