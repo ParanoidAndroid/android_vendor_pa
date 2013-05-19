@@ -90,7 +90,7 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
 PA_VERSION_MAJOR = 3
-PA_VERSION_MINOR = 5
+PA_VERSION_MINOR = 6
 PA_VERSION_MAINTENANCE = 0
 PA_PREF_REVISION = 1
 
