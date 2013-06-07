@@ -1,0 +1,121 @@
+[
+    {
+        "remote":       "github",
+        "account":      "TheMuppets",
+        "repository":   "proprietary_vendor_oppo",
+        "target_path":  "vendor/oppo",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_frameworks_av",
+        "target_path":  "frameworks/av",
+        "branch":       "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_libhardware",
+        "target_path":  "hardware/libhardware",
+        "branch":       "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_libhardware_legacy",
+        "target_path":  "hardware/libhardware_legacy",
+        "branch":       "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_audio",
+        "target_path":  "hardware/qcom/audio",
+        "branch":       "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_audio-caf",
+        "target_path":  "hardware/qcom/audio-caf",
+        "branch":       "cm-10.1"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/bt",
+        "target_path":  "hardware/qcom/bt",
+        "branch":       "jb-mr1.1-release"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_camera",
+        "target_path":  "hardware/qcom/camera",
+        "branch":       "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_display",
+        "target_path":  "hardware/qcom/display",
+        "branch":       "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_display-caf",
+        "target_path":  "hardware/qcom/display-caf",
+        "branch":       "cm-10.1"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/gps",
+        "target_path":  "hardware/qcom/gps",
+        "branch":       "jb-mr1.1-release"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/keymaster",
+        "target_path":  "hardware/qcom/keymaster",
+        "branch":       "jb-mr1.1-release"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_media",
+        "target_path":  "hardware/qcom/media",
+        "branch":       "cm-10.1"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/power",
+        "target_path":  "hardware/qcom/power",
+        "branch":       "jb-mr1.1-release"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/wlan",
+        "target_path":  "hardware/qcom/wlan",
+        "branch":       "jb-mr1.1-release"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_system_vold",
+        "target_path":  "system/vold",
+        "branch":       "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_external_e2fsprogs",
+        "target_path":  "external/e2fsprogs",
+        "branch":       "cm-10.1"
+    }
+]
