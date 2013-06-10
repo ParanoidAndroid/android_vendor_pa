@@ -49,10 +49,6 @@ else
         vendor/pa/prebuilt/common/bootanimation/XHDPI.zip:system/media/bootanimation.zip
 endif
 
-# ParanoidAndroid common packages
-PRODUCT_PACKAGES += \
-    ParanoidWallpapers
-
 # T-Mobile theme engine
 include vendor/pa/config/themes_common.mk
 
