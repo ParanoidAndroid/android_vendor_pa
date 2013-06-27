@@ -40,6 +40,10 @@
         "path":     "system/netd"
     },
     {
+        "name":     "platform/system/vold",
+        "path":     "system/vold"
+    },
+    {
         "name":     "platform/packages/apps/Gallery2",
         "path":     "packages/apps/Gallery2"
     },
