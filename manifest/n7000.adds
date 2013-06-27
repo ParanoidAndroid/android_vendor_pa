@@ -1,5 +1,12 @@
 [
     {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "android_packages_providers_TelephonyProvider",
+        "target_path":  "packages/providers/TelephonyProvider",
+        "revision":     "refs/tags/android-4.2.2_r1"
+    },
+    {
         "remote":       "github",
         "account":      "CyanogenMod",
         "repository":   "android_external_wpa_supplicant_8",
@@ -44,34 +51,6 @@
     {
         "remote":       "github",
         "account":      "CyanogenMod",
-        "repository":   "android_frameworks_av",
-        "target_path":  "frameworks/av",
-        "revision":     "cm-10.1"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
-        "repository":   "android_frameworks_native",
-        "target_path":  "frameworks/native",
-        "revision":     "cm-10.1"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
-        "repository":   "android_hardware_libhardware",
-        "target_path":  "hardware/libhardware",
-        "revision":     "cm-10.1"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
-        "repository":   "android_hardware_libhardware_legacy",
-        "target_path":  "hardware/libhardware_legacy",
-        "revision":     "cm-10.1"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
         "repository":   "android_system_netd",
         "target_path":  "system/netd",
         "revision":     "cm-10.1"
@@ -86,20 +65,6 @@
     {
         "remote":       "github",
         "account":      "CyanogenMod",
-        "repository":   "android_frameworks_opt_telephony",
-        "target_path":  "frameworks/opt/telephony",
-        "revision":     "cm-10.1"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
-        "repository":   "android_device_common",
-        "target_path":  "device/common",
-        "revision":     "cm-10.1"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
         "repository":   "android_device_generic_armv7-a-neon",
         "target_path":  "device/generic/armv7-a-neon",
 	    "revision":     "cm-10.1"
@@ -109,20 +74,6 @@
         "account":      "CyanogenMod",
         "repository":   "android_device_generic_common",
         "target_path":  "device/generic/common",
-        "revision":     "cm-10.1"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
-        "repository":   "android_packages_apps_LegacyCamera",
-        "target_path":  "packages/apps/LegacyCamera",
-        "revision":     "cm-10.1"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
-        "repository":   "android_packages_apps_Gallery2",
-        "target_path":  "packages/apps/Gallery2",
         "revision":     "cm-10.1"
     },
     {

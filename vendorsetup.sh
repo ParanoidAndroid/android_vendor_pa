@@ -7,6 +7,7 @@ add_lunch_combo pa_tilapia-userdebug
 add_lunch_combo pa_maguro-userdebug
 add_lunch_combo pa_mako-userdebug
 add_lunch_combo pa_manta-userdebug
+add_lunch_combo pa_n7000-userdebug
 add_lunch_combo pa_n7100-userdebug
 add_lunch_combo pa_tf700t-userdebug
 add_lunch_combo pa_toro-userdebug

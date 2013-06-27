@@ -26,5 +26,19 @@
         "repository":   "android_kernel_samsung_smdk4412",
         "target_path":  "kernel/samsung/smdk4412",
         "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
+        "repository":   "android_device_samsung_galaxys2-common",
+        "target_path":  "device/samsung/galaxys2-common",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
+        "repository":   "android_device_samsung_n7000",
+        "target_path":  "device/samsung/n7000",
+        "revision":     "cm-10.1"
     }
 ]

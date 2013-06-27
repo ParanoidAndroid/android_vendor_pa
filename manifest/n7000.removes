@@ -1,7 +1,11 @@
 [
     {
-        "name":     "device/common",
-        "path":     "device/common"
+        "name":     "CyanogenMod/android_packages_providers_TelephonyProvider",
+        "path":     "packages/providers/TelephonyProvider"
+    },
+    {
+        "name":     "CyanogenMod/android_hardware_ril",
+        "path":     "hardware/ril"
     },
     {
         "name":     "platform/external/wpa_supplicant_8",
@@ -20,36 +24,12 @@
         "path":     "hardware/ti/wlan"
     },
     {
-        "name":     "platform/frameworks/av",
-        "path":     "frameworks/av"
-    },
-    {
-        "name":     "ParanoidAndroid/android_frameworks_native",
-        "path":     "frameworks/native"
-    },
-    {
-        "name":     "platform/hardware/libhardware",
-        "path":     "hardware/libhardware"
-    },
-    {
-        "name":     "platform/hardware/libhardware_legacy",
-        "path":     "hardware/libhardware_legacy"
-    },
-    {
         "name":     "platform/system/netd",
         "path":     "system/netd"
     },
     {
         "name":     "platform/system/vold",
         "path":     "system/vold"
-    },
-    {
-        "name":     "platform/packages/apps/Gallery2",
-        "path":     "packages/apps/Gallery2"
-    },
-    {
-        "name":     "ParanoidAndroid/android_frameworks_opt_telephony",
-        "path":     "frameworks/opt/telephony"
     },
     {
         "name":     "ParanoidAndroid/android_bionic",
