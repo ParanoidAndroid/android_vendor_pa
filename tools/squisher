@@ -109,6 +109,14 @@ cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/sys
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 echo "ro.pa=true"  >> $REPACK/ota/system/build.prop
 
+# Copy kernel files
+if [ -f "$ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/boot.img" ]; then
+    printf "Copying kernel files for $TARGET_PRODUCT..."
+    echo
+    cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/boot.img $REPACK/ota/
+    cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/system/lib/modules/* $REPACK/ota/system/lib/modules/
+fi
+
 # Pack it up and sign
 printf "Zipping package..."
 ( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )

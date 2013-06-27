@@ -1,0 +1,54 @@
+[
+    {
+        "name":     "device/common",
+        "path":     "device/common"
+    },
+    {
+        "name":     "platform/external/wpa_supplicant_8",
+        "path":     "external/wpa_supplicant_8"
+    },
+    {
+        "name":     "platform/external/wpa_supplicant_6",
+        "path":     "external/wpa_supplicant_6"
+    },
+    {
+        "name":     "platform/hardware/broadcom/wlan",
+        "path":     "hardware/broadcom/wlan"
+    },
+    {
+        "name":     "platform/hardware/ti/wlan",
+        "path":     "hardware/ti/wlan"
+    },
+    {
+        "name":     "platform/frameworks/av",
+        "path":     "frameworks/av"
+    },
+    {
+        "name":     "ParanoidAndroid/android_frameworks_native",
+        "path":     "frameworks/native"
+    },
+    {
+        "name":     "platform/hardware/libhardware",
+        "path":     "hardware/libhardware"
+    },
+    {
+        "name":     "platform/hardware/libhardware_legacy",
+        "path":     "hardware/libhardware_legacy"
+    },
+    {
+        "name":     "platform/system/netd",
+        "path":     "system/netd"
+    },
+    {
+        "name":     "platform/packages/apps/Gallery2",
+        "path":     "packages/apps/Gallery2"
+    },
+    {
+        "name":     "ParanoidAndroid/android_frameworks_opt_telephony",
+        "path":     "frameworks/opt/telephony"
+    },
+    {
+        "name":     "ParanoidAndroid/android_bionic",
+        "path":     "bionic"
+    }
+]
