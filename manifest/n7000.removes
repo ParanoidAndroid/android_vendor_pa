@@ -1,13 +1,5 @@
 [
     {
-        "name":     "CyanogenMod/android_packages_providers_TelephonyProvider",
-        "path":     "packages/providers/TelephonyProvider"
-    },
-    {
-        "name":     "CyanogenMod/android_hardware_ril",
-        "path":     "hardware/ril"
-    },
-    {
         "name":     "platform/external/wpa_supplicant_8",
         "path":     "external/wpa_supplicant_8"
     },

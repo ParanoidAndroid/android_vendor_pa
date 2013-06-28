@@ -1,12 +1,5 @@
 [
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "android_packages_providers_TelephonyProvider",
-        "target_path":  "packages/providers/TelephonyProvider",
-        "revision":     "refs/tags/android-4.2.2_r1"
-    },
-    {
         "remote":       "github",
         "account":      "CyanogenMod",
         "repository":   "android_external_wpa_supplicant_8",
