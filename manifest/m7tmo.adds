@@ -1,0 +1,15 @@
+[
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_system_vold",
+        "target_path":  "system/vold",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "paranoid",
+        "repository":   "android_packages_apps_paranoidpreferences",
+        "target_path":  "packages/apps/ParanoidPreferences",
+        "revision":     "jellybean"
+    }
+]

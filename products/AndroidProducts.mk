@@ -55,3 +55,9 @@ endif
 ifeq (pa_find5,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_find5.mk
 endif
+ifeq (pa_m7tmo,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_m7tmo.mk
+endif
+ifeq (pa_m7ul,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_m7ul.mk
+endif
