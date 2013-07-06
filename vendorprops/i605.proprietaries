@@ -29,16 +29,9 @@
     },
     {
         "remote":       "github",
-        "account":      "CyanogenMod",
+        "account":      "ParanoidAndroid",
         "repository":   "android_device_samsung_t0lte",
         "target_path":  "device/samsung/t0lte",
-        "revision":     "cm-10.1"
-    },
-    {
-        "remote":       "github",
-        "account":      "AOSPA-t0ltecdma",
-        "repository":   "android_device_samsung_t0ltecdma",
-        "target_path":  "device/samsung/t0ltecdma",
         "revision":     "cm-10.1"
     },
     {

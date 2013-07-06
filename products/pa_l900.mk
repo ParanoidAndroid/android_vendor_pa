@@ -22,7 +22,7 @@ PARANOID_BOOTANIMATION_NAME := XHDPI
 OVERLAY_TARGET := pa_i9300
 
 # Build paprefs from sources
-PREFS_FROM_SOURCE ?= false
+PREFS_FROM_SOURCE ?= true
 
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/pa/config/cdma.mk)
@@ -39,7 +39,7 @@ $(call inherit-product, device/samsung/l900/full_l900.mk)
 # Override AOSP build properties
 PRODUCT_NAME := pa_l900
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SCH-l900
+PRODUCT_MODEL := SPH-l900
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=t0ltespr TARGET_DEVICE=t0ltespr BUILD_FINGERPRINT="samsung/t0ltespr/t0ltespr:4.1.2/JZO54K/L900VPAMC2:user/release-keys" PRIVATE_BUILD_DESC="t0ltespr-user 4.1.2 JZO54K L900VPAMC2 release-keys"
 
