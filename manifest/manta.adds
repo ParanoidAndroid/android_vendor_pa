@@ -4,5 +4,11 @@
         "repository":   "android_packages_apps_paranoidpreferences",
         "target_path":  "packages/apps/ParanoidPreferences",
         "revision":     "jellybean"
+    },
+    {
+        "remote":       "cm",
+        "repository":   "android_kernel_samsung_manta",
+        "target_path":  "kernel/samsung/manta",
+        "revision":     "cm-10.1"
     }
 ]
