@@ -31,10 +31,6 @@ PRODUCT_COPY_FILES +=  \
 # Bring in all video files
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
-# Paranoid Ota
-PRODUCT_COPY_FILES +=  \
-        vendor/pa/prebuilt/common/apk/ParanoidOta.apk:system/app/ParanoidOta.apk
-
 # Exclude prebuilt paprefs from builds if the flag is set
 ifneq ($(PREFS_FROM_SOURCE),true)
     PRODUCT_COPY_FILES += \
@@ -44,6 +40,10 @@ else
     PRODUCT_PACKAGES += \
         ParanoidPreferences
 endif
+
+# ParanoidOTA
+PRODUCT_PACKAGES += \
+    ParanoidOTA
 
 ifneq ($(PARANOID_BOOTANIMATION_NAME),)
     PRODUCT_COPY_FILES += \
@@ -90,7 +90,7 @@ PA_VERSION_MINOR = 6
 PA_VERSION_MAINTENANCE = 8
 PA_PREF_REVISION = 1
 
-TARGET_CUSTOM_RELEASETOOL :=source vendor/pa/tools/squisher
+TARGET_CUSTOM_RELEASETOOL := source vendor/pa/tools/squisher
 
 VERSION := $(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)
 ifeq ($(DEVELOPER_VERSION),true)
