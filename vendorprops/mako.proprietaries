@@ -89,5 +89,12 @@
         "repository":   "hardware/qcom/wlan",
         "target_path":  "hardware/qcom/wlan",
         "branch":       "master"
+    },
+    {
+        "remote":       "aosp",
+        "account":      "platform",
+        "repository":   "hardware/qcom/msm8960/",
+        "target_path":  "hardware/qcom/msm8960/",
+        "branch":       "master"
     }
 ]
