@@ -7,6 +7,13 @@
         "revision":     "jellybean"
     },
     {
+        "remote":       "aosp",
+        "account":      "device",
+        "repository":   "lge/mako-kernel",
+        "target_path":  "device/lge/mako/mako-kernel",
+        "revision":     "android-4.3_r2"
+    },
+    {
         "remote":       "github",
         "account":      "ParanoidAndroid",
         "repository":   "proprietary_vendor_broadcom",
@@ -26,13 +33,6 @@
         "repository":   "proprietary_vendor_widevine",
         "target_path":  "vendor/widevine",
         "revision":     "jellybean"
-    },
-    {
-        "remote":       "aosp",
-        "account":      "device",
-        "repository":   "lge/mako-kernel",
-        "target_path":  "kernel/lge/mako",
-        "branch":       "master"
     },
     {
         "remote":       "aosp",
