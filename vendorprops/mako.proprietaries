@@ -7,11 +7,11 @@
         "revision":     "jellybean"
     },
     {
-        "remote":       "aosp",
-        "account":      "device",
-        "repository":   "lge/mako-kernel",
-        "target_path":  "device/lge/mako/mako-kernel",
-        "revision":     "android-4.3_r2"
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "lge-kernel-mako",
+        "target_path":  "kernel/lge/mako",
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
@@ -56,18 +56,11 @@
         "branch":       "jb-mr2.0-release"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/display",
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "branch":       "master"
-    },
-    {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/gps",
-        "target_path":  "hardware/qcom/gps",
-        "branch":       "jb-mr2.0-release"
+        "branch":       "cm-10.2"
     },
     {
         "remote":       "aosp",
