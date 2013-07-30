@@ -39,14 +39,14 @@
         "account":      "platform",
         "repository":   "hardware/qcom/audio",
         "target_path":  "hardware/qcom/audio",
-        "branch":       "android-4.3_r2.1"
+        "revision":     "69cde0e6efbbc98d412bc54c260e8241ed98248b"
     },
     {
         "remote":       "aosp",
         "account":      "platform",
         "repository":   "hardware/qcom/bt",
         "target_path":  "hardware/qcom/bt",
-        "branch":       "android-4.3_r2.1"
+        "revision":     "5faa2a529b07625c341ee8cee4040c87e030f050"
     },
     {
         "remote":       "aosp",
@@ -67,27 +67,27 @@
         "account":      "platform",
         "repository":   "hardware/qcom/media",
         "target_path":  "hardware/qcom/media",
-        "branch":       "android-4.3_r2.1"
+        "revision":     "19cc13fd201577a813ae367130ee6a9711280a62"
     },
     {
         "remote":       "aosp",
         "account":      "platform",
         "repository":   "hardware/qcom/power",
         "target_path":  "hardware/qcom/power",
-        "branch":       "android-4.3_r2.1"
+        "revision":     "e87aaaf637d7f9f756cff57cfbbfdb44c20adbeb"
     },
     {
         "remote":       "aosp",
         "account":      "platform",
         "repository":   "hardware/qcom/wlan",
         "target_path":  "hardware/qcom/wlan",
-        "branch":       "android-4.3_r2.1"
+        "revision":     "8bff0c0323c62c34621a818dc1e2f863589aab00"
     },
     {
         "remote":       "aosp",
         "account":      "platform",
         "repository":   "hardware/qcom/msm8960/",
         "target_path":  "hardware/qcom/msm8960/",
-        "branch":       "android-4.3_r2.1"
+        "revision":     "e165f7b27e1ecd9582c3e161a1eb932c25057c96"
     }
 ]
