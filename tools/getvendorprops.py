@@ -66,7 +66,7 @@ def add_to_manifest(repositories):
         try:
             repo_revision = repository['revision']
         except:
-            repo_revision = "jellybean"
+            repo_revision = "jb43"
         repo_full = repo_account + '/' + repo_name
         if exists_in_tree(lm, repo_full):
             print '%s already exists' % repo_full

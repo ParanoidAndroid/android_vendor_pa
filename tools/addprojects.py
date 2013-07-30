@@ -71,7 +71,7 @@ def add_to_manifest(repositories):
         try:
             repo_revision = repository['revision']
         except:
-            repo_revision = "jellybean"
+            repo_revision = "jb43"
 
         try:
             repo_account = repository['account']
