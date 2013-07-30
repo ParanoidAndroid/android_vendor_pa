@@ -38,7 +38,7 @@ PRODUCT_NAME := pa_mako
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_ID=JSS15J BUILD_FINGERPRINT="google/occam/mako:4.3/JSS15J/737497:user/release-keys" PRIVATE_BUILD_DESC="occam-user 4.3 JSS15J 737497 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT="google/occam/mako:4.3/JSS15J/737497:user/release-keys" PRIVATE_BUILD_DESC="occam-user 4.3 JSS15J 737497 release-keys"
 
 # Update local_manifest.xml
 GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
