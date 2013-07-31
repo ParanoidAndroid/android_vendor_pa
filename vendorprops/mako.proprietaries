@@ -8,10 +8,10 @@
     },
     {
         "remote":       "github",
-        "account":      "TheMuppets",
+        "account":      "ParanoidAndroid",
         "repository":   "proprietary_vendor_lge",
         "target_path":  "vendor/lge",
-        "revision":     "cm-10.2"
+        "revision":     "jellybean"
     },
     {
         "remote":       "github",
