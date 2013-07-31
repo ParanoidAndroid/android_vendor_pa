@@ -1,5 +1,6 @@
 add_lunch_combo pa_grouper-userdebug
 add_lunch_combo pa_find5-userdebug
+add_lunch_combo pa_flo-userdebug
 add_lunch_combo pa_i9100-userdebug
 add_lunch_combo pa_i9300-userdebug
 add_lunch_combo pa_i9305-userdebug
