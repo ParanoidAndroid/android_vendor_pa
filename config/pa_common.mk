@@ -46,7 +46,8 @@ endif
 
 # embed superuser into settings 
 SUPERUSER_EMBEDDED := true
-
+ PRODUCT_PACKAGES += \
+        su
 # device common prebuilts
 ifneq ($(DEVICE_COMMON),)
     -include vendor/pa/prebuilt/$(DEVICE_COMMON)/prebuilt.mk
@@ -91,7 +92,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(PA_VERSION) \
   ro.pa.family=$(PA_CONF_SOURCE) \
   ro.pa.version=$(VERSION) \
-  ro.papref.revision=$(PA_PREF_REVISION)
+  ro.papref.revision=$(PA_PREF_REVISION) 
+
 
 # goo.im properties
 ifneq ($(DEVELOPER_VERSION),true)
