@@ -23,13 +23,6 @@
     {
         "remote":       "aosp",
         "account":      "platform",
-        "repository":   "hardware/qcom/camera",
-        "target_path":  "hardware/qcom/camera",
-        "branch":       "refs/tags/android-4.3_r2.1"
-    },
-    {
-        "remote":       "aosp",
-        "account":      "platform",
         "repository":   "hardware/qcom/display",
         "target_path":  "hardware/qcom/display",
         "branch":       "refs/tags/android-4.3_r2.1"
@@ -75,5 +68,12 @@
         "repository":   "hardware/qcom/wlan",
         "target_path":  "hardware/qcom/wlan",
         "revision":     "refs/tags/android-4.3_r2.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "TheMuppets",
+        "repository":   "proprietary_vendor_asus",
+        "target_path":  "vendor/asus",
+        "revision":     "cm-10.2"
     }
 ]

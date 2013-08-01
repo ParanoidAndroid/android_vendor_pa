@@ -4,7 +4,6 @@
 service su_daemon /system/xbin/su --daemon
     class main
     oneshot
-    disabled
 
 on init
     export ANDROID_CACHE /cache
@@ -17,9 +16,9 @@ on post-fs-data
     chmod 0771 /cache/dalvik-cache
 
 on boot
+    start su_daemon
     # Run sysinit
     start sysinit
-    start su_daemon
 
     chown system system /sys/block/mmcblk0/queue/scheduler
     chmod 0664 /sys/block/mmcblk0/queue/scheduler
