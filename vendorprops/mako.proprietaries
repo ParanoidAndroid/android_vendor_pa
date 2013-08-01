@@ -9,16 +9,16 @@
     {
         "remote":       "github",
         "account":      "ParanoidAndroid",
-        "repository":   "proprietary_vendor_lge",
-        "target_path":  "vendor/lge",
-        "revision":     "jellybean"
+        "repository":   "lge-kernel-mako",
+        "target_path":  "kernel/lge/mako",
+        "revision":     "jb43"
     },
     {
         "remote":       "github",
         "account":      "ParanoidAndroid",
-        "repository":   "lge-kernel-mako",
-        "target_path":  "kernel/lge/mako",
-        "revision":     "jb43"
+        "repository":   "proprietary_vendor_lge",
+        "target_path":  "vendor/lge",
+        "revision":     "jellybean"
     },
     {
         "remote":       "github",
@@ -71,10 +71,10 @@
     },
     {
         "remote":       "github",
-        "account":      "CyanogenMod",
+        "account":      "ParanoidAndroid",
         "repository":   "android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "branch":       "cm-10.2"
+        "revision":     "jb43"
     },
     {
         "remote":       "aosp",
@@ -117,5 +117,12 @@
         "repository":   "hardware/qcom/sensors",
         "target_path":  "hardware/qcom/sensors",
         "revision":     "07c5bcdb36158e22d33bac02eecd83d4ff1fb2f8"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_packages_apps_Torch",
+        "target_path":  "packages/apps/Torch",
+        "revision":     "cm-10.2"
     }
 ]
