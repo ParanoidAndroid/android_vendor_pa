@@ -84,11 +84,11 @@
         "revision":     "19cc13fd201577a813ae367130ee6a9711280a62"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/power",
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_power",
         "target_path":  "hardware/qcom/power",
-        "revision":     "e87aaaf637d7f9f756cff57cfbbfdb44c20adbeb"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "aosp",
