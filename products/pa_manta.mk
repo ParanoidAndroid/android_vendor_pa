@@ -41,7 +41,7 @@ PRODUCT_NAME := pa_manta
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 10
 PRODUCT_MANUFACTURER := Samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mantaray BUILD_FINGERPRINT="google/mantaray/manta:4.2.2/JDQ39/573038:user/release-keys" PRIVATE_BUILD_DESC="mantaray-user 4.2.2 JDQ39 573038 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mantaray BUILD_FINGERPRINT="google/mantaray/manta:4.3/JWR66V/737497:user/release-keys" PRIVATE_BUILD_DESC="mantaray-user 4.3 JWR66V 737497 release-keys"
 
 # Update local_manifest.xml
 GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
