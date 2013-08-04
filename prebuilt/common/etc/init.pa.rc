@@ -1,9 +1,5 @@
-# Extras
-
-# su daemon
-service su_daemon /system/xbin/su --daemon
-    class main
-    oneshot
+# ParanoidAndroid Extras
+import /init.superuser.rc
 
 on init
     export ANDROID_CACHE /cache
@@ -14,12 +10,12 @@ on post-fs-data
     mkdir /cache/dalvik-cache 0771 system system
     chown system system /cache/dalvik-cache
     chmod 0771 /cache/dalvik-cache
+    mkdir /data/.ssh 0750 root shell
 
-on boot
-    start su_daemon
     # Run sysinit
     start sysinit
 
+on boot
     chown system system /sys/block/mmcblk0/queue/scheduler
     chmod 0664 /sys/block/mmcblk0/queue/scheduler
 
@@ -33,15 +29,16 @@ on boot
     write /sys/kernel/mm/ksm/sleep_millisecs 1500
     write /sys/kernel/mm/ksm/pages_to_scan 256
 
-# sysinit (/system/etc/init.d)
-service sysinit /system/bin/sysinit
-    user root
-    oneshot
-
-# Adb over Network
+# adb over network
 on property:service.adb.tcp.port=5555
     stop adbd
     start adbd
 on property:service.adb.tcp.port=-1
     stop adbd
     start adbd
+
+# sysinit (/system/etc/init.d)
+service sysinit /system/bin/sysinit
+    user root
+    oneshot
+    disabled

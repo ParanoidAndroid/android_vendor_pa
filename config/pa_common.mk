@@ -44,10 +44,17 @@ else
         vendor/pa/prebuilt/common/bootanimation/XHDPI.zip:system/media/bootanimation.zip
 endif
 
-# embed superuser into settings 
+# Embed superuser into settings
 SUPERUSER_EMBEDDED := true
- PRODUCT_PACKAGES += \
-        su
+
+# Enable root for adb+apps
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=3
+
+# Superuser
+PRODUCT_PACKAGES += \
+    su
+
 # device common prebuilts
 ifneq ($(DEVICE_COMMON),)
     -include vendor/pa/prebuilt/$(DEVICE_COMMON)/prebuilt.mk
