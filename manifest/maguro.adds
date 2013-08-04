@@ -4,6 +4,6 @@
         "account":      "CyanogenMod",
         "repository":   "android_packages_apps_Torch",
         "target_path":  "packages/apps/Torch",
-        "revision":     "cm-10.1"
+        "revision":     "cm-10.2"
     }
 ]
