@@ -1,4 +1,4 @@
-# Extra packages from CM-10.1
+# Extra packages from CM-10.2
 PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
