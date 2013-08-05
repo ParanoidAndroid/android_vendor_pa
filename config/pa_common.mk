@@ -1,8 +1,8 @@
 # Set audio
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.config.ringtone=Themos.ogg \
-  ro.config.notification_sound=Proxima.ogg \
-  ro.config.alarm_alert=Cesium.ogg
+    ro.config.ringtone=Themos.ogg \
+    ro.config.notification_sound=Proxima.ogg \
+    ro.config.alarm_alert=Cesium.ogg
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -89,16 +89,7 @@ else
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.modversion=$(PA_VERSION) \
-  ro.pa.family=$(PA_CONF_SOURCE) \
-  ro.pa.version=$(VERSION) \
-  ro.papref.revision=$(PA_PREF_REVISION) 
-
-
-# goo.im properties
-ifneq ($(DEVELOPER_VERSION),true)
-    PRODUCT_PROPERTY_OVERRIDES += \
-      ro.goo.developerid=paranoidandroid \
-      ro.goo.rom=paranoidandroid \
-      ro.goo.version=$(shell date +%s)
-endif
+    ro.modversion=$(PA_VERSION) \
+    ro.pa.family=$(PA_CONF_SOURCE) \
+    ro.pa.version=$(VERSION) \
+    ro.papref.revision=$(PA_PREF_REVISION)
