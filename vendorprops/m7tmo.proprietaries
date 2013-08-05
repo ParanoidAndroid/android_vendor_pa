@@ -37,13 +37,6 @@
     {
         "remote":       "github",
         "account":      "CyanogenMod",
-        "repository":   "android_hardware_qcom_camera",
-        "target_path":  "hardware/qcom/camera",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
         "revision":     "cm-10.2"
