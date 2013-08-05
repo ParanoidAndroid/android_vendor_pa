@@ -1,0 +1,34 @@
+[
+    {
+        "name":     "platform/external/wpa_supplicant_8",
+        "path":     "external/wpa_supplicant_8"
+    },
+    {
+        "name":     "platform/external/yaffs2",
+        "path":     "external/yaffs2"
+    },
+    {
+        "name":     "platform/external/zlib",
+        "path":     "external/zlib"
+    },
+    {
+        "name":     "platform/hardware/broadcom/wlan",
+        "path":     "hardware/broadcom/wlan"
+    },
+    {
+        "name":     "platform/hardware/ti/wlan",
+        "path":     "hardware/ti/wlan"
+    },
+    {
+        "name":     "platform/system/netd",
+        "path":     "system/netd"
+    },
+    {
+        "name":     "platform/bootable/recovery",
+        "path":     "bootable/recovery"
+    },
+    {
+        "name":     "ParanoidAndroid/android_bionic",
+        "path":     "bionic"
+    }
+]
