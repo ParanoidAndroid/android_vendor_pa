@@ -36,7 +36,7 @@
     },
     {
         "remote":       "github",
-        "account":      "ParanoidAndroid",
+        "account":      "CyanogenMod",
         "repository":   "android_device_samsung_smdk4412-common",
         "target_path":  "device/samsung/smdk4412-common",
         "revision":     "cm-10.2"
