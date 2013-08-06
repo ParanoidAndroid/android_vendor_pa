@@ -1,0 +1,16 @@
+[
+    {
+        "remote":       "github",
+        "account":      "franciscofranco",
+        "repository":   "Tuna_JB_pre1",
+        "target_path":  "kernel/samsung/tuna",
+        "revision":     "nightlies-4.3"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_system_netd",
+        "target_path":  "system/netd",
+        "revision":     "cm-10.2"
+    }
+]
