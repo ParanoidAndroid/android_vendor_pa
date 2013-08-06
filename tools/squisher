@@ -111,7 +111,7 @@ echo "ro.pa=true"  >> $REPACK/ota/system/build.prop
 
 # Inject build manifest
 printf "Injecting build manifest..."
-( cd $ANDROID_BUILD_TOP; repo manifest -o $REPACK/ota/system/etc/build-manifest.xml -r . )
+( cd $ANDROID_BUILD_TOP; repo manifest -o $REPACK/ota/system/etc/build-manifest.xml -r )
 
 # Pack it up and sign
 printf "Zipping package..."
