@@ -118,7 +118,10 @@ if [ -f "$ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/boot.img" 
     printf "Copying kernel files for $TARGET_PRODUCT..."
     echo
     cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/boot.img $REPACK/ota/
+    cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/system/bin/* $REPACK/ota/system/bin/
+    cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/system/lib/* $REPACK/ota/system/lib/
     cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/system/lib/modules/* $REPACK/ota/system/lib/modules/
+    cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/system/extras/ext4_utils/* $REPACK/ota/system/extras/ext4_utils/
 fi
 
 # Pack it up and sign
