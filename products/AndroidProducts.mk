@@ -70,3 +70,21 @@ endif
 ifeq (pa_t0lte,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_t0lte.mk
 endif
+ifeq (pa_d2tmo,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_d2tmo.mk
+endif
+ifeq (pa_d2att,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_d2att.mk
+endif
+ifeq (pa_d2spr,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_d2spr.mk
+endif
+ifeq (pa_d2usc,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_d2usc.mk
+endif
+ifeq (pa_d2mtr,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_d2mtr.mk
+endif
+ifeq (pa_d2vzw,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_d2vzw.mk
+endif
