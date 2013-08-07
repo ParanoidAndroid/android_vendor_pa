@@ -50,6 +50,11 @@ else
         vendor/pa/prebuilt/common/bootanimation/XHDPI.zip:system/media/bootanimation.zip
 endif
 
+# CM Hardware Abstraction Framework 
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
+
 # Embed superuser into settings
 SUPERUSER_EMBEDDED := true
 
