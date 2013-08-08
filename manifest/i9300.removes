@@ -1,26 +1,30 @@
 [
     {
-        "name":     "platform/frameworks/av",
-        "path":     "frameworks/av"
+        "name":     "platform/external/wpa_supplicant_8",
+        "path":     "external/wpa_supplicant_8"
     },
     {
-        "name":     "ParanoidAndroid/android_frameworks_native",
-        "path":     "frameworks/native"
+        "name":     "platform/external/zlib",
+        "path":     "external/zlib"
     },
     {
-        "name":     "platform/hardware/libhardware",
-        "path":     "hardware/libhardware"
+        "name":     "platform/hardware/broadcom/wlan",
+        "path":     "hardware/broadcom/wlan"
     },
     {
-        "name":     "platform/hardware/libhardware_legacy",
-        "path":     "hardware/libhardware_legacy"
+        "name":     "platform/hardware/ti/wlan",
+        "path":     "hardware/ti/wlan"
     },
     {
-        "name":     "device/common",
-        "path":     "device/common"
+        "name":     "platform/system/netd",
+        "path":     "system/netd"
     },
     {
-        "name":     "ParanoidAndroid/android_frameworks_opt_telephony",
-        "path":     "frameworks/opt/telephony"
+	"name":     "device/generic/armv7-a-neon"
+	"path":     "device/generic/armv7-a-neon"
+    },
+    {
+        "name":     "device/generic/common"
+        "path":     "device/generic/common"
     }
 ]
