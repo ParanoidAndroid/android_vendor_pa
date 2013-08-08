@@ -38,6 +38,7 @@ PRODUCT_MANUFACTURER := Oppo
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT=OPPO/oppo_12069/FIND5:4.1.1/JRO03L/1362469752:user/release-keys PRIVATE_BUILD_DESC="msm8960-user 4.1.1 JRO03L eng.oppo.20130328.172033 release-keys"
 PRIVATE_BUILD_DESC="nakasi-user 4.2 JOP40C 527662 release-keys"
 
-GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
+# Include ParanoidAndroid repos configuration
+include vendor/pa/config/pa_addons.mk
 
 endif

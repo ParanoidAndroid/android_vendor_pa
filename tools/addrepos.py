@@ -6,13 +6,7 @@ import json
 import re
 from xml.etree import ElementTree
 
-target = sys.argv[1];
-
-try:
-    def_file = target[target.index("_") + 1:]
-    def_file = def_file + ".adds"
-except:
-    def_file = target
+syncable_repos = []
 
 def exists_in_tree(lm, repository):
     for child in lm.getchildren():
@@ -36,16 +30,21 @@ def indent(elem, level=0):
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
 
-def is_in_manifest(projectname):
+def is_in_manifest(projectname, type=""):
     try:
         lm = ElementTree.parse(".repo/local_manifests/roomservice.xml")
         lm = lm.getroot()
     except:
         lm = ElementTree.Element("manifest")
 
-    for localpath in lm.findall("project"):
-        if localpath.get("name") == projectname:
-            return 1
+    if type == "remove":
+        for localpath in lm.findall("remove-project"):
+            if localpath.get("name")[localpath.get("name").find('/')+1:] == projectname:
+                return 1
+    else:
+        for localpath in lm.findall("project"):
+            if localpath.get("name") == projectname:
+                return 1
 
     return None
 
@@ -80,8 +79,11 @@ def add_to_manifest(repositories):
             repo_full = repo_name
 
         if exists_in_tree(lm, repo_full):
-            print '%s already exists' % repo_full
-            continue
+            if is_in_manifest(repo_name, "remove"):
+                print '%s exists but as remove-project' % repo_full
+            else:
+                print '%s already exists' % repo_full
+                continue
 
         print 'Adding project: %s -> %s' % (repo_full, repo_target)
         project = ElementTree.Element("project", attrib = { "path": repo_target,
@@ -102,9 +104,8 @@ def add_to_manifest(repositories):
 
 def fetch_extras(def_file):
     print 'Looking for add projects entries'
-    projects_path = 'vendor/pa/manifest/' + def_file
+    projects_path = 'vendor/pa/manifests/' + def_file
 
-    syncable_repos = []
 
     if os.path.exists(projects_path):
         projects_file = open(projects_path, 'r')
@@ -134,9 +135,16 @@ def fetch_extras(def_file):
     else:
         print 'add projects definition file not found, bailing out.'
 
-    if len(syncable_repos) > 0:
-        print 'Syncing projects'
-        os.system('repo sync %s' % ' '.join(syncable_repos))
+for target in sys.argv[1:]:
+    try:
+        def_file = target[target.index("_") + 1:]
+        def_file = def_file + ".adds"
+    except:
+        def_file = target + ".adds"
 
+    print 'Add projects definition from %s' % def_file
+    fetch_extras(def_file)
 
-fetch_extras(def_file)
+if len(syncable_repos) > 0:
+    print 'Syncing projects'
+    os.system('repo sync %s' % ' '.join(syncable_repos))

@@ -6,14 +6,6 @@ import json
 import re
 from xml.etree import ElementTree
 
-target = sys.argv[1];
-
-try:
-    def_file = target[target.index("_") + 1:]
-    def_file = def_file + ".removes"
-except:
-    def_file = target
-
 def exists_in_tree(lm, repository):
     for child in lm.getchildren():
         if child.attrib['name'].endswith(repository):
@@ -36,7 +28,7 @@ def indent(elem, level=0):
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
 
-def name_in_manifest(projectname):
+def is_in_manifest(projectname):
     try:
         lm = ElementTree.parse(".repo/local_manifests/roomservice.xml")
         lm = lm.getroot()
@@ -83,7 +75,7 @@ def add_to_manifest(repositories):
 
 def process_removes(def_file):
     print 'Looking for remove projects entries'
-    projects_path = 'vendor/pa/manifest/' + def_file
+    projects_path = 'vendor/pa/manifests/' + def_file
 
     if os.path.exists(projects_path):
         projects_file = open(projects_path, 'r')
@@ -93,7 +85,7 @@ def process_removes(def_file):
         for project in projects:
             repo_name = project['name']
             print '  Check for %s in local_manifest' % repo_name
-            if not name_in_manifest(repo_name):
+            if not is_in_manifest(repo_name):
                 fetch_list.append(project)
             else:
                 print '  %s already in local_manifest' % repo_name
@@ -106,4 +98,12 @@ def process_removes(def_file):
     else:
         print 'remove projects definition file not found, bailing out.'
 
-process_removes(def_file)
+for target in sys.argv[1:]:
+    try:
+        def_file = target[target.index("_") + 1:]
+        def_file = def_file + ".removes"
+    except:
+        def_file = target + ".removes"
+
+    print 'Remove projects definition from %s' % def_file
+    process_removes(def_file)

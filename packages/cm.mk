@@ -1,9 +1,21 @@
-# Extra packages from CM-10.2
+# Required CM packages
+#PRODUCT_PACKAGES += \
+#    Focal \
+#    Development \
+#    LatinIME \
+#    Superuser \
+#    su
+
+# Optional CM packages
+#PRODUCT_PACKAGES += \
+#    VoicePlus \
+#    VideoEditor \
+#    VoiceDialer \
+#    SoundRecorder \
+#    Basic
+
+# Extra tools in CM
 PRODUCT_PACKAGES += \
-    DSPManager \
-    libcyanogen-dsp \
-    CMFileManager \
-    Torch \
     openvpn \
     e2fsck \
     mke2fs \
@@ -14,11 +26,22 @@ PRODUCT_PACKAGES += \
     htop \
     powertop \
     lsof \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat \
+    ntfsfix \
+    ntfs-3g
+
+# Openssh
+PRODUCT_PACKAGES += \
     scp \
     sftp \
     ssh \
     sshd \
     sshd_config \
     ssh-keygen \
-    start-ssh \
+    start-ssh
+
+# rsync
+PRODUCT_PACKAGES += \
     rsync
