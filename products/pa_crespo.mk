@@ -22,16 +22,13 @@ PARANOID_BOOTANIMATION_NAME := HDPI
 OVERLAY_TARGET := pa_hdpi
 
 # Build paprefs from sources
-PREFS_FROM_SOURCE := false
+PREFS_FROM_SOURCE ?= true
 
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
 # Inherit AOSP device configuration
 $(call inherit-product, device/samsung/crespo/full_crespo.mk)
-
-# Product Package Extras - Repos can be added manually or via addprojects.py
--include vendor/pa/packages/cm.mk
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_crespo
@@ -40,9 +37,7 @@ PRODUCT_MODEL := Nexus S
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_FINGERPRINT="google/soju/crespo:4.1.2/JZO54K/485486:user/release-keys" PRIVATE_BUILD_DESC="soju-user 4.1.2 JZO54K 485486 release-keys"
 
-# Update local_manifest.xml
-GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
-GET_CM_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py cm.adds)
+# Include ParanoidAndroid repos configuration
+include vendor/pa/config/pa_addons.mk
 
 endif
-

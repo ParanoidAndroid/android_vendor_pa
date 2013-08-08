@@ -38,7 +38,7 @@ PRODUCT_MANUFACTURER := Asus
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasig/tilapia:4.3/JSS15J/737497:user/release-keys"
 PRIVATE_BUILD_DESC="nakasi-user 4.3 JSS15J 737497 release-keys"
 
-GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
+# Include ParanoidAndroid repos configuration
+include vendor/pa/config/pa_addons.mk
 
 endif
-

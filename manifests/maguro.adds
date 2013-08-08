@@ -1,6 +1,19 @@
 [
     {
         "remote":       "github",
+        "account":      "franciscofranco",
+        "repository":   "Tuna_JB_pre1",
+        "target_path":  "kernel/samsung/tuna",
+        "revision":     "nightlies-4.3"
+    },
+    {
+        "remote":       "cm",
+        "repository":   "android_packages_apps_Torch",
+        "target_path":  "packages/apps/Torch",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
         "account":      "TheMuppets",
         "repository":   "proprietary_vendor_samsung",
         "target_path":  "vendor/samsung",

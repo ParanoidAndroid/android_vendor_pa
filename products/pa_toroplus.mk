@@ -30,12 +30,6 @@ include vendor/pa/config/pa_common.mk
 # Inherit AOSP device configuration
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
-# Product Package Extras - Repos can be added manually or via addprojects.py
--include vendor/pa/packages/toroplus.mk
-
-# CM Package Extras
--include vendor/pa/packages/cm.mk
-
 # Override AOSP build properties
 PRODUCT_NAME := pa_toroplus
 PRODUCT_BRAND := Google
@@ -43,11 +37,7 @@ PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_FINGERPRINT="google/yakju/maguro:4.3/JSS15J/737497:user/release-keys" PRIVATE_BUILD_DESC="yakju-user 4.3 JSS15J 737497 release-keys"
 
-# Update local_manifest.xml
-GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
-GET_PROJECT_RMS := $(shell vendor/pa/tools/removeprojects.py $(PRODUCT_NAME))
-GET_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py $(PRODUCT_NAME))
-GET_CM_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py cm.adds)
+# Include ParanoidAndroid repos configuration
+include vendor/pa/config/pa_addons.mk
 
 endif
-
