@@ -9,5 +9,5 @@ REPOS_LIST += cm
 endif
 
 # Remove/Get extra repos (roomservice.xml)
-ADD_REPOS := $(shell vendor/pa/tools/removerepos.py $(REPOS_LIST))
-REMOVE_REPOS := $(shell vendor/pa/tools/addrepos.py $(REPOS_LIST))
+REMOVE_REPOS := $(shell vendor/pa/tools/removeprojects.py $(REPOS_LIST))
+ADD_REPOS    := $(shell vendor/pa/tools/addprojects.py    $(REPOS_LIST))
