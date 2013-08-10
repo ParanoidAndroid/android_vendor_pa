@@ -1,20 +1,6 @@
 [
     {
         "remote":       "github",
-        "account":      "ParanoidAndroid",
-        "repository":   "android_device_samsung_toro",
-        "target_path":  "device/samsung/toro",
-        "revision":     "jb43"
-    },
-    {
-        "remote":       "github",
-        "account":      "ParanoidAndroid",
-        "repository":   "android_device_samsung_tuna",
-        "target_path":  "device/samsung/tuna",
-        "revision":     "jb43"
-    },
-    {
-        "remote":       "github",
         "account":      "franciscofranco",
         "repository":   "Tuna_JB_pre1",
         "target_path":  "kernel/samsung/tuna",
