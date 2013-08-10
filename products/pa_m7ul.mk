@@ -29,8 +29,8 @@ include vendor/pa/config/pa_common.mk
 
 $(call inherit-product, device/htc/m7ul/full_m7ul.mk)
 
-# CM Extras
--include vendor/pa/packages/cm.mk
+# Include CM extras
+EXTRA_CM_PACKAGES ?= true
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_m7ul
@@ -39,9 +39,7 @@ PRODUCT_MODEL := HTC One
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=m7ul TARGET_DEVICE=m7ul BUILD_ID=JZO54K BUILD_FINGERPRINT="htc_europe/m7/m7:4.1.2/JZO54K/177101.12:user/release-keys" PRIVATE_BUILD_DESC="1.29.401.12 CL177101 release-keys"
 
-# Update local_manifest.xml
-GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
-GET_PROJECT_RMS := $(shell vendor/pa/tools/removeprojects.py $(PRODUCT_NAME))
-GET_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py $(PRODUCT_NAME))
+# Include ParanoidAndroid repos configuration
+include vendor/pa/config/pa_addons.mk
 
 endif

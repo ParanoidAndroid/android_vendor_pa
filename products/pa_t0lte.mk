@@ -27,14 +27,11 @@ PREFS_FROM_SOURCE ?= false
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
-# Include missing proprietaries
-#PRODUCT_COPY_FILES += \
-
 # Inherit AOSP device configuration
 $(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
 
-# CM Package Extras
--include vendor/pa/packages/cm.mk
+# Include CM extras
+EXTRA_CM_PACKAGES ?= true
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_t0lte
@@ -44,6 +41,9 @@ PRODUCT_MANUFACTURER := samsung
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=t0lte TARGET_DEVICE=t0lte BUILD_FINGERPRINT="samsung/t0ltexx/t0lte:4.1.2/JZO54K/N7105XXDLL4:user/release-keys" PRIVATE_BUILD_DESC="t0ltexx-user 4.1.2 JZO54K N7105XXDLL4 release-keys"
+
+# Include ParanoidAndroid repos configuration
+include vendor/pa/config/pa_addons.mk
 
 endif
 

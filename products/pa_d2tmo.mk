@@ -34,9 +34,8 @@ include vendor/pa/config/pa_common.mk
 # Inherit from d2tmo device
 $(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
 
-# CM Package Extras
--include vendor/pa/packages/cm.mk
-
+# Include CM extras
+EXTRA_CM_PACKAGES ?= true
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_d2tmo
@@ -50,9 +49,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="samsung/d2uc/d2att:4.1.2/JZO54K/T999UVDMD5:user/release-keys" \
     PRIVATE_BUILD_DESC="d2uc-user 4.1.2 JZO54K T999UVDMD5 release-keys"
 
-# Update local_manifest.xml
-GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
-GET_PROJECT_RMS := $(shell vendor/pa/tools/removeprojects.py $(PRODUCT_NAME))
-GET_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py $(PRODUCT_NAME))
-GET_CM_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py cm.adds)
+# Include ParanoidAndroid repos configuration
+include vendor/pa/config/pa_addons.mk
+
 endif

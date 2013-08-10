@@ -33,8 +33,9 @@ include vendor/pa/config/pa_common.mk
 
 # Inherit from d2att device
 $(call inherit-product, device/samsung/d2att/full_d2att.mk)
-# CM Package Extras
--include vendor/pa/packages/cm.mk
+
+# Include CM extras
+EXTRA_CM_PACKAGES ?= true
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_d2att
@@ -48,10 +49,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="samsung/d2uc/d2att:4.1.1/JRO03L/I747UCDLK3:user/release-keys" \
     PRIVATE_BUILD_DESC="d2uc-user 4.1.1 JRO03L I747UCDLK3 release-keys"
 
-# Update local_manifest.xml
-GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
-GET_PROJECT_RMS := $(shell vendor/pa/tools/removeprojects.py $(PRODUCT_NAME))
-GET_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py $(PRODUCT_NAME))
-GET_CM_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py cm.adds)
+# Include ParanoidAndroid repos configuration
+include vendor/pa/config/pa_addons.mk
 
 endif

@@ -34,10 +34,11 @@ include vendor/pa/config/pa_common.mk
 # Inherit from d2vzw device
 $(call inherit-product, device/samsung/d2vzw/full_d2vzw.mk)
 
-# CM Package Extras
--include vendor/pa/packages/cm.mk
 # Inherit CDMA apns.
 -include vendor/pa/config/cdma.mk
+
+# Include CM extras
+EXTRA_CM_PACKAGES ?= true
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_d2vzw
@@ -47,9 +48,7 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SCH-I535
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2vzw TARGET_DEVICE=d2vzw BUILD_FINGERPRINT="Verizon/d2vzw/d2vzw:4.1.2/JZO54K/I535VRBMF1:user/release-keys" PRIVATE_BUILD_DESC="d2vzw-user 4.1.2 JZO54K I535VRBMF1 release-keys"
 
-# Update local_manifest.xml
-GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))
-GET_PROJECT_RMS := $(shell vendor/pa/tools/removeprojects.py $(PRODUCT_NAME))
-GET_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py $(PRODUCT_NAME))
-GET_CM_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py cm.adds)
+# Include ParanoidAndroid repos configuration
+include vendor/pa/config/pa_addons.mk
+
 endif

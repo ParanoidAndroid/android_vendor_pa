@@ -4,10 +4,6 @@
         "path":     "packages/inputmethods/LatinIME"
     },
     {
-        "name":     "platform/external/e2fsprogs",
-        "path":     "external/e2fsprogs"
-    },
-    {
         "name":     "platform/external/openssh",
         "path":     "external/openssh"
     },
