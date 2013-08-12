@@ -6,6 +6,10 @@
 #    Superuser \
 #    su
 
+# Useful CM packages
+PRODUCT_PACKAGES += \
+    CMFileManager
+
 # Optional CM packages
 #PRODUCT_PACKAGES += \
 #    VoicePlus \
