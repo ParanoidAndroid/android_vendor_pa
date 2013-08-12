@@ -4,21 +4,21 @@
         "account":      "Ayysir",
         "repository":   "android_system_core",
         "target_path":  "system/core",
-	"revision":     "exp"
+        "revision":     "exp"
     },
     {
         "remote":       "github",
         "account":      "Ayysir",
         "repository":   "android_build",
         "target_path":  "build",
-	"revision":     "jb43-legacy"
+        "revision":     "jb43-legacy"
     },
     {
         "remote":       "github",
         "account":      "CyanogenMod",
         "repository":   "android_device_generic_armv7-a-neon",
         "target_path":  "device/generic/armv7-a-neon",
-	"revision":     "cm-10.2"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
@@ -51,15 +51,15 @@
     {
         "remote":       "github",
         "account":      "Ayysir",
-        "repository":   "android_device_samsung_d2mtr",
-        "target_path":  "device/samsung/d2mtr",
+        "repository":   "android_device_samsung_jflteatt",
+        "target_path":  "device/samsung/jflteatt",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
         "account":      "Ayysir",
-        "repository":   "android_device_samsung_d2-common",
-        "target_path":  "device/samsung/d2-common",
+        "repository":   "android_device_samsung_jf-common",
+        "target_path":  "device/samsung/jf-common",
         "revision":     "cm-10.2"
     },
     {
@@ -163,8 +163,8 @@
     {
         "remote":       "github",
         "account":      "Ayysir",
-        "repository":   "android_kernel_samsung_d2",
-        "target_path":  "kernel/samsung/d2",
+        "repository":   "android_kernel_samsung_jf",
+        "target_path":  "kernel/samsung/jf",
         "revision":     "cm-10.2"
     },
     {

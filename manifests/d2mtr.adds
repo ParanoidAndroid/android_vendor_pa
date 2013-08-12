@@ -4,21 +4,21 @@
         "account":      "Ayysir",
         "repository":   "android_system_core",
         "target_path":  "system/core",
-	    "revision":     "exp"
+        "revision":     "exp"
     },
     {
         "remote":       "github",
         "account":      "Ayysir",
         "repository":   "android_build",
         "target_path":  "build",
-	    "revision":     "jb43-legacy"
+	"revision":     "jb43-legacy"
     },
     {
         "remote":       "github",
         "account":      "CyanogenMod",
         "repository":   "android_device_generic_armv7-a-neon",
         "target_path":  "device/generic/armv7-a-neon",
-	    "revision":     "cm-10.2"
+	"revision":     "cm-10.2"
     },
     {
         "remote":       "github",
@@ -165,6 +165,34 @@
         "account":      "Ayysir",
         "repository":   "android_kernel_samsung_d2",
         "target_path":  "kernel/samsung/d2",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_external_wpa_supplicant_8",
+        "target_path":  "external/wpa_supplicant_8",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_external_wpa_supplicant_8_ti",
+        "target_path":  "external/wpa_supplicant_8_ti",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_broadcom_wlan",
+        "target_path":  "hardware/broadcom/wlan",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_ti_wlan",
+        "target_path":  "hardware/ti/wlan",
         "revision":     "cm-10.2"
     }
 ]
