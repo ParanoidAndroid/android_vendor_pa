@@ -1,8 +1,8 @@
 [
     {
         "remote":       "github",
-        "account":      "franciscofranco",
-        "repository":   "Tuna_JB_pre1",
+        "account":      "BigBrother1984",
+        "repository":   "PA-Tuna-franco.kernel",
         "target_path":  "kernel/samsung/tuna",
         "revision":     "nightlies-4.3"
     },
