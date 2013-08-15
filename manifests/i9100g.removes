@@ -1,0 +1,34 @@
+[
+    {
+        "name":     "platform/hardware/broadcom/wlan",
+        "path":     "hardware/broadcom/wlan"
+    },
+    {
+        "name":     "platform/hardware/ti/wlan",
+        "path":     "hardware/ti/wlan"
+    },
+    {
+        "name":     "platform/external/wpa_supplicant_8",
+        "path":     "external/wpa_supplicant_8"
+    },
+    {
+        "name":     "platform/external/sepolicy",
+        "path":     "external/sepolicy"
+    },
+    {
+        "name":     "platform/external/libselinux",
+        "path":     "external/libselinux"
+    },
+    {
+        "name":     "platform/hardware/ti/omap4xxx",
+        "path":     "hardware/ti/omap4xxx"
+    },
+    {
+        "name":     "device/generic/armv7-a-neon",
+        "path":     "device/generic/armv7-a-neon"
+    },
+    {
+        "name":     "device/generic/common",
+        "path":     "device/generic/common"
+    }
+]
