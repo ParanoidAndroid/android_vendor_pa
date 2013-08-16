@@ -79,6 +79,7 @@ BOARD := $(subst pa_,,$(TARGET_PRODUCT))
 
 # ParanoidAndroid Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
 
 # Allow device family to add overlays and use a same prop.conf
