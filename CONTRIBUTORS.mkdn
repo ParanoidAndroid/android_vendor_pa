@@ -1,0 +1,20 @@
+ParanoidAndroid
+===============
+
+Maintainers:
+-----------------------------
+* __Nexus 4:__ molescoming
+
+General developers:
+-------------------
+* __UI Team:__ molescoming, all
+* __System Team:__ molescoming, all
+
+Translators:
+------------
+* __English:__ Anonymous
+
+Credits:
+--------
+* __vendor_pa:__ CM
+* __build:__ CM

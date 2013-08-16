@@ -1,0 +1,12 @@
+ParanoidAndroid
+===============
+
+Visit http://github.com/ParanoidAndroid for full changelogs and git access.
+
+Visit http://review.paranoidandroid.ca for our Gerrit instance.
+
+CHANGELOG (notable new features)
+---------
+
+### 3.9.6
+* Common: Android 4.3 (Google)
