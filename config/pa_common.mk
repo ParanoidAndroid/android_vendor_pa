@@ -100,6 +100,11 @@ PRODUCT_COPY_FILES += \
 else
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# SIM Toolkit
+PRODUCT_PACKAGES += \
+    Stk \
+    CellBroadcastReceiver
 endif
 
 # Copy ParanoidPreferences overlays
