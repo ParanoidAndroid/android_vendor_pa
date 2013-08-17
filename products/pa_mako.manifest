@@ -1,10 +1,5 @@
 [
-    {
-        "remote":       "cm",
-        "repository":   "android_packages_apps_Torch",
-        "target_path":  "packages/apps/Torch",
-        "revision":     "cm-10.2"
-    },
+  [
     {
         "remote":       "github",
         "account":      "ParanoidAndroid",
@@ -90,4 +85,7 @@
         "target_path":  "hardware/qcom/sensors",
         "revision":     "refs/tags/android-4.3_r1"
     }
+  ],
+  [
+  ]
 ]

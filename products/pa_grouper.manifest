@@ -1,4 +1,5 @@
 [
+  [
     {
         "remote":       "github",
         "account":      "TheMuppets",
@@ -48,4 +49,7 @@
         "target_path":  "vendor/widevine",
         "revision":     "cm-10.2"
     }
+  ],
+  [
+  ]
 ]

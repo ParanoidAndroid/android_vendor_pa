@@ -1,22 +1,10 @@
-# Required CM packages
-#PRODUCT_PACKAGES += \
-#    Focal \
-#    Development \
-#    LatinIME \
-#    Superuser \
-#    su
-
-# Useful CM packages
+# Basic CM packages
 PRODUCT_PACKAGES += \
     CMFileManager
-
-# Optional CM packages
-#PRODUCT_PACKAGES += \
-#    VoicePlus \
-#    VideoEditor \
-#    VoiceDialer \
-#    SoundRecorder \
-#    Basic
+#    Basic \
+#    Development \
+#    Focal \
+#    VoicePlus
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \

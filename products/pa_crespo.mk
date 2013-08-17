@@ -37,7 +37,7 @@ PRODUCT_MODEL := Nexus S
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_FINGERPRINT="google/soju/crespo:4.1.2/JZO54K/485486:user/release-keys" PRIVATE_BUILD_DESC="soju-user 4.1.2 JZO54K 485486 release-keys"
 
-# Include ParanoidAndroid repos configuration
-include vendor/pa/config/pa_addons.mk
+# Include ParanoidAndroid roomservice
+include vendor/pa/config/pa_roomservice.mk
 
 endif

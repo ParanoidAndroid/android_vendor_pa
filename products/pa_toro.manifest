@@ -1,4 +1,19 @@
 [
+  [
+    {
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
+        "repository":   "android_device_samsung_toro",
+        "target_path":  "device/samsung/toro",
+        "revision":     "jb43"
+    },
+    {
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
+        "repository":   "android_device_samsung_tuna",
+        "target_path":  "device/samsung/tuna",
+        "revision":     "jb43"
+    },
     {
         "remote":       "github",
         "account":      "BigBrother1984",
@@ -60,4 +75,11 @@
         "target_path":  "vendor/widevine",
         "revision":     "cm-10.2"
     }
+  ],
+  [
+    {
+        "name":     "platform/system/netd",
+        "path":     "system/netd"
+    }
+  ]
 ]

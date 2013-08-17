@@ -1,16 +1,25 @@
 [
+  [
+    {
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
+        "repository":   "android_device_samsung_maguro",
+        "target_path":  "device/samsung/maguro",
+        "revision":     "jb43"
+    },
+    {
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
+        "repository":   "android_device_samsung_tuna",
+        "target_path":  "device/samsung/tuna",
+        "revision":     "jb43"
+    },
     {
         "remote":       "github",
         "account":      "BigBrother1984",
         "repository":   "PA-Tuna-franco.kernel",
         "target_path":  "kernel/samsung/tuna",
         "revision":     "nightlies-4.3"
-    },
-    {
-        "remote":       "cm",
-        "repository":   "android_packages_apps_Torch",
-        "target_path":  "packages/apps/Torch",
-        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
@@ -54,4 +63,7 @@
         "target_path":  "vendor/widevine",
         "revision":     "cm-10.2"
     }
+  ],
+  [
+  ]
 ]

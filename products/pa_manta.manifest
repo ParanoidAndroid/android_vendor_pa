@@ -1,4 +1,5 @@
 [
+  [
     {
         "remote":       "cm",
         "repository":   "android_kernel_samsung_manta",
@@ -26,4 +27,7 @@
         "target_path":  "vendor/samsung",
         "revision":     "cm-10.2"
     }
+  ],
+  [
+  ]
 ]

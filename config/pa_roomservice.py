@@ -7,6 +7,7 @@ import re
 from xml.etree import ElementTree
 
 syncable_repos = []
+fetch_list = []
 
 def exists_in_tree(lm, repository):
     for child in lm.getchildren():
@@ -48,7 +49,7 @@ def is_in_manifest(projectname, type=""):
 
     return None
 
-def add_to_manifest(repositories):
+def add_projects(repositories):
     if not os.path.exists(".repo/local_manifests/"):
         os.makedirs(".repo/local_manifests/")
 
@@ -80,12 +81,12 @@ def add_to_manifest(repositories):
 
         if exists_in_tree(lm, repo_full):
             if is_in_manifest(repo_name, "remove"):
-                print '%s exists but as remove-project' % repo_full
+                print '[%s] exists but as remove-project' % repo_full
             else:
-                print '%s already exists' % repo_full
+                print '[%s] already exists' % repo_full
                 continue
 
-        print 'Adding project: %s -> %s' % (repo_full, repo_target)
+        print 'Adding project: [%s] -> [%s]' % (repo_full, repo_target)
         project = ElementTree.Element("project", attrib = { "path": repo_target,
             "remote": repo_remote, "name": repo_full, "revision": repo_revision })
 
@@ -102,48 +103,87 @@ def add_to_manifest(repositories):
     f.write(raw_xml)
     f.close()
 
-def fetch_extras(def_file):
-    print 'Looking for add projects entries'
-    projects_path = 'vendor/pa/manifests/' + def_file
+def remove_projects(repositories):
+    if not os.path.exists(".repo/local_manifests/"):
+        os.makedirs(".repo/local_manifests/")
 
+    try:
+        lm = ElementTree.parse(".repo/local_manifests/roomservice.xml")
+        lm = lm.getroot()
+    except:
+        lm = ElementTree.Element("manifest")
 
-    if os.path.exists(projects_path):
-        projects_file = open(projects_path, 'r')
+    for repository in repositories:
+        repo_name = repository['name']
+        if exists_in_tree(lm, repo_name):
+            print '[%s] already exists' % repo_name
+            continue
+
+        print 'Adding remove-project: [%s]' % (repo_name)
+        project = ElementTree.Element("remove-project", attrib = { "name": repo_name })
+
+        if 'branch' in repository:
+            project.set('revision',repository['branch'])
+
+        lm.insert(0,project)
+
+    indent(lm, 0)
+    raw_xml = ElementTree.tostring(lm)
+    raw_xml = '<?xml version="1.0" encoding="UTF-8"?>\n' + raw_xml
+
+    f = open('.repo/local_manifests/roomservice.xml', 'w')
+    f.write(raw_xml)
+    f.close()
+
+def process_projects(manifest):
+    print 'Looking for remove/add projects entries from [%s]' % manifest
+
+    if os.path.exists(manifest):
+        projects_file = open(manifest, 'r')
         projects = json.loads(projects_file.read())
-        fetch_list = []
 
-        for project in projects:
+        # Removing projects
+        fetch_list = []
+        for project in projects[1]:
+            repo_name = project['name']
+            print '  Check for [%s] in local_manifest' % repo_name
+            if not is_in_manifest(repo_name):
+                fetch_list.append(project)
+            else:
+                print '  [%s] already in local_manifest' % repo_name
+
+        if len(fetch_list) > 0:
+            print 'Adding remove-project entries to local_manifest'
+            remove_projects(fetch_list)
+
+        # Adding projects
+        fetch_list = []
+        for project in projects[0]:
             try:
                 repo_account = project['account']
                 repo_full = repo_account + '/' + project['repository']
             except:
                 repo_full = project['repository']
 
-            print '  Check for %s in local_manifest' % repo_full
+            print '  Check for [%s] in local_manifest' % repo_full
             if not is_in_manifest(repo_full):
-                print 'Appending %s to fetch_list and %s to syncable_repos' % (repo_full, project['target_path'])
+                print 'Appending [%s] to fetch_list and [%s] to syncable_repos' % (repo_full, project['target_path'])
                 fetch_list.append(project)
                 syncable_repos.append(project['target_path'])
             else:
-                print '  %s already in local_manifest' % repo_full
-
-        projects_file.close()
+                print '  [%s] already in local_manifest' % repo_full
 
         if len(fetch_list) > 0:
             print 'Adding projects to local_manifest'
-            add_to_manifest(fetch_list)
+            add_projects(fetch_list)
+
+        projects_file.close()
     else:
-        print 'add projects definition file not found, bailing out.'
+        print 'Projects definition file [%s] not found, skipping.' % manifest
 
 for target in sys.argv[1:]:
-    try:
-        def_file = target[target.index("_") + 1:]
-        def_file = def_file + ".adds"
-    except:
-        def_file = target + ".adds"
-
-    print 'Add projects definition from %s' % def_file
-    fetch_extras(def_file)
+    process_projects('vendor/pa/' + target + ".manifest")
+    process_projects('vendor/pa/' + target + "_extra.manifest")
 
 if len(syncable_repos) > 0:
     print 'Syncing projects'

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Version 2.0.4
+# Version 2.0.5
 
 # We don't allow scrollback buffer
 echo -e '\0033\0143'
@@ -25,19 +25,47 @@ txtrst=$(tput sgr0)             # Reset
 
 # Local defaults, can be overriden by environment
 : ${PREFS_FROM_SOURCE:="false"}
-: ${EXTRA_CM_PACKAGES:="true"}
+: ${VENDOR_PACKAGES_LIST:="cm"}
 : ${NO_OTA_BUILD:="true"}
+: ${LOCAL_JDK:="jdk"}
+: ${LOCAL_JDK_FORCE:="false"}
 : ${USE_CCACHE:="true"}
 : ${CCACHE_NOSTATS:="false"}
 : ${CCACHE_DIR:="$(dirname $OUT)/ccache"}
 : ${THREADS:="$(cat /proc/cpuinfo | grep "^processor" | wc -l)"}
 
-# If there is more than one jdk installed, use latest 6.x
-if [ "`update-alternatives --list javac | wc -l`" -gt 1 ]; then
+# First try already installed local JDK
+if [ -d "$(dirname ${LOCAL_JDK}/bin/javac)" ]; then
+	echo -e "${bldblu}Local JDK [${LOCAL_JDK}] will be used.${txtrst}"
+	JDK6=`cd $(dirname ${LOCAL_JDK}/bin/javac); pwd`
+	JRE6=`cd $(dirname ${JDK6}/../jre/bin/java); pwd`
+	export PATH=${JDK6}:${JRE6}:$PATH
+# If local JDK forced or there is no system wide JDK, install latest 6.x vesion in tree
+elif [ "${LOCAL_JDK_FORCE}" == "true" ] || [ "`update-alternatives --list javac | wc -l`" -lt 1 ]; then
+	echo -e "${bldblu}Downloading and installing latest JDK 6.x version into [${LOCAL_JDK}]...${txtrst}"
+	jinst="jdk-6u45-linux-x64.bin"
+	jurl="http://download.oracle.com/otn-pub/java/jdk/6u45-b06/$jinst"
+	jver="jdk1.6.0_45"
+
+	wget --unlink --timestamping -q --no-cookies --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com" "$jurl"
+	chmod +x ${jinst}
+	./${jinst} &> /dev/null
+	rm -rf ${jdk}
+	mv ${jver} ${LOCAL_JDK}
+
+	JDK6=`cd $(dirname ${LOCAL_JDK}/bin/javac); pwd`
+	JRE6=`cd $(dirname ${JDK6}/../jre/bin/java); pwd`
+	export PATH=${JDK6}:${JRE6}:$PATH
+# If there is more than one JDK installed, selecting latest 6.x
+elif [ "`update-alternatives --list javac | wc -l`" -gt 1 ]; then
+	echo -e "${bldblu}Found more than one Java JDK, selecting latest 6.x.${txtrst}"
 	JDK6=$(dirname `update-alternatives --list javac | grep "\-6\-"` | tail -n1)
 	JRE6=$(dirname ${JDK6}/../jre/bin/java)
 	export PATH=${JDK6}:${JRE6}:$PATH
+else
+	echo -e "${bldblu}Default JDK will be used.${txtrst}"
 fi
+echo -e "${bldcya}JDK located in [${JDK6}:${JRE6}] will be used.${txtrst}"
 JVER=$(javac -version  2>&1 | head -n1 | cut -f2 -d' ')
 
 # Import command line parameters
@@ -132,11 +160,20 @@ echo -e "${bldgrn}Start time: $(date) ${txtrst}"
 [ -n "${CCACHE_DIR}" ] && export CCACHE_DIR && echo -e "${bldgrn}CCACHE: location = [${txtrst}${grn}${CCACHE_DIR}${bldgrn}], size = [${txtrst}${grn}${cache1}${bldgrn}]${txtrst}"
 
 if [ -d vendor/pa ]; then
-	echo -e "${cya}"
-	./vendor/pa/tools/getdevicetree.py $DEVICE
-	echo -en "${txtrst}"
+	if [ -r "vendor/pa/products/pa_${DEVICE}.mk" ]; then
+		echo -e "${cya} Found device [${DEVICE}] definition.${txtrst}"
+	else
+		echo -e "${red} Definition of device [${DEVICE}] not found, exiting!${txtrst}"
+		exit 1
+	fi
+	if [ -r "vendor/pa/products/pa_${DEVICE}.manifest" ]; then
+		echo -e "${cya} Found manifest for [${DEVICE}], pre-fetching device related projects...${txtrst}"
+		vendor/pa/config/pa_roomservice.py products/pa_$DEVICE
+	else
+		echo -e "${bldcya} Manifest for [${DEVICE}] not found. Skipping pre-fetching device related projects!${txtrst}"
+	fi
 else
-	echo -e "${bldcya}Not PA tree, skipping device tree${txtrst}"
+	echo -e "${bldcya}Not PA tree, skipping PA roomservice tree${txtrst}"
 fi
 echo -e ""
 
@@ -223,7 +260,7 @@ else
 	if [ -d vendor/pa ]; then
 		echo -e "${bldblu}Lunching device [$DEVICE]${txtrst}"
 		export PREFS_FROM_SOURCE
-		export EXTRA_CM_PACKAGES
+		export VENDOR_PACKAGES_LIST
 		export NO_OTA_BUILD
 		lunch "pa_$DEVICE-userdebug";
 
