@@ -79,3 +79,15 @@ endif
 ifeq (pa_jfltecan,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_jfltecan.mk
 endif
+ifeq (pa_jfltespr,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_jfltespr.mk
+endif
+ifeq (pa_jflteusc,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_jflteusc.mk
+endif
+ifeq (pa_jfltecsp,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_jfltecsp.mk
+endif
+ifeq (pa_jfltecri,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_jfltecri.mk
+endif
