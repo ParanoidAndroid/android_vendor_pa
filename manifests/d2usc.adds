@@ -51,8 +51,8 @@
     {
         "remote":       "github",
         "account":      "Ayysir",
-        "repository":   "android_device_samsung_d2mtr",
-        "target_path":  "device/samsung/d2mtr",
+        "repository":   "android_device_samsung_d2usc",
+        "target_path":  "device/samsung/d2usc",
         "revision":     "cm-10.2"
     },
     {
