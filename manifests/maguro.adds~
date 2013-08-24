@@ -2,7 +2,7 @@
     {
         "remote":       "github",
         "account":      "BigBrother1984",
-        "repository":   "Paranoid-FK-Tuna",
+        "repository":   "PA-Tuna-franco.kernel",
         "target_path":  "kernel/samsung/tuna",
         "revision":     "nightlies-4.3"
     },
@@ -14,44 +14,44 @@
     },
     {
         "remote":       "github",
-        "account":      "ParanoidAndroid",
+        "account":      "TheMuppets",
         "repository":   "proprietary_vendor_samsung",
         "target_path":  "vendor/samsung",
-        "revision":     "jb43"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
-        "account":      "ParanoidAndroid",
+        "account":      "TheMuppets",
         "repository":   "proprietary_vendor_imgtec",
         "target_path":  "vendor/imgtec",
-        "revision":     "jb43"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
-        "account":      "ParanoidAndroid",
+        "account":      "TheMuppets",
         "repository":   "proprietary_vendor_invensense",
         "target_path":  "vendor/invensense",
-        "revision":     "jb43"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
-        "account":      "ParanoidAndroid",
+        "account":      "TheMuppets",
         "repository":   "proprietary_vendor_broadcom",
         "target_path":  "vendor/broadcom",
-        "revision":     "jb43"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
-        "account":      "ParanoidAndroid",
+        "account":      "TheMuppets",
         "repository":   "proprietary_vendor_nxp",
         "target_path":  "vendor/nxp",
-        "revision":     "jb43"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
-        "account":      "ParanoidAndroid",
+        "account":      "TheMuppets",
         "repository":   "proprietary_vendor_widevine",
         "target_path":  "vendor/widevine",
-        "revision":     "jb43"
+        "revision":     "cm-10.2"
     }
 ]
