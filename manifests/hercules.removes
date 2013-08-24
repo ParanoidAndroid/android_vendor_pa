@@ -1,0 +1,14 @@
+[
+    {
+        "name":     "ParanoidAndroid/android_bionic",
+        "path":     "bionic"
+    },
+    {
+        "name":     "ParanoidAndroid/android_system_extras",
+        "path":     "system/extras"
+    },
+    {
+        "name":     "ParanoidAndroid/android_build",
+        "path":     "build"
+    }
+]
