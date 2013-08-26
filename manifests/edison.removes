@@ -1,0 +1,30 @@
+[
+    {
+        "name":     "ParanoidAndroid/android_build",
+        "path":     "build"
+    },
+    {
+        "name":     "device/generic/common",
+        "path":     "device/generic/common"
+    },
+    {
+        "name":     "device/generic/armv7-a-neon",
+        "path":     "device/generic/armv7-a-neon"
+    },
+    {
+        "name":     "platform/hardware/ti/omap4xxx",
+        "path":     "hardware/ti/omap4xxx"
+    },
+    {
+        "name":     "platform/hardware/ti/wlan",
+        "path":     "hardware/ti/wlan"
+    },
+    {
+        "name":     "platform/hardware/ti/wpan",
+        "path":     "hardware/ti/wpan"
+    },
+    {
+        "name":     "ParanoidAndroid/android_packages_apps_Settings",
+        "path":     "packages/apps/Settings"
+    }
+]
