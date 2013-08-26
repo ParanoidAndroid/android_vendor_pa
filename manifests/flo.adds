@@ -71,9 +71,9 @@
     },
     {
         "remote":       "github",
-        "account":      "TheMuppets",
+        "account":      "ParanoidAndroid",
         "repository":   "proprietary_vendor_asus",
         "target_path":  "vendor/asus",
-        "revision":     "cm-10.2"
+        "revision":     "jb43"
     }
 ]
