@@ -30,3 +30,6 @@ add_lunch_combo pa_jfltetmo-userdebug
 add_lunch_combo pa_jflteatt-userdebug
 add_lunch_combo pa_jfltecan-userdebug
 add_lunch_combo pa_hercules-userdebug
+add_lunch_combo pa_edison-userdebug
+add_lunch_combo pa_spyder-userdebug
+add_lunch_combo pa_umts_spyder-userdebug
