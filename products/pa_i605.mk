@@ -41,7 +41,7 @@ PRODUCT_NAME := pa_i605
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := SCH-I605
 PRODUCT_MANUFACTURER := Samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=i605 TARGET_DEVICE=i605 BUILD_FINGERPRINT="Verizon/t0ltevzw/t0ltevzw:4.1.2/JZO54K/I605VRAMC3:user/release-keys" PRIVATE_BUILD_DESC="t0ltevzw-user 4.1.2 JZO54K I605VRAMC3 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=t0ltevzw TARGET_DEVICE=t0ltevzw BUILD_FINGERPRINT="Verizon/t0ltevzw/t0ltevzw:4.1.2/JZO54K/I605VRAMC3:user/release-keys" PRIVATE_BUILD_DESC="t0ltevzw-user 4.1.2 JZO54K I605VRAMC3 release-keys"
 
 # Include ParanoidAndroid repos configuration
 include vendor/pa/config/pa_addons.mk
