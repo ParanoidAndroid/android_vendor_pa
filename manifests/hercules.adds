@@ -106,13 +106,6 @@
   {
     "remote":       "github",
     "account":      "CyanogenMod",
-    "repository":   "android_bionic",
-    "target_path":  "bionic",
-    "revision":     "cm-10.2"
-  },
-  {
-    "remote":       "github",
-    "account":      "CyanogenMod",
     "repository":   "android_system_extras",
     "target_path":  "system/extras",
     "revision":     "cm-10.2"
