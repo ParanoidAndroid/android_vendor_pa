@@ -24,10 +24,6 @@
         "path":     "system/netd"
     },
     {
-        "name":     "platform/bootable/recovery",
-        "path":     "bootable/recovery"
-    },
-    {
         "name":     "ParanoidAndroid/android_bionic",
         "path":     "bionic"
     }
