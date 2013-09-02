@@ -21,11 +21,11 @@
         "revision":     "refs/tags/android-4.3_r2.2"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/display",
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
+        "repository":   "android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "branch":       "refs/tags/android-4.3_r2.2"
+        "branch":       "jb43-flo"
     },
     {
         "remote":       "aosp",
