@@ -109,3 +109,6 @@ endif
 ifeq (pa_i9100g,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_i9100g.mk
 endif
+ifeq (pa_galaxysmtd,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_galaxysmtd.mk
+endif

@@ -1,0 +1,17 @@
+[
+    {
+        "name":     "android_bootable_recovery"
+    },
+    {
+        "name":     "platform/hardware/broadcom/wlan"
+    },
+    {
+        "name":     "ParanoidAndroid/android_system_extras"
+    },
+    {
+        "name":     "platform/bootable/diskinstaller"
+    },
+    {
+        "name":     "ParanoidAndroid/android_bionic"
+    }
+]
