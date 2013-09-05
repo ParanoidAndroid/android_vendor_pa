@@ -67,7 +67,7 @@
         "account":      "CyanogenMod",
         "repository":   "android_device_generic_common",
         "target_path":  "device/generic/common",
-        "revision":     "cm-10.1"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
