@@ -1,0 +1,146 @@
+[
+    {
+        "remote":       "private",
+        "target_path":  "hardware/qcom/display-legacy",
+        "repository":   "alviteri/android_hardware_qcom_display-legacy",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "private",
+        "target_path":  "hardware/qcom/media-legacy",
+        "repository":   "alviteri/android_hardware_qcom_media-legacy",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "private",
+        "target_path":  "packages/wallpapers/BlueBalls",
+        "repository":   "alviteri/android_packages_wallpapers_BlueBalls",
+        "revision":     "jb43-legacy"
+    },
+    {
+        "remote":       "private",
+        "target_path":  "packages/apps/PerformanceControl",
+        "repository":   "erik96/android_packages_apps_PerformanceControl",
+        "revision":     "jb2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "packages/apps/CMFileManager",
+        "repository":   "android_packages_apps_CMFileManager",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "packages/apps/LockClock",
+        "repository":   "android_packages_apps_LockClock",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "packages/apps/Apollo",
+        "repository":   "android_packages_apps_Apollo",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/qcom/wlan",
+        "repository":   "android_hardware_qcom_wlan",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/qcom/sensors",
+        "repository":   "android_hardware_qcom_sensors",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/qcom/power",
+        "repository":   "android_hardware_qcom_power",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/qcom/media",
+        "repository":   "android_hardware_qcom_media",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/qcom/keymaster",
+        "repository":   "android_hardware_qcom_keymaster",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/qcom/gps",
+        "repository":   "android_hardware_qcom_gps",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/qcom/display",
+        "repository":   "android_hardware_qcom_display",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/qcom/bt",
+        "repository":   "android_hardware_qcom_bt",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/qcom/audio-caf",
+        "repository":   "android_hardware_qcom_audio-caf",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/qcom/audio",
+        "repository":   "android_hardware_qcom_audio",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/msm7k",
+        "repository":   "android_hardware_msm7k",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "hardware/broadcom/wlan",
+        "repository":   "android_hardware_broadcom_wlan",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "external/llvm",
+        "repository":   "android_external_llvm",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "external/clang",
+        "repository":   "android_external_clang",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "external/v8",
+        "repository":   "android_external_v8",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "dalvik",
+        "repository":   "android_dalvik",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "target_path":  "bionic",
+        "repository":   "android_bionic",
+        "revision":     "cm-10.2"
+    }
+]

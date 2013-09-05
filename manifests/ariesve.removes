@@ -1,0 +1,30 @@
+[
+    {
+        "name":     "platform/external/v8",
+        "path":     "external/v8"
+    },
+    {
+        "name":     "platform/hardware/broadcom/wlan",
+        "path":     "hardware/broadcom/wlan"
+    },
+    {
+        "name":     "platform/hardware/msm7k",
+        "path":     "hardware/msm7k"
+    },
+    {
+        "name":     "ParanoidAndroid/android_dalvik",
+        "path":     "dalvik"
+    },
+    {
+        "name":     "ParanoidAndroid/android_bionic",
+        "path":     "bionic"
+    },
+    {
+        "name":     "platform/external/clang",
+        "path":     "external/clang"
+    },
+    {
+        "name":     "platform/external/llvm",
+        "path":     "external/llvm"
+    }
+]
