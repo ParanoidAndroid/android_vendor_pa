@@ -1,4 +1,4 @@
-<property name="Stock UI" active="true" image="/system/etc/paranoid/preferences/images/Phablet.png" color="#238fcd">
+<property name="Stock UI" active="true" image="/system/etc/paranoid/preferences/images/phablet.png" color="#238fcd">
 
         <description><![CDATA[
             This will put your device into 320 DPI/600p Phablet UI, none of your apps will be changed.
