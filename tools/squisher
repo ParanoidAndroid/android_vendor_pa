@@ -108,6 +108,7 @@ mkdir $REPACK/ota/system/etc/paranoid/preferences/images
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 echo "ro.pa=true"  >> $REPACK/ota/system/build.prop
+echo "ro.pa.device=${TARGET_PRODUCT:3}"  >> $REPACK/ota/system/build.prop
 
 # Inject build manifest
 printf "Injecting build manifest..."
