@@ -20,7 +20,7 @@
     {
         "remote":       "private",
         "target_path":  "packages/apps/PerformanceControl",
-        "repository":   "erik96/android_packages_apps_PerformanceControl",
+        "repository":   "horn3t/android_packages_apps_PerformanceControl",
         "revision":     "jb2"
     },
     {
