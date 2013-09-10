@@ -130,17 +130,5 @@
         "target_path":  "external/v8",
         "repository":   "android_external_v8",
         "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "cm",
-        "target_path":  "dalvik",
-        "repository":   "android_dalvik",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "cm",
-        "target_path":  "bionic",
-        "repository":   "android_bionic",
-        "revision":     "cm-10.2"
     }
 ]

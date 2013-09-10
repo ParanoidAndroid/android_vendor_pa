@@ -12,14 +12,6 @@
         "path":     "hardware/msm7k"
     },
     {
-        "name":     "ParanoidAndroid/android_dalvik",
-        "path":     "dalvik"
-    },
-    {
-        "name":     "ParanoidAndroid/android_bionic",
-        "path":     "bionic"
-    },
-    {
         "name":     "platform/external/clang",
         "path":     "external/clang"
     },
