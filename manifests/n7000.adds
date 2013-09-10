@@ -72,13 +72,6 @@
     {
         "remote":       "github",
         "account":      "CyanogenMod",
-        "repository":   "android_bionic",
-        "target_path":  "bionic",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
         "repository":   "android_bootable_recovery",
         "target_path":  "bootable/recovery",
         "revision":     "cm-10.2"

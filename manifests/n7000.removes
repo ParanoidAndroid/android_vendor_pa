@@ -10,9 +10,5 @@
     {
         "name":     "platform/hardware/ti/wlan",
         "path":     "hardware/ti/wlan"
-    },
-    {
-        "name":     "ParanoidAndroid/android_bionic",
-        "path":     "bionic"
     }
 ]
