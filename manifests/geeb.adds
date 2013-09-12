@@ -12,17 +12,11 @@
         "revision":     "cm-10.2"
     },
     {
-        "remote":       "cm",
-        "repository":   "android_hardware_qcom_bt",
-        "target_path":  "hardware/qcom/bt",
-        "revision":     "cm-10.2"
-    },
-    {
         "remote":       "github",
         "account":      "g3tsum",
         "repository":   "android_device_lge_geeb",
         "target_path":  "device/lge/geeb",
-        "revision":     "jb43"
+        "revision":     "jb43-legacy"
     },
     {
         "remote":       "github",
@@ -36,62 +30,79 @@
         "account":      "g3tsum",
         "repository":   "android_kernel_lge_geeb",
         "target_path":  "kernel/lge/geeb",
-        "revision":     "jb43"
+        "revision":     "jb43-legacy"
     },
     {
-        "remote":       "github",
-        "account":      "ParanoidAndroid",
+        "remote":       "cm",
+        "repository":   "android_hardware_msm7k",
+        "target_path":  "hardware/msm7k",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "repository":   "android_hardware_qcom_bt",
+        "target_path":  "hardware/qcom/bt",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
         "repository":   "android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "revision":     "jb43"
+        "revision":     "cm-10.2"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/power",
+        "remote":       "cm",
+        "repository":   "android_hardware_qcom_display-caf",
+        "target_path":  "hardware/qcom/display-caf",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "repository":   "android_hardware_qcom_power",
         "target_path":  "hardware/qcom/power",
-        "revision":     "refs/tags/android-4.3_r1"
+        "revision":     "cm-10.2"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/media",
+        "remote":       "cm",
+        "repository":   "android_hardware_qcom_media",
         "target_path":  "hardware/qcom/media",
-        "revision":     "refs/tags/android-4.3_r1"
+        "revision":     "cm-10.2"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/wlan",
+        "remote":       "cm",
+        "repository":   "android_hardware_qcom_media-caf",
+        "target_path":  "hardware/qcom/media-caf",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "repository":   "android_hardware_qcom_wlan",
         "target_path":  "hardware/qcom/wlan",
-        "revision":     "refs/tags/android-4.3_r1"
+        "revision":     "cm-10.2"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/audio",
+        "remote":       "cm",
+        "repository":   "android_hardware_qcom_audio",
         "target_path":  "hardware/qcom/audio",
-        "revision":     "refs/tags/android-4.3_r1"
+        "revision":     "cm-10.2"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/msm8960",
+        "remote":       "cm",
+        "repository":   "android_hardware_qcom_msm8960",
         "target_path":  "hardware/qcom/msm8960",
-        "revision":     "refs/tags/android-4.3_r1"
+        "revision":     "cm-10.2"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/keymaster",
+        "remote":       "cm",
+        "repository":   "android_hardware_qcom_keymaster",
         "target_path":  "hardware/qcom/keymaster",
-        "revision":     "refs/tags/android-4.3_r1"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "aosp",
         "account":      "platform",
         "repository":   "hardware/qcom/sensors",
         "target_path":  "hardware/qcom/sensors",
-        "revision":     "refs/tags/android-4.3_r1"
+        "revision":     "refs/tags/android-4.3_r2.2"
     }
 ]
