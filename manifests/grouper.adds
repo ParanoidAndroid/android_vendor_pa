@@ -1,4 +1,10 @@
 [
+    {   "remote":	"github",
+	"account":	"ParanoidAndroid",
+	"repository":	"android_kernel_grouper",
+	"target_path":	"kernel/asus/grouper",
+	"revision":	"jb43"
+    },
     {
         "remote":       "github",
         "account":      "ParanoidAndroid",
