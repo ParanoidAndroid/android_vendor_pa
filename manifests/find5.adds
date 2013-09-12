@@ -2,13 +2,6 @@
     {
         "remote":       "github",
         "account":      "maxwen",
-        "repository":   "proprietary_vendor_oppo",
-        "target_path":  "vendor/oppo",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "github",
-        "account":      "maxwen",
         "repository":   "android_kernel_oppo_find5",
         "target_path":  "kernel/oppo/find5",
         "revision":     "jb-mr2"
@@ -102,6 +95,20 @@
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_wlan",
         "target_path":  "hardware/qcom/wlan",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "maxwen",
+        "repository":   "android_external_icu4c",
+        "target_path":  "external/icu4c",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "maxwen",
+        "repository":   "proprietary_vendor_oppo",
+        "target_path":  "vendor/oppo",
         "revision":     "cm-10.2"
     }
 ]
