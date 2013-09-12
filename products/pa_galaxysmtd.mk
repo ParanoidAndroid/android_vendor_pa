@@ -19,7 +19,7 @@ ifeq (pa_galaxysmtd,$(TARGET_PRODUCT))
 PARANOID_BOOTANIMATION_NAME := HDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_hdpi
+OVERLAY_TARGET := pa_galaxysmtd
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= true
