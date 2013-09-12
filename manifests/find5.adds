@@ -1,117 +1,107 @@
 [
     {
-        "remote":       "cm",
-        "repository":   "android_frameworks_av",
-        "target_path":  "frameworks/av",
-        "branch":       "cm-10.2"
-    },
-    {
-        "remote":       "cm",
-        "repository":   "android_hardware_libhardware",
-        "target_path":  "hardware/libhardware",
-        "branch":       "cm-10.2"
-    },
-    {
-        "remote":       "cm",
-        "repository":   "android_hardware_libhardware_legacy",
-        "target_path":  "hardware/libhardware_legacy",
-        "branch":       "cm-10.2"
-    },
-    {
-        "remote":       "cm",
-        "repository":   "android_system_vold",
-        "target_path":  "system/vold",
-        "branch":       "cm-10.2"
-    },
-    {
         "remote":       "github",
-        "account":      "TheMuppets",
+        "account":      "maxwen",
         "repository":   "proprietary_vendor_oppo",
         "target_path":  "vendor/oppo",
-        "revision":     "cm-10.1"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
-        "account":      "aaronpoweruser",
+        "account":      "maxwen",
         "repository":   "android_kernel_oppo_find5",
         "target_path":  "kernel/oppo/find5",
-        "revision":     "pa"
+        "revision":     "jb-mr2"
     },
     {
         "remote":       "github",
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_audio",
         "target_path":  "hardware/qcom/audio",
-        "branch":       "cm-10.1"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_audio-caf",
         "target_path":  "hardware/qcom/audio-caf",
-        "branch":       "cm-10.1"
-    },
-    {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/bt",
-        "target_path":  "hardware/qcom/bt",
-        "branch":       "jb-mr1.1-release"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
         "account":      "CyanogenMod",
-        "repository":   "android_hardware_qcom_camera",
-        "target_path":  "hardware/qcom/camera",
-        "branch":       "cm-10.1"
+        "repository":   "android_hardware_qcom_bt",
+        "target_path":  "hardware/qcom/bt",
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "branch":       "cm-10.1"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_display-caf",
         "target_path":  "hardware/qcom/display-caf",
-        "branch":       "cm-10.1"
+        "revision":     "cm-10.2"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/gps",
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_gps",
         "target_path":  "hardware/qcom/gps",
-        "branch":       "jb-mr1.1-release"
+        "revision":     "cm-10.2"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/keymaster",
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_keymaster",
         "target_path":  "hardware/qcom/keymaster",
-        "branch":       "jb-mr1.1-release"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "github",
         "account":      "CyanogenMod",
         "repository":   "android_hardware_qcom_media",
         "target_path":  "hardware/qcom/media",
-        "branch":       "cm-10.1"
+        "revision":     "cm-10.2"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/power",
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_media-caf",
+        "target_path":  "hardware/qcom/media-caf",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_msm8960",
+        "target_path":  "hardware/qcom/msm8960",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_sensors",
+        "target_path":  "hardware/qcom/sensors",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_power",
         "target_path":  "hardware/qcom/power",
-        "branch":       "jb-mr1.1-release"
+        "revision":     "cm-10.2"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/wlan",
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_wlan",
         "target_path":  "hardware/qcom/wlan",
-        "branch":       "jb-mr1.1-release"
+        "revision":     "cm-10.2"
     }
 ]
