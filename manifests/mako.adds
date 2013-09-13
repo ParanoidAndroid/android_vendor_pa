@@ -31,7 +31,7 @@
         "account":      "ParanoidAndroid",
         "repository":   "android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "revision":     "jb43-r2.2"
+        "revision":     "jb43"
     },
     {
         "remote":       "aosp",
