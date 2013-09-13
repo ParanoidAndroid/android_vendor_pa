@@ -19,7 +19,7 @@ ifeq (pa_geeb,$(TARGET_PRODUCT))
 PARANOID_BOOTANIMATION_NAME := XHDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_xhdpi
+OVERLAY_TARGET := pa_i9300
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= false
