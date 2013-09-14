@@ -1,114 +1,133 @@
 [
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_bash",
         "target_path":  "external/bash",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_packages_apps_CMFileManager",
         "target_path":  "packages/apps/CMFileManager",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_packages_apps_DSPManager",
         "target_path":  "packages/apps/DSPManager",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_e2fsprogs",
         "target_path":  "external/e2fsprogs",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_exfat",
         "target_path":  "external/exfat",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_fuse",
         "target_path":  "external/fuse",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_htop",
         "target_path":  "external/htop",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_packages_inputmethods_LatinIME",
         "target_path":  "packages/inputmethods/LatinIME",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_libncurses",
         "target_path":  "external/libncurses",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_lsof",
         "target_path":  "external/lsof",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_lzo",
         "target_path":  "external/lzo",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_nano",
         "target_path":  "external/nano",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_ntfs-3g",
         "target_path":  "external/ntfs-3g",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_openssh",
         "target_path":  "external/openssh",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_openvpn",
         "target_path":  "external/openvpn",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_powertop",
         "target_path":  "external/powertop",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_rsync",
         "target_path":  "external/rsync",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_packages_apps_SoundRecorder",
         "target_path":  "packages/apps/SoundRecorder",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_external_vim",
         "target_path":  "external/vim",
         "revision":     "cm-10.2"

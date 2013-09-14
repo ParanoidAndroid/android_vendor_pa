@@ -7,7 +7,7 @@
         "revision":     "cm-10.1"
     },
     {
-        "remote":      "github",
+        "remote":      "cm",
         "account":     "CyanogenMod",
         "repository":  "android_kernel_samsung_crespo",
         "target_path": "kernel/samsung/crespo",

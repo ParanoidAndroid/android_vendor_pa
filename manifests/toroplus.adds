@@ -8,12 +8,14 @@
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_packages_apps_Torch",
         "target_path":  "packages/apps/Torch",
         "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_system_netd",
         "target_path":  "system/netd",
         "revision":     "cm-10.2"

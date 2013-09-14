@@ -1,6 +1,7 @@
 [
     {
         "remote":       "cm",
+	"account":	"CyanogenMod",
         "repository":   "android_kernel_samsung_manta",
         "target_path":  "kernel/samsung/manta",
         "revision":     "cm-10.2"
