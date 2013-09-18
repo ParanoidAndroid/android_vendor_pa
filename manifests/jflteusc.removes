@@ -1,9 +1,5 @@
 [
     {
-        "name":     "ParanoidAndroid/android_build",
-        "path":     "build"
-    },
-    {
         "name":     "device/generic/common",
         "path":     "device/generic/common"
     },
