@@ -23,6 +23,20 @@
     {
         "remote":       "github",
         "account":      "CyanogenMod",
+        "repository":   "android_device_motorola_edison",
+        "target_path":  "device/motorola/edison",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "Atrix2-Dev-Team",
+        "repository":   "android_device_motorola_omap4-common",
+        "target_path":  "device/motorola/omap4-common",
+        "revision":     "pa4.3"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
         "repository":   "android_external_wpa_supplicant_8_ti",
         "target_path":  "external/wpa_supplicant_8_ti",
         "revision":     "cm-10.2"
@@ -71,9 +85,16 @@
     },
     {
         "remote":       "github",
-        "account":      "SlimRoms",
+        "account":      "CyanogenMod",
         "repository":   "android_prebuilt",
         "target_path":  "prebuilt",
-        "revision":     "jb4.3"
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "TheMuppets",
+        "repository":   "proprietary_vendor_motorola",
+        "target_path":  "vendor/motorola",
+        "revision":     "cm-10.2"
     }
 ]
