@@ -16,7 +16,7 @@
         "account":      "g3tsum",
         "repository":   "android_device_lge_geespr",
         "target_path":  "device/lge/geeb",
-        "revision":     "jb43-legacy"
+        "revision":     "jb43"
     },
     {
         "remote":       "github",
@@ -45,10 +45,11 @@
         "revision":     "cm-10.2"
     },
     {
-        "remote":       "cm",
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
         "repository":   "android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "revision":     "cm-10.2"
+        "revision":     "jb43"
     },
     {
         "remote":       "cm",
