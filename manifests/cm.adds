@@ -23,13 +23,6 @@
     {
         "remote":       "cm",
 	"account":	"CyanogenMod",
-        "repository":   "android_external_e2fsprogs",
-        "target_path":  "external/e2fsprogs",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "cm",
-	"account":	"CyanogenMod",
         "repository":   "android_external_exfat",
         "target_path":  "external/exfat",
         "revision":     "cm-10.2"
@@ -81,13 +74,6 @@
 	"account":	"CyanogenMod",
         "repository":   "android_external_nano",
         "target_path":  "external/nano",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "cm",
-	"account":	"CyanogenMod",
-        "repository":   "android_external_ntfs-3g",
-        "target_path":  "external/ntfs-3g",
         "revision":     "cm-10.2"
     },
     {
