@@ -1,13 +1,6 @@
 [
     {
         "remote":       "github",
-        "account":      "Ayysir",
-        "repository":   "android_build",
-        "target_path":  "build",
-        "revision":     "jb43"
-    },
-    {
-        "remote":       "github",
         "account":      "CyanogenMod",
         "repository":   "android_external_clang",
         "target_path":  "external/clang",
