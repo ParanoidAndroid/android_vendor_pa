@@ -1,6 +1,12 @@
 [
     {
         "remote":       "private",
+        "target_path":  "frameworks/native",
+        "repository":   "TeamHackLG/android_frameworks_native",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "private",
         "target_path":  "hardware/qcom/display-legacy",
         "repository":   "alviteri/android_hardware_qcom_display-legacy",
         "revision":     "cm-10.2"
@@ -37,8 +43,8 @@
     },
     {
         "remote":       "cm",
-        "target_path":  "packages/apps/Apollo",
-        "repository":   "android_packages_apps_Apollo",
+        "target_path":  "packages/apps/SoundRecorder",
+        "repository":   "android_packages_apps_SoundRecorder",
         "revision":     "cm-10.2"
     },
     {
