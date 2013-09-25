@@ -1,5 +1,13 @@
 [
     {
+        "name":     "android_frameworks_native",
+        "path":     "frameworks/native"
+    },
+    {
+        "name":     "platform/packages/apps/SoundRecorder",
+        "path":     "packages/apps/SoundRecorder"
+    },
+    {
         "name":     "platform/external/v8",
         "path":     "external/v8"
     },
