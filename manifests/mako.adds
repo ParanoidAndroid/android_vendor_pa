@@ -35,11 +35,11 @@
         "revision":     "jb43"
     },
     {
-        "remote":       "aosp",
-        "account":      "platform",
-        "repository":   "hardware/qcom/display",
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
+        "repository":   "android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "revision":     "refs/tags/android-4.3_r3.1"
+        "revision":     "jb43"
     },
     {
         "remote":       "aosp",
