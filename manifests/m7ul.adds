@@ -7,12 +7,6 @@
         "revision":     "cm-10.2"
     },
     {
-        "remote":       "paranoid",
-        "repository":   "android_packages_apps_paranoidpreferences",
-        "target_path":  "packages/apps/ParanoidPreferences",
-        "revision":     "jb43"
-    },
-    {
         "remote":       "github",
         "account":      "TheMuppets",
         "repository":   "proprietary_vendor_htc",
@@ -126,7 +120,7 @@
     },
     {
         "remote":       "github",
-        "account":      "slickrick",
+        "account":      "houst0nn",
         "repository":   "android_device_htc_m7-common",
         "target_path":  "device/htc/m7-common",
         "revision":     "cm-10.2"
