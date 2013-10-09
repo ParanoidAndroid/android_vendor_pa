@@ -1,0 +1,31 @@
+[
+
+    {
+        "remote":       "github",
+        "account":      "dcos",
+        "repository":   "android_device_lge_p880",
+        "target_path":  "device/lge/p880",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "dcos",
+        "repository":   "lge-kernel-p880",
+        "target_path":  "kernel/lge/p880",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "TheMuppets",
+        "repository":   "proprietary_vendor_lge",
+        "target_path":  "vendor/lge",
+        "revision":     "cm-10.2"
+    },
+	    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_packages_apps_Torch",
+        "target_path":  "packages/apps/Torch",
+        "revision":     "cm-10.2"
+    }
+]
