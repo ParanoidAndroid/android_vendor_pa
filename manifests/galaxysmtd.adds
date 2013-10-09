@@ -79,13 +79,6 @@
     {
         "remote":       "github",
         "account":      "CyanogenMod",
-        "repository":   "android_packages_apps_DSPManager",
-        "target_path":  "packages/apps/DSPManager",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
         "repository":   "android_bionic",
         "target_path":  "bionic",
         "revision":     "cm-10.2"

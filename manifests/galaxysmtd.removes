@@ -1,6 +1,6 @@
 [
     {
-        "name":     "android_bootable_recovery"
+        "name":     "CyanogenMod/android_bootable_recovery"
     },
     {
         "name":     "platform/hardware/broadcom/wlan"
