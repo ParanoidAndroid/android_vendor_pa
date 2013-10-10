@@ -34,7 +34,7 @@ include vendor/pa/config/pa_common.mk
 $(call inherit-product, device/lge/p880/full_p880.mk)
 
 # Include CM extras
-EXTRA_CM_PACKAGES ?= true
+# EXTRA_CM_PACKAGES ?= true
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_p880
