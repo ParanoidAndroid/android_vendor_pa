@@ -1,0 +1,126 @@
+[
+    {
+        "name":     "device/generic/common",
+        "path":     "device/generic/common"
+    },
+    {
+        "name":     "CyanogenMod/android_device_sample",
+        "path":     "device/sample"
+    },
+    {
+        "name":     "platform/external/sepolicy",
+        "path":     "external/sepolicy"
+    },
+    {
+        "name":     "platform/hardware/ti/wpan",
+        "path":     "hardware/ti/wpan"
+    },
+    {
+        "name":     "platform/hardware/ti/wlan",
+        "path":     "hardware/ti/wlan"
+    },
+    {
+        "name":     "platform/hardware/ti/omap4xxx",
+        "path":     "hardware/ti/omap4xxx"
+    },
+    {
+        "name":     "platform/hardware/ti/omap3",
+        "path":     "hardware/ti/omap3"
+    },
+    {
+        "name":     "platform/hardware/samsung_slsi/exynos5",
+        "path":     "hardware/samsung_slsi/exynos5"
+    },
+    {
+        "name":     "platform/hardware/broadcom/wlan",
+        "path":     "hardware/broadcom/wlan"
+    },
+    {
+        "name":     "device/generic/mini-emulator-armv7-a-neon",
+        "path":     "device/generic/mini-emulator-armv7-a-neon"
+    },
+    {
+        "name":     "device/generic/armv7-a-neon",
+        "path":     "device/generic/armv7-a-neon"
+    },
+    {
+        "name":     "device/generic/x86",
+        "path":     "device/generic/x86"
+    },
+    {
+        "name":     "device/generic/mini-emulator-x86",
+        "path":     "device/generic/mini-emulator-x86"
+    },
+    {
+        "name":     "device/generic/mini-emulator-mips",
+        "path":     "device/generic/mini-emulator-mips"
+    },
+	{
+        "name":     "platform/prebuilts/eclipse",
+        "path":     "prebuilts/eclipse"
+    },
+    {
+        "name":     "platform/prebuilts/eclipse-build-deps",
+        "path":     "prebuilts/eclipse-build-deps"
+    },
+    {
+        "name":     "platform/prebuilts/eclipse-build-deps-sources",
+        "path":     "prebuilts/eclipse-build-deps-sources"
+    },
+    {
+        "name":     "platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6",
+        "path":     "prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6"
+    },
+    {
+        "name":     "platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7",
+        "path":     "prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7"
+    },
+    {
+        "name":     "platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6",
+        "path":     "prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6"
+    },
+    {
+        "name":     "platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7",
+        "path":     "prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7"
+    },
+    {
+        "name":     "platform/prebuilts/gcc/darwin-x86/host/headers",
+        "path":     "prebuilts/gcc/darwin-x86/host/headers"
+    },
+    {
+        "name":     "platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1",
+        "path":     "prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1"
+    },
+    {
+        "name":     "platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6",
+        "path":     "prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6"
+    },
+    {
+        "name":     "platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7",
+        "path":     "prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7"
+    },
+    {
+        "name":     "platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6",
+        "path":     "prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6"
+    },
+    {
+        "name":     "platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7",
+        "path":     "prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7"
+    },
+    {
+        "name":     "platform/packages/inputmethods/OpenWnn",
+        "path":     "packages/inputmethods/OpenWnn"
+    },
+    {
+        "name":     "platform/packages/inputmethods/PinyinIME",
+        "path":     "packages/inputmethods/PinyinIME"
+    },
+    {
+        "name":     "platform/prebuilts/clang/darwin-x86/3.1",
+        "path":     "prebuilts/clang/darwin-x86/3.1"
+    },
+    {
+        "name":     "platform/prebuilts/clang/darwin-x86/3.2",
+        "path":     "prebuilts/clang/darwin-x86/3.2"
+    }
+]

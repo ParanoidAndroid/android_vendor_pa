@@ -40,4 +40,4 @@ add_lunch_combo pa_ariesve-userdebug
 add_lunch_combo pa_geeb-userdebug
 add_lunch_combo pa_geespr-userdebug
 add_lunch_combo pa_p880-userdebug
-
+add_lunch_combo pa_e975-userdebug
