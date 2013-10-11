@@ -1,0 +1,114 @@
+[
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_packages_apps_Torch",
+        "target_path":  "packages/apps/Torch",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "TheMuppets",
+        "repository":   "proprietary_vendor_lge",
+        "target_path":  "vendor/lge",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_device_lge_e975",
+        "target_path":  "device/lge/e975",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_audio",
+        "target_path":  "hardware/qcom/audio",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_bt",
+        "target_path":  "hardware/qcom/bt",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_display-caf",
+        "target_path":  "hardware/qcom/display-caf",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_gps",
+        "target_path":  "hardware/qcom/gps",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_keymaster",
+        "target_path":  "hardware/qcom/keymaster",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_media",
+        "target_path":  "hardware/qcom/media",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_msm8960",
+        "target_path":  "hardware/qcom/msm8960",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_power",
+        "target_path":  "hardware/qcom/power",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_sensors",
+        "target_path":  "hardware/qcom/sensors",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_wlan",
+        "target_path":  "hardware/qcom/wlan",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_external_sepolicy",
+        "target_path":  "external/sepolicy",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "lge-kernel-gproj",
+        "target_path":  "kernel/lge/gproj",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "account":      "CyanogenMod",
+        "repository":   "android_device_lge_gproj-common",
+        "target_path":  "device/lge/gproj-common",
+        "revision":     "cm-10.2"
+    }
+]
