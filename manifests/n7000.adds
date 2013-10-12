@@ -16,20 +16,6 @@
     {
         "remote":       "github",
         "account":      "CyanogenMod",
-        "repository":   "android_external_yaffs2",
-        "target_path":  "external/yaffs2",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
-        "repository":   "android_external_zlib",
-        "target_path":  "external/zlib",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
         "repository":   "android_hardware_broadcom_wlan",
         "target_path":  "hardware/broadcom/wlan",
         "revision":     "cm-10.2"
@@ -51,13 +37,6 @@
     {
         "remote":       "github",
         "account":      "CyanogenMod",
-        "repository":   "android_system_netd",
-        "target_path":  "system/netd",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
         "repository":   "android_device_generic_armv7-a-neon",
         "target_path":  "device/generic/armv7-a-neon",
 	    "revision":     "cm-10.2"
@@ -67,13 +46,6 @@
         "account":      "CyanogenMod",
         "repository":   "android_device_generic_common",
         "target_path":  "device/generic/common",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "github",
-        "account":      "CyanogenMod",
-        "repository":   "android_bootable_recovery",
-        "target_path":  "bootable/recovery",
         "revision":     "cm-10.2"
     }
 ]
