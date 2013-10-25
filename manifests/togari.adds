@@ -1,0 +1,177 @@
+[
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_kernel_sony_msm8974",
+        "target_path":  "kernel/sony/msm8974",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_device_sony_common",
+        "target_path":  "device/sony/common",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "ParanoidAndroid",
+        "repository":   "android_device_sony_qcom-common",
+        "target_path":  "device/sony/qcom-common",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_external_wpa_supplicant_8",
+        "target_path":  "external/wpa_supplicant_8",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_external_wpa_supplicant_8_ti",
+        "target_path":  "external/wpa_supplicant_8_ti",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_broadcom_wlan",
+        "target_path":  "hardware/broadcom/wlan",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_ti_wlan",
+        "target_path":  "hardware/ti/wlan",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_audio",
+        "target_path":  "hardware/qcom/audio",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_audio-caf",
+        "target_path":  "hardware/qcom/audio-caf",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_display",
+        "target_path":  "hardware/qcom/display",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_display-caf",
+        "target_path":  "hardware/qcom/display-caf",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_keymaster",
+        "target_path":  "hardware/qcom/keymaster",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_gps",
+        "target_path":  "hardware/qcom/gps",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_media",
+        "target_path":  "hardware/qcom/media",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_media-caf",
+        "target_path":  "hardware/qcom/media-caf",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_msm8960",
+        "target_path":  "hardware/qcom/msm8960",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_power",
+        "target_path":  "hardware/qcom/power",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_sensors",
+        "target_path":  "hardware/qcom/sensors",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_wlan",
+        "target_path":  "hardware/qcom/wlan",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_device_generic_armv7-a-neon",
+        "target_path":  "device/generic/armv7-a-neon",
+	    "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_device_generic_common",
+        "target_path":  "device/generic/common",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "TheMuppets",
+        "repository":   "proprietary_vendor_sony",
+        "target_path":  "vendor/sony",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_audio-bfam",
+        "target_path":  "hardware/qcom/audio-bfam",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_display-mdss",
+        "target_path":  "hardware/qcom/display-mdss",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_hardware_qcom_media-v4l2",
+        "target_path":  "hardware/qcom/media-v4l2",
+        "revision":     "cm-10.2"
+    }
+]
